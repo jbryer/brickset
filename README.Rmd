@@ -1,0 +1,91 @@
+---
+title: "brickset"
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+<a href='https://github.com/jbryer/brickset'><img src='brickset.png' align="right" height="200" /></a>
+
+# An R package to interface with the Brickset.com API for getting data about LEGO sets
+
+**Author:** Jason Bryer, Ph.D. jason.bryer@cuny.edu  
+**Website:** https://github.com/jbryer/brickset
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE, error=FALSE}
+library(brickset)
+library(ggplot2)
+library(knitr)
+data("legosets", package = 'brickset')
+source('brickset_login.R')
+```
+
+This package provides functions to access data about [LEGO](https://lego.com) sets from the [Brickset](https://brickset.com) website. The package also contains a `data.frame` with all LEGO sets (n = `r nrow(legosets)`) from `r min(legosets$year)` through `r max(legosets$year)`. This data set was created using the `getSets` function and it is recommended that you use this data frame to reduce the number of API calls. See the [build.R](build.R) script for how the data frame was created. Documentation on the variables is included below.
+
+To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](http://brickset.com/tools/webservices/requestkey). The full Brickset API documentation available here: https://brickset.com/article/52664/api-version-3-documentation
+
+To get started, set these three R variables to your username, password, and API key:
+
+```{r, eval=FALSE}
+username <- "YOUR_USERNAME"
+password <- "YOUR_PASSWORD"
+key <- "YOUR_API_KEY"
+```
+
+To check if your API key is valid, call the `checkKey` function:
+
+```{r}
+brickset::checkKey(key)
+```
+
+Most of the Brickset API requests require you to be logged in. The `username` and `password` can be passed to each function, or `userHash` parameter can be reused for each session to reduce the number of calls the the `login` function. The `checkUserHash` will verify that the login and hash are valid.
+
+```{r}
+userHash <- brickset::login(username, password, key)
+brickset::checkUserHash(key, userHash)
+```
+
+You can check your API usage with the `getKeyUsageStats` function.
+
+```{r}
+brickset::getKeyUsageStats(key)
+```
+
+The `getSets` function returns all LEGO sets from the given year.
+
+```{r}
+sets2021 <- brickset::getSets(2021, key = key, userHash = userHash)
+head(sets2021, n = 3)
+```
+
+The `getReviews` function will return all reviews for a given set.
+
+```{r}
+reviews29830 <- brickset::getReviews(29830, key = key, userHash = userHash)
+names(reviews29830)
+```
+
+### `legosets` Data Frame
+
+```{r, fig.height=4}
+data("legosets", package = "brickset")
+ggplot(legosets, aes(x = year)) + geom_bar() +
+	ggtitle('Number of LEGO sets by year') +
+	xlab('Year') + ylab('Number of LEGO Sets')
+```
+
+The variables in the `legosets` data frame are:
+
+```{r, echo=FALSE, results='asis'}
+legosets_cols <- data.frame(
+	row.names = names(legosets),
+	Type = character(ncol(legosets)),
+	Unique_Values = integer(ncol(legosets))
+)
+
+for(i in names(legosets)) {
+	legosets_cols[i,'Type'] <- class(legosets[,i])
+	legosets_cols[i,'Unique_Values'] <- length(unique(legosets[,i]))
+}
+knitr::kable(legosets_cols, format = 'markdown')
+```

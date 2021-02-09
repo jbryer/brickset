@@ -1,0 +1,9 @@
+^\.Rproj\.user$
+^.*\.Rproj$
+data-raw/
+build.R
+.gitignore
+.Rhistory
+sticker.R
+bricks.png
+brickset.png
