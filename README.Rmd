@@ -24,6 +24,12 @@ This package provides functions to access data about [LEGO](https://lego.com) se
 
 To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](http://brickset.com/tools/webservices/requestkey). The full Brickset API documentation available here: https://brickset.com/article/52664/api-version-3-documentation
 
+The package can be installed from Github:
+
+```{r, eval=FALSE}
+remotes::install_github('jbryer/brickset')
+```
+
 To get started, set these three R variables to your username, password, and API key:
 
 ```{r, eval=FALSE}
@@ -67,7 +73,7 @@ names(reviews29830)
 
 ### `legosets` Data Frame
 
-```{r, fig.height=4}
+```{r legosets_by_year, fig.height=4}
 data("legosets", package = "brickset")
 ggplot(legosets, aes(x = year)) + geom_bar() +
 	ggtitle('Number of LEGO sets by year') +

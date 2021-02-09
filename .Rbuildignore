@@ -7,3 +7,5 @@ build.R
 sticker.R
 bricks.png
 brickset.png
+README_files/*
+

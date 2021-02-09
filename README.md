@@ -23,6 +23,12 @@ key](http://brickset.com/tools/webservices/requestkey). The full
 Brickset API documentation available here:
 <https://brickset.com/article/52664/api-version-3-documentation>
 
+The package can be installed from Github:
+
+``` r
+remotes::install_github('jbryer/brickset')
+```
+
 To get started, set these three R variables to your username, password,
 and API key:
 
@@ -60,7 +66,7 @@ brickset::getKeyUsageStats(key)
 ```
 
     ##              dateStamp count
-    ## 1 2021-02-09T00:00:00Z    58
+    ## 1 2021-02-09T00:00:00Z    59
     ## 2 2021-02-08T00:00:00Z    77
 
 The `getSets` function returns all LEGO sets from the given year.
@@ -126,7 +132,7 @@ ggplot(legosets, aes(x = year)) + geom_bar() +
     xlab('Year') + ylab('Number of LEGO Sets')
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](README_files/figure-gfm/legosets_by_year-1.png)<!-- -->
 
 The variables in the `legosets` data frame are:
 
