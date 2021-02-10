@@ -13,5 +13,6 @@ checkKey <- function(key, error = TRUE) {
 	if(error & http_error(checkKey)) {
 		stop(paste0('Error checking API key: ', http_status(checkKey)$message))
 	}
-	return(!http_error(checkKey))
+	key_json <- jsonlite::fromJSON(content(checkKey, as = 'text', encoding = "UTF-8"))
+	return(key_json$status == 'success')
 }

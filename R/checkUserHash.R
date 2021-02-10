@@ -13,12 +13,12 @@ checkUserHash <- function(key, userHash, error = TRUE) {
 	if(!checkKey(key, error = error)) {
 		return(FALSE)
 	}
-
 	checkUserHash <- httr::GET(paste0(brickset_api_endpoint,
 								 'checkUserHash?apiKey=', key,
 								 '&userHash=', userHash))
 	if(error & http_error(checkUserHash)) {
 		stop(paste0('Error checking user hash: ', http_status(checkUserHash)$message))
 	}
-	return(!http_error(checkUserHash))
+	user_hash_json <- jsonlite::fromJSON(content(checkUserHash, as = 'text', encoding = "UTF-8"))
+	return(user_hash_json$status == 'success')
 }

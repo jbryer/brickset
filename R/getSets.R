@@ -1,4 +1,4 @@
-#' Downloads Lego data.
+#' Downloads LEGO data from Brickset.
 #'
 #' @param year the year of data to download.
 #' @param key the Brickset key.
