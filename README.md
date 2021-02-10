@@ -66,7 +66,7 @@ brickset::getKeyUsageStats(key)
 ```
 
     ##              dateStamp count
-    ## 1 2021-02-10T00:00:00Z     4
+    ## 1 2021-02-10T00:00:00Z     5
     ## 2 2021-02-09T00:00:00Z    60
     ## 3 2021-02-08T00:00:00Z    77
 
@@ -166,6 +166,25 @@ head(years)
     ## 5  Town 1982       10
     ## 6  Town 1983       13
 
+The `getInstructions` will return a table with the URLs to the building
+instructions.
+
+``` r
+instructions <- getInstructions(setID = 29830, key = key, userHash = userHash)
+instructions
+```
+
+    ##                                                                       URL
+    ## 1 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313846.pdf
+    ## 2 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313848.pdf
+    ## 3 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313849.pdf
+    ## 4 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313850.pdf
+    ##                             description
+    ## 1 BI 3103, 112+4/65+200G, 10270 V29 1/2
+    ## 2   BI 3103, 96+4/65+200G,10270 V29 2/2
+    ## 3   BI 3103, 112+4/65+200G, V39/142 1/2
+    ## 4    BI 3103, 96+4/65+200G, V39/142 2/2
+
 ## `legosets` Data Frame
 
 ``` r
@@ -218,9 +237,6 @@ The variables in the `legosets` data frame are:
 
 ## TODO
 
--   Implement the following API functions:
-    -   getInstructions and getInstructions2
-    -   getYears
 -   Write more documentation
 -   Create a pkgdown site
 -   Write vignette

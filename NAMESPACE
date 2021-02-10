@@ -2,6 +2,7 @@
 
 export(checkKey)
 export(checkUserHash)
+export(getInstructions)
 export(getKeyUsageStats)
 export(getReviews)
 export(getSets)
