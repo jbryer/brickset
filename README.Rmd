@@ -92,6 +92,14 @@ ggplot(legosets, aes(x = year)) + geom_bar() +
 	xlab('Year') + ylab('Number of LEGO Sets')
 ```
 
+```{r pieces_by_price, fig.height=4, warning = FALSE}
+ggplot(legosets, aes(x = pieces, y = US_retailPrice)) + 
+	geom_point() +
+	ggtitle('Cost of LEGO sets by number of pieces') +
+	xlab('Number of LEGO pieces') + ylab('US Retail Price (dollars)')
+```
+
+
 The variables in the `legosets` data frame are:
 
 ```{r, echo=FALSE, results='asis'}

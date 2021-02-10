@@ -56,7 +56,7 @@ brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2021-02-10T00:00:00Z     8
+    ## 1 2021-02-10T00:00:00Z     9
     ## 2 2021-02-09T00:00:00Z    60
     ## 3 2021-02-08T00:00:00Z    77
 
@@ -179,6 +179,15 @@ ggplot(legosets, aes(x = year)) + geom_bar() +
 ```
 
 ![](README_files/figure-gfm/legosets_by_year-1.png)<!-- -->
+
+``` r
+ggplot(legosets, aes(x = pieces, y = US_retailPrice)) + 
+    geom_point() +
+    ggtitle('Cost of LEGO sets by number of pieces') +
+    xlab('Number of LEGO pieces') + ylab('US Retail Price (dollars)')
+```
+
+![](README_files/figure-gfm/pieces_by_price-1.png)<!-- -->
 
 The variables in the `legosets` data frame are:
 
