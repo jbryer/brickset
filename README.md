@@ -66,8 +66,9 @@ brickset::getKeyUsageStats(key)
 ```
 
     ##              dateStamp count
-    ## 1 2021-02-09T00:00:00Z    59
-    ## 2 2021-02-08T00:00:00Z    77
+    ## 1 2021-02-10T00:00:00Z     4
+    ## 2 2021-02-09T00:00:00Z    60
+    ## 3 2021-02-08T00:00:00Z    77
 
 The `getSets` function returns all LEGO sets from the given year.
 
@@ -87,7 +88,7 @@ head(sets2021, n = 3)
     ##   reviewCount packagingType   availability agerange_min US_retailPrice
     ## 1           2           Box LEGO exclusive           18         199.99
     ## 2           1           Box         Retail           18          49.99
-    ## 3           1           Box         Retail           18          49.99
+    ## 3           0           Box         Retail           18          49.99
     ##   US_dateFirstAvailable US_dateLastAvailable UK_retailPrice
     ## 1  2021-01-02T00:00:00Z 2021-01-15T00:00:00Z         169.99
     ## 2  2021-01-02T00:00:00Z 2021-01-15T00:00:00Z          44.99
@@ -123,7 +124,49 @@ names(reviews29830)
     ## [1] "author"     "datePosted" "rating"     "title"      "review"    
     ## [6] "HTML"
 
-### `legosets` Data Frame
+The `getThemes` and `getSubthemes` returns information about LEGO
+themes.
+
+``` r
+themes <- getThemes(key = key, userHash = userHash)
+head(themes)
+```
+
+    ##             theme setCount subthemeCount yearFrom yearTo
+    ## 1       4 Juniors       24             5     2003   2004
+    ## 2 Action Wheelers        9             0     2000   2001
+    ## 3     Adventurers       72             4     1998   2003
+    ## 4          Agents       13             0     2008   2009
+    ## 5      Alpha Team       32             3     2001   2005
+    ## 6    Aqua Raiders        7             0     2007   2007
+
+``` r
+subthemes <- getSubthemes('Town', key = key, userHash = userHash)
+head(subthemes)
+```
+
+    ##   theme         subtheme setCount yearFrom yearTo
+    ## 1  Town           {None}        3     1978   1978
+    ## 2  Town      Accessories       37     1978   2002
+    ## 3  Town           Arctic       10     2000   2000
+    ## 4  Town            Boats       11     1990   1997
+    ## 5  Town Bonus/Value Pack       13     1983   2000
+    ## 6  Town             City       37     1997   2000
+
+``` r
+years <- getYears('Town', key = key, userHash = userHash)
+head(years)
+```
+
+    ##   theme year setCount
+    ## 1  Town 1978       34
+    ## 2  Town 1979       19
+    ## 3  Town 1980       17
+    ## 4  Town 1981       15
+    ## 5  Town 1982       10
+    ## 6  Town 1983       13
+
+## `legosets` Data Frame
 
 ``` r
 data("legosets", package = "brickset")
@@ -172,3 +215,13 @@ The variables in the `legosets` data frame are:
 | weight                 | numeric   |            892 |
 | thumbnailURL           | character |          15334 |
 | imageURL               | character |          15334 |
+
+## TODO
+
+-   Implement the following API functions:
+    -   getInstructions and getInstructions2
+    -   getYears
+-   Write more documentation
+-   Create a pkgdown site
+-   Write vignette
+-   shiny app?

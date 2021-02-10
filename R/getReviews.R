@@ -8,7 +8,7 @@
 #' @return a data.frame with the reviews.
 #' @export
 getReviews <- function(setID, key, username, password,
-					userHash = login(username, password, key)) {
+					   userHash = login(username, password, key)) {
 	checkUserHash(key, userHash, error = TRUE)
 
 	reviews <- httr::GET(paste0(brickset_api_endpoint, 'getReviews?apiKey=', key,

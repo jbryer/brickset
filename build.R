@@ -1,5 +1,3 @@
-
-
 # Build the package
 devtools::document()
 devtools::install()

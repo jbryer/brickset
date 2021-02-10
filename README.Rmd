@@ -71,7 +71,19 @@ reviews29830 <- brickset::getReviews(29830, key = key, userHash = userHash)
 names(reviews29830)
 ```
 
-### `legosets` Data Frame
+The `getThemes` and `getSubthemes` returns information about LEGO themes.
+
+```{r}
+themes <- getThemes(key = key, userHash = userHash)
+head(themes)
+subthemes <- getSubthemes('Town', key = key, userHash = userHash)
+head(subthemes)
+years <- getYears('Town', key = key, userHash = userHash)
+head(years)
+```
+
+
+## `legosets` Data Frame
 
 ```{r legosets_by_year, fig.height=4}
 data("legosets", package = "brickset")
@@ -95,3 +107,13 @@ for(i in names(legosets)) {
 }
 knitr::kable(legosets_cols, format = 'markdown')
 ```
+
+## TODO
+
+* Implement the following API functions:
+	* getInstructions and getInstructions2
+* Write more documentation
+* Create a pkgdown site
+* Write vignette
+* shiny app?
+
