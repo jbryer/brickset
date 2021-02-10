@@ -1,13 +1,14 @@
 #' Returns a table of themes with number of sets and years active.
 #'
-#' @param username the Brickset username.
-#' @param password the Brickset password.
-#' @param userHash the hash used for a logged in user. See \link{login}.
+#' @param key the Brickset API key.
+#' @param ... other parameters passed to \code{\link{getUserHash}} including
+#'        the Brickset username and password if they are not available from
+#'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
 #' @return a data.frame with the themes.
 #' @export
-getThemes <- function(key, username, password,
-					  userHash = login(username, password, key)) {
-	checkUserHash(key, userHash, error = TRUE)
+getThemes <- function(key = getOption('brickset_key'),
+					  ...) {
+	userHash <- getUserHash(key = key, ...)
 
 	themes <- httr::GET(paste0(brickset_api_endpoint, 'getThemes?apiKey=', key,
 							'&userHash=', userHash))

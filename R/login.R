@@ -5,7 +5,9 @@
 #' @param key the Brickset API key.
 #' @return the user hash used for other API calls.
 #' @export
-login <- function(username, password, key) {
+login <- function(username = getOption('brickset_username'),
+				  password  = getOption('brickset_password'),
+				  key = getOption('brickset_key')) {
 	checkKey(key)
 
 	login <- httr::GET(paste0(brickset_api_endpoint, 'login?apiKey=', key,

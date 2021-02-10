@@ -2,14 +2,15 @@
 #'
 #' @param year the year of data to download.
 #' @param key the Brickset key.
-#' @param username the Brickset username.
-#' @param password the Brickset password.
-#' @param userHash the hash used for a logged in user. See \link{login}.
+#' @param ... other parameters passed to \code{\link{getUserHash}} including
+#'        the Brickset username and password if they are not available from
+#'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
 #' @return a data.frame with all sets from the given year.
 #' @export
-getSets <- function(year, key, username, password,
-					userHash = login(username, password, key)) {
-	checkUserHash(key, userHash, error = TRUE)
+getSets <- function(year,
+					key = getOption('brickset_key'),
+					...) {
+	userHash <- getUserHash(key = key, ...)
 
 	sets <- httr::GET(paste0(brickset_api_endpoint, 'getSets?apiKey=', key,
 							'&userHash=', userHash,

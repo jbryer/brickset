@@ -4,14 +4,14 @@
 \alias{getThemes}
 \title{Returns a table of themes with number of sets and years active.}
 \usage{
-getThemes(key, username, password, userHash = login(username, password, key))
+getThemes(key = getOption("brickset_key"), ...)
 }
 \arguments{
-\item{username}{the Brickset username.}
+\item{key}{the Brickset API key.}
 
-\item{password}{the Brickset password.}
-
-\item{userHash}{the hash used for a logged in user. See \link{login}.}
+\item{...}{other parameters passed to \code{\link{getUserHash}} including
+the Brickset username and password if they are not available from
+\code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 }
 \value{
 a data.frame with the themes.

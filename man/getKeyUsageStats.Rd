@@ -4,13 +4,10 @@
 \alias{getKeyUsageStats}
 \title{Check the Brickset API key.}
 \usage{
-getKeyUsageStats(key, error = TRUE)
+getKeyUsageStats(key = getOption("brickset_key"))
 }
 \arguments{
 \item{key}{the API key}
-
-\item{error}{if TRUE, the function will throw an error. If FALSE, then the
-function will return TRUE if the key check failed.}
 }
 \value{
 TRUE if the API key is fine.

@@ -17,79 +17,73 @@ library(brickset)
 library(ggplot2)
 library(knitr)
 data("legosets", package = 'brickset')
-source('brickset_login.R')
+source('brickset_config.R')
 ```
 
-This package provides functions to access data about [LEGO](https://lego.com) sets from the [Brickset](https://brickset.com) website. The package also contains a `data.frame` with all LEGO sets (n = `r nrow(legosets)`) from `r min(legosets$year)` through `r max(legosets$year)`. This data set was created using the `getSets` function and it is recommended that you use this data frame to reduce the number of API calls. See the [build.R](build.R) script for how the data frame was created. Documentation on the variables is included below.
+This package provides functions to access data about [LEGO](https://lego.com) sets from the [Brickset](https://brickset.com) website. The package also contains a `data.frame` with all LEGO sets (n = `r prettyNum(nrow(legosets), big.mark = ',')`) from `r min(legosets$year)` through `r max(legosets$year)`. This data set was created using the `getSets` function and it is recommended that you use this data frame to reduce the number of API calls. See the [build.R](build.R) script for how the data frame was created. Information about the variables is included below.
 
-To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](http://brickset.com/tools/webservices/requestkey). The full Brickset API documentation available here: https://brickset.com/article/52664/api-version-3-documentation
-
-The package can be installed from Github:
+The `brickset` package can be installed from Github with the following command:
 
 ```{r, eval=FALSE}
 remotes::install_github('jbryer/brickset')
 ```
 
-To get started, set these three R variables to your username, password, and API key:
+## Brickset API
+
+To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](http://brickset.com/tools/webservices/requestkey). The full Brickset API documentation is available here: https://brickset.com/article/52664/api-version-3-documentation
+
+Most of the functions require a Brickset username, password, and API key. You can pass these as parameters, or you can set these options:
 
 ```{r, eval=FALSE}
-username <- "YOUR_USERNAME"
-password <- "YOUR_PASSWORD"
-key <- "YOUR_API_KEY"
+options(brickset_key = 'YOUR_API_KEY',
+		brickset_username = 'YOUR_USERNAME',
+		brickset_password = 'YOUR_PASSWORD')
 ```
 
-To check if your API key is valid, call the `checkKey` function:
+The `checkKey` function will verify that your API key is valid:
 
 ```{r}
-brickset::checkKey(key)
-```
-
-Most of the Brickset API requests require you to be logged in. The `username` and `password` can be passed to each function, or `userHash` parameter can be reused for each session to reduce the number of calls the the `login` function. The `checkUserHash` will verify that the login and hash are valid.
-
-```{r}
-userHash <- brickset::login(username, password, key)
-brickset::checkUserHash(key, userHash)
+brickset::checkKey()
 ```
 
 You can check your API usage with the `getKeyUsageStats` function.
 
 ```{r}
-brickset::getKeyUsageStats(key)
+brickset::getKeyUsageStats()
 ```
 
 The `getSets` function returns all LEGO sets from the given year.
 
 ```{r}
-sets2021 <- brickset::getSets(2021, key = key, userHash = userHash)
+sets2021 <- brickset::getSets(2021)
 head(sets2021, n = 3)
 ```
 
 The `getReviews` function will return all reviews for a given set.
 
 ```{r}
-reviews29830 <- brickset::getReviews(29830, key = key, userHash = userHash)
+reviews29830 <- brickset::getReviews(29830)
 names(reviews29830)
 ```
 
 The `getThemes` and `getSubthemes` returns information about LEGO themes.
 
 ```{r}
-themes <- getThemes(key = key, userHash = userHash)
-head(themes)
-subthemes <- getSubthemes('Town', key = key, userHash = userHash)
-head(subthemes)
-years <- getYears('Town', key = key, userHash = userHash)
-head(years)
+getThemes() %>% head(n = 3)
+getSubthemes('Toy Story')
+getYears('Toy Story')
 ```
 
 The `getInstructions` will return a table with the URLs to the building instructions.
 
 ```{r}
-instructions <- getInstructions(setID = 29830, key = key, userHash = userHash)
+instructions <- getInstructions(setID = 29830)
 instructions
 ```
 
-## `legosets` Data Frame
+## Data Frames
+
+The `legosets` data frame contains all LEGO sets (n = `r prettyNum(nrow(legosets), big.mark = ',')`) from `r min(legosets$year)` through `r max(legosets$year)`.
 
 ```{r legosets_by_year, fig.height=4}
 data("legosets", package = "brickset")
@@ -113,11 +107,4 @@ for(i in names(legosets)) {
 }
 knitr::kable(legosets_cols, format = 'markdown')
 ```
-
-## TODO
-
-* Write more documentation
-* Create a pkgdown site
-* Write vignette
-* shiny app?
 

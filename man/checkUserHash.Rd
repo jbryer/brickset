@@ -4,15 +4,12 @@
 \alias{checkUserHash}
 \title{Check the Brickset API key.}
 \usage{
-checkUserHash(key, userHash, error = TRUE)
+checkUserHash(key = getOption("brickset_key"), userHash)
 }
 \arguments{
 \item{key}{the API key}
 
 \item{userHash}{the user hash returned from \link{login}.}
-
-\item{error}{if TRUE, the function will throw an error. If FALSE, then the
-function will return TRUE if the key check failed.}
 }
 \value{
 TRUE if the API key is fine.

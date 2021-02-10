@@ -3,12 +3,16 @@
 \docType{data}
 \name{legosets}
 \alias{legosets}
-\title{Lego sets from 1970 through 2020.}
+\title{Lego sets from 1970 through 2020.'}
 \source{
 \url{https://brickset.com}
 }
 \description{
-Lego sets from 1970 through 2020.
+This dataset was built using the \code{\link{getSets}} function. For working
+with the LEGO sets data frame this pre-built data is preferred as it will
+minimize the API requests. Note that the only disadvantage is that the
+\code{rating} and \code{reviewCount} may be out-of-date and inaccurate. The
+remaining variables are relatively static.
 }
 \keyword{data,}
 \keyword{lego}

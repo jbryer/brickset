@@ -4,18 +4,20 @@
 \alias{checkKey}
 \title{Check the Brickset API key.}
 \usage{
-checkKey(key, error = TRUE)
+checkKey(key = getOption("brickset_key"))
 }
 \arguments{
-\item{key}{the API key}
-
-\item{error}{if TRUE, the function will throw an error. If FALSE, then the
-function will return TRUE if the key check failed.}
+\item{key}{the Brickset API key}
 }
 \value{
-TRUE if the API key is fine.
+TRUE if the API key is valid.
 }
 \description{
 You can request an API key on the Brickset website here:
 http://brickset.com/tools/webservices/requestkey
+}
+\details{
+The API key can be passed as function parameter or may be set globally using:
+
+\code{options(brickset_key = YOUR_API_KEY)}
 }

@@ -4,25 +4,16 @@
 \alias{getInstructions}
 \title{Download list of instructions for given set.}
 \usage{
-getInstructions(
-  setID,
-  setNumber,
-  key,
-  username,
-  password,
-  userHash = login(username, password, key)
-)
+getInstructions(setID, setNumber, key = getOption("brickset_key"), ...)
 }
 \arguments{
 \item{setNumber}{the set number from on the LEGO box}
 
-\item{key}{the Brickset key.}
+\item{key}{the Brickset API key.}
 
-\item{username}{the Brickset username.}
-
-\item{password}{the Brickset password.}
-
-\item{userHash}{the hash used for a logged in user. See \link{login}.}
+\item{...}{other parameters passed to \code{\link{getUserHash}} including
+the Brickset username and password if they are not available from
+\code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 
 \item{setId}{the ID of the set (see \code{data(legosets)})}
 }

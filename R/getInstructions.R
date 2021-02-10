@@ -2,15 +2,17 @@
 #'
 #' @param setId the ID of the set (see \code{data(legosets)})
 #' @param setNumber the set number from on the LEGO box
-#' @param key the Brickset key.
-#' @param username the Brickset username.
-#' @param password the Brickset password.
-#' @param userHash the hash used for a logged in user. See \link{login}.
+#' @param key the Brickset API key.
+#' @param ... other parameters passed to \code{\link{getUserHash}} including
+#'        the Brickset username and password if they are not available from
+#'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
 #' @return a data.frame with the reviews.
 #' @export
-getInstructions <- function(setID, setNumber, key, username, password,
-					        userHash = login(username, password, key)) {
-	checkUserHash(key, userHash, error = TRUE)
+getInstructions <- function(setID,
+							setNumber,
+							key = getOption('brickset_key'),
+							...) {
+	userHash <- getUserHash(key = key, ...)
 
 	url <- NULL
 	if(!missing(setID)) {

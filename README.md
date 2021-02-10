@@ -11,50 +11,40 @@ brickset
 This package provides functions to access data about
 [LEGO](https://lego.com) sets from the [Brickset](https://brickset.com)
 website. The package also contains a `data.frame` with all LEGO sets (n
-= 16355) from 1970 through 2020. This data set was created using the
+= 16,355) from 1970 through 2020. This data set was created using the
 `getSets` function and it is recommended that you use this data frame to
 reduce the number of API calls. See the [build.R](build.R) script for
-how the data frame was created. Documentation on the variables is
+how the data frame was created. Information about the variables is
 included below.
 
-To use the Brickset API, you must first create a [Brickset
-account](https://brickset.com/signup) and request an [API
-key](http://brickset.com/tools/webservices/requestkey). The full
-Brickset API documentation available here:
-<https://brickset.com/article/52664/api-version-3-documentation>
-
-The package can be installed from Github:
+The `brickset` package can be installed from Github with the following
+command:
 
 ``` r
 remotes::install_github('jbryer/brickset')
 ```
 
-To get started, set these three R variables to your username, password,
-and API key:
+## Brickset API
+
+To use the Brickset API, you must first create a [Brickset
+account](https://brickset.com/signup) and request an [API
+key](http://brickset.com/tools/webservices/requestkey). The full
+Brickset API documentation is available here:
+<https://brickset.com/article/52664/api-version-3-documentation>
+
+Most of the functions require a Brickset username, password, and API
+key. You can pass these as parameters, or you can set these options:
 
 ``` r
-username <- "YOUR_USERNAME"
-password <- "YOUR_PASSWORD"
-key <- "YOUR_API_KEY"
+options(brickset_key = 'YOUR_API_KEY',
+        brickset_username = 'YOUR_USERNAME',
+        brickset_password = 'YOUR_PASSWORD')
 ```
 
-To check if your API key is valid, call the `checkKey` function:
+The `checkKey` function will verify that your API key is valid:
 
 ``` r
-brickset::checkKey(key)
-```
-
-    ## [1] TRUE
-
-Most of the Brickset API requests require you to be logged in. The
-`username` and `password` can be passed to each function, or `userHash`
-parameter can be reused for each session to reduce the number of calls
-the the `login` function. The `checkUserHash` will verify that the login
-and hash are valid.
-
-``` r
-userHash <- brickset::login(username, password, key)
-brickset::checkUserHash(key, userHash)
+brickset::checkKey()
 ```
 
     ## [1] TRUE
@@ -62,18 +52,18 @@ brickset::checkUserHash(key, userHash)
 You can check your API usage with the `getKeyUsageStats` function.
 
 ``` r
-brickset::getKeyUsageStats(key)
+brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2021-02-10T00:00:00Z     5
+    ## 1 2021-02-10T00:00:00Z     8
     ## 2 2021-02-09T00:00:00Z    60
     ## 3 2021-02-08T00:00:00Z    77
 
 The `getSets` function returns all LEGO sets from the given year.
 
 ``` r
-sets2021 <- brickset::getSets(2021, key = key, userHash = userHash)
+sets2021 <- brickset::getSets(2021)
 head(sets2021, n = 3)
 ```
 
@@ -117,60 +107,51 @@ head(sets2021, n = 3)
 The `getReviews` function will return all reviews for a given set.
 
 ``` r
-reviews29830 <- brickset::getReviews(29830, key = key, userHash = userHash)
+reviews29830 <- brickset::getReviews(29830)
 names(reviews29830)
 ```
 
-    ## [1] "author"     "datePosted" "rating"     "title"      "review"    
-    ## [6] "HTML"
+    ##  [1] "author"             "datePosted"         "title"             
+    ##  [4] "review"             "HTML"               "overall"           
+    ##  [7] "parts"              "buildingExperience" "playability"       
+    ## [10] "valueForMoney"
 
 The `getThemes` and `getSubthemes` returns information about LEGO
 themes.
 
 ``` r
-themes <- getThemes(key = key, userHash = userHash)
-head(themes)
+getThemes() %>% head(n = 3)
 ```
 
     ##             theme setCount subthemeCount yearFrom yearTo
     ## 1       4 Juniors       24             5     2003   2004
     ## 2 Action Wheelers        9             0     2000   2001
     ## 3     Adventurers       72             4     1998   2003
-    ## 4          Agents       13             0     2008   2009
-    ## 5      Alpha Team       32             3     2001   2005
-    ## 6    Aqua Raiders        7             0     2007   2007
 
 ``` r
-subthemes <- getSubthemes('Town', key = key, userHash = userHash)
-head(subthemes)
+getSubthemes('Toy Story')
 ```
 
-    ##   theme         subtheme setCount yearFrom yearTo
-    ## 1  Town           {None}        3     1978   1978
-    ## 2  Town      Accessories       37     1978   2002
-    ## 3  Town           Arctic       10     2000   2000
-    ## 4  Town            Boats       11     1990   1997
-    ## 5  Town Bonus/Value Pack       13     1983   2000
-    ## 6  Town             City       37     1997   2000
+    ##       theme      subtheme setCount yearFrom yearTo
+    ## 1 Toy Story        {None}        6     2010   2010
+    ## 2 Toy Story Original Film        2     2010   2010
+    ## 3 Toy Story   Toy Story 2        3     2010   2010
+    ## 4 Toy Story   Toy Story 3        4     2010   2010
+    ## 5 Toy Story   Toy Story 4        6     2019   2019
 
 ``` r
-years <- getYears('Town', key = key, userHash = userHash)
-head(years)
+getYears('Toy Story')
 ```
 
-    ##   theme year setCount
-    ## 1  Town 1978       34
-    ## 2  Town 1979       19
-    ## 3  Town 1980       17
-    ## 4  Town 1981       15
-    ## 5  Town 1982       10
-    ## 6  Town 1983       13
+    ##       theme year setCount
+    ## 1 Toy Story 2010       15
+    ## 2 Toy Story 2019        6
 
 The `getInstructions` will return a table with the URLs to the building
 instructions.
 
 ``` r
-instructions <- getInstructions(setID = 29830, key = key, userHash = userHash)
+instructions <- getInstructions(setID = 29830)
 instructions
 ```
 
@@ -185,7 +166,10 @@ instructions
     ## 3   BI 3103, 112+4/65+200G, V39/142 1/2
     ## 4    BI 3103, 96+4/65+200G, V39/142 2/2
 
-## `legosets` Data Frame
+## Data Frames
+
+The `legosets` data frame contains all LEGO sets (n = 16,355) from 1970
+through 2020.
 
 ``` r
 data("legosets", package = "brickset")
@@ -234,10 +218,3 @@ The variables in the `legosets` data frame are:
 | weight                 | numeric   |            892 |
 | thumbnailURL           | character |          15334 |
 | imageURL               | character |          15334 |
-
-## TODO
-
--   Write more documentation
--   Create a pkgdown site
--   Write vignette
--   shiny app?

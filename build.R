@@ -10,23 +10,24 @@ data("legosets", package = 'brickset')
 names(legosets)
 dim(legosets)
 
-source('brickset_login.R') # Need to define username, password, and key
-
 ggplot(legosets, aes(x = year)) + geom_bar() +
 	ggtitle('Number of LEGO sets by year') +
 	xlab('Year') + ylab('Number of LEGO Sets')
 
 ################################################################################
-# Test the functions
+# Test the API functions
 
-brickset::checkKey(key)
-userHash <- brickset::login(username, password, key)
-brickset::checkUserHash(key, userHash)
-brickset::getKeyUsageStats(key)
+source('brickset_config.R') # Need to define username, password, and key
 
-sets2021 <- brickset::getSets(2021, key = key, userHash = userHash)
+brickset::checkKey()
+brickset::getUserHash()
+brickset::getKeyUsageStats()
 
-reviews29830 <- brickset::getReviews(29830, key = key, userHash = userHash)
+brickset::getThemes() %>% head()
+brickset::getSubthemes('Toy Story')
+brickset::getYears('Toy Story')
+sets2021 <- brickset::getSets(2021)
+reviews29830 <- brickset::getReviews(29830)
 
 
 ################################################################################

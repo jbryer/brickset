@@ -4,7 +4,11 @@
 \alias{login}
 \title{Login to the Brickset API.}
 \usage{
-login(username, password, key)
+login(
+  username = getOption("brickset_username"),
+  password = getOption("brickset_password"),
+  key = getOption("brickset_key")
+)
 }
 \arguments{
 \item{username}{the Brickset username.}

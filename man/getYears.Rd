@@ -4,22 +4,16 @@
 \alias{getYears}
 \title{Get a list of years for a given theme, with the total number of sets in each.}
 \usage{
-getYears(
-  theme,
-  key,
-  username,
-  password,
-  userHash = login(username, password, key)
-)
+getYears(theme, key = getOption("brickset_key"), ...)
 }
 \arguments{
 \item{theme}{the theme}
 
-\item{username}{the Brickset username.}
+\item{key}{the Brickset API key.}
 
-\item{password}{the Brickset password.}
-
-\item{userHash}{the hash used for a logged in user. See \link{login}.}
+\item{...}{other parameters passed to \code{\link{getUserHash}} including
+the Brickset username and password if they are not available from
+\code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 }
 \value{
 a data.frame with the years of a given theme.

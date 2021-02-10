@@ -4,22 +4,14 @@
 \alias{getSubthemes}
 \title{Returns a table of sub-themes for a given theme with number of sets and years active.}
 \usage{
-getSubthemes(
-  theme,
-  key,
-  username,
-  password,
-  userHash = login(username, password, key)
-)
+getSubthemes(theme, key = getOption("brickset_key"), ...)
 }
 \arguments{
 \item{theme}{the theme}
 
-\item{username}{the Brickset username.}
-
-\item{password}{the Brickset password.}
-
-\item{userHash}{the hash used for a logged in user. See \link{login}.}
+\item{...}{other parameters passed to \code{\link{getUserHash}} including
+the Brickset username and password if they are not available from
+\code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 }
 \value{
 a data.frame with the subthemes.

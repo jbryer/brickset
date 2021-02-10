@@ -5,19 +5,19 @@
 #'
 #' @param key the API key
 #' @param userHash the user hash returned from \link{login}.
-#' @param error if TRUE, the function will throw an error. If FALSE, then the
-#'        function will return TRUE if the key check failed.
 #' @return TRUE if the API key is fine.
 #' @export
-checkUserHash <- function(key, userHash, error = TRUE) {
-	if(!checkKey(key, error = error)) {
+checkUserHash <- function(key = getOption('brickset_key'),
+						  userHash) {
+	if(!checkKey(key)) {
 		return(FALSE)
 	}
 	checkUserHash <- httr::GET(paste0(brickset_api_endpoint,
 								 'checkUserHash?apiKey=', key,
 								 '&userHash=', userHash))
-	if(error & http_error(checkUserHash)) {
-		stop(paste0('Error checking user hash: ', http_status(checkUserHash)$message))
+	if(http_error(checkUserHash)) {
+		message(paste0('Error checking user hash: ', http_status(checkUserHash)$message))
+		return(FALSE)
 	}
 	user_hash_json <- jsonlite::fromJSON(content(checkUserHash, as = 'text', encoding = "UTF-8"))
 	return(user_hash_json$status == 'success')

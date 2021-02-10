@@ -2,30 +2,22 @@
 % Please edit documentation in R/getSets.R
 \name{getSets}
 \alias{getSets}
-\title{Downloads Lego data.}
+\title{Downloads LEGO data from Brickset.}
 \usage{
-getSets(
-  year,
-  key,
-  username,
-  password,
-  userHash = login(username, password, key)
-)
+getSets(year, key = getOption("brickset_key"), ...)
 }
 \arguments{
 \item{year}{the year of data to download.}
 
 \item{key}{the Brickset key.}
 
-\item{username}{the Brickset username.}
-
-\item{password}{the Brickset password.}
-
-\item{userHash}{the hash used for a logged in user. See \link{login}.}
+\item{...}{other parameters passed to \code{\link{getUserHash}} including
+the Brickset username and password if they are not available from
+\code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 }
 \value{
 a data.frame with all sets from the given year.
 }
 \description{
-Downloads Lego data.
+Downloads LEGO data from Brickset.
 }
