@@ -35,7 +35,7 @@ reviews29830 <- brickset::getReviews(29830)
 # Download data files.
 pb <- txtProgressBar(min = 1970, max = lubridate::year(Sys.Date()) - 1, initial = 1970, style = 3)
 for(i in seq(1970, lubridate::year(Sys.Date()) - 1)) {
-	sets <- brickset::getSets(i, key = key, userHash = userHash)
+	sets <- brickset::getSets(i)
 	write.csv(sets, paste0('data-raw/', i, '.csv'), row.names = FALSE)
 	setTxtProgressBar(pb, value = i)
 }
