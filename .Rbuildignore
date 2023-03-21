@@ -9,3 +9,5 @@ bricks.png
 brickset.png
 README_files/*
 
+^LICENSE\.md$
+^\.github$

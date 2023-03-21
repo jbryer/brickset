@@ -3,6 +3,10 @@ devtools::document()
 devtools::install()
 devtools::build()
 
+devtools::check(cran = TRUE)
+devtools::check_win_release()
+devtools::check_rhub()
+
 library(brickset)
 ls('package:brickset')
 data("legosets", package = 'brickset')
@@ -65,4 +69,5 @@ legosets <- legosets %>%
 		   DE_dateFirstAvailable = as.Date(DE_dateFirstAvailable),
 		   DE_dateLastAvailable = as.Date(DE_dateLastAvailable))
 save(legosets, file = 'data/legosets.rda')
+tools::resaveRdaFiles('data/legosets.rda')
 # NOTE: Need to reinstall the package after the legosets.rda file is saved

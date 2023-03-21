@@ -9,6 +9,10 @@ editor_options:
 
 # An R package to interface with the Brickset.com API for getting data about LEGO sets
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
 **Author:** Jason Bryer, Ph.D. jason.bryer@cuny.edu  
 **Website:** https://github.com/jbryer/brickset
 
