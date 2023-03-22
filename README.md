@@ -1,9 +1,5 @@
-brickset
-================
 
-<a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" width="120" /></a>
-
-# An R package to interface with the Brickset.com API for getting data about LEGO sets
+# <a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" width="120" /></a> brickset: An R package to interface with the Brickset.com API for getting data about LEGO sets
 
 <!-- badges: start -->
 
@@ -61,7 +57,7 @@ brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2023-03-22T00:00:00Z     2
+    ## 1 2023-03-22T00:00:00Z     9
     ## 2 2023-03-21T00:00:00Z     2
 
 The `getSets` function returns all LEGO sets from the given year.

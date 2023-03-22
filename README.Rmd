@@ -1,13 +1,12 @@
 ---
-title: "brickset"
 output: github_document
+md_extensions:
+  self_contained: true
 editor_options: 
   chunk_output_type: console
 ---
 
-<a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" width="120" /></a>
-
-# An R package to interface with the Brickset.com API for getting data about LEGO sets
+# <a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" width="120" /></a> brickset: An R package to interface with the Brickset.com API for getting data about LEGO sets
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
