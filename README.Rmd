@@ -85,7 +85,7 @@ instructions <- getInstructions(setID = 29830)
 instructions
 ```
 
-## Data Frames
+## `legosets` Dataset
 
 The `legosets` data frame contains all LEGO sets (n = `r prettyNum(nrow(legosets), big.mark = ',')`) from `r min(legosets$year)` through `r max(legosets$year)`.
 

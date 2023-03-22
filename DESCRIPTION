@@ -10,7 +10,8 @@ Description: R package to interface with the Brickset API for getting data about
 	and learning without the need of a Brickset account and API key.
 License: GPL (>= 3)
 LazyData: TRUE
-URL: https://github.com/jbryer/brickset
+URL: https://github.com/jbryer/brickset,
+    https://jbryer.github.io/brickset/
 BugReports: https://github.com/jbryer/brickset/issues
 Depends: dplyr, jsonlite, httr
 Suggests: ggplot2, DT, knitr

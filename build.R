@@ -10,6 +10,7 @@ devtools::check_rhub()
 library(brickset)
 ls('package:brickset')
 data("legosets", package = 'brickset')
+?legosets
 
 library(ggplot2)
 names(legosets)

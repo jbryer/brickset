@@ -3,6 +3,9 @@
 #' You can request an API key on the Brickset website here:
 #' http://brickset.com/tools/webservices/requestkey
 #'
+#' Brickset API documentation is available here:
+#' https://brickset.com/article/52664/api-version-3-documentation
+#'
 #' @param key the API key
 #' @param userHash the user hash returned from \link{login}.
 #' @return TRUE if the API key is fine.

@@ -6,7 +6,19 @@
 #'        the Brickset username and password if they are not available from
 #'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
 #' @return a data.frame with the years of a given theme.
+#' \describe{
+#' \item{theme}{Name of the theme}
+#' \item{year}{Year}
+#' \item{setCount}{Number of sets released in the given year and theme}
+#' }
 #' @export
+#' @examples
+#' \dontrun{
+#' options(brickset_key = 'BRICKSET_KEY',
+#'         brickset_username = 'BRICKSET_UERNAME',
+#'         brickset_password = 'BRICKSET_PASSWORD')
+#' getYears('Architecture')
+#' }
 getYears <- function(theme,
 					 key = getOption('brickset_key'),
 					 ...) {

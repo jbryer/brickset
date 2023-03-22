@@ -1,5 +1,8 @@
 #' Returns a table of sub-themes for a given theme with number of sets and years active.
 #'
+#' Brickset API documentation is available here:
+#' https://brickset.com/article/52664/api-version-3-documentation
+#'
 #' @param theme the theme.
 #' @param key the Brickset API key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including

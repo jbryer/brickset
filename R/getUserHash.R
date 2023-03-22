@@ -5,9 +5,13 @@
 #' login across multiple API calls. It will also ensure that the hash is still
 #' valid and if it expired a new hash will be requested.
 #'
+#' Brickset API documentation is available here:
+#' https://brickset.com/article/52664/api-version-3-documentation
+#'
 #' @param username the Brickset username.
 #' @param password the Brickset password.
 #' @param key the Brickset API key.
+#' @return the user hash for the current API session.
 #' @export
 getUserHash <- function(username = getOption('brickset_username'),
 						password = getOption('brickset_password'),

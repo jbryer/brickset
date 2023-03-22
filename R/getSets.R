@@ -1,20 +1,28 @@
 #' Downloads LEGO data from Brickset.
 #'
+#' Brickset API documentation is available here:
+#' https://brickset.com/article/52664/api-version-3-documentation
+#'
 #' @param year the year of data to download.
 #' @param key the Brickset key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including
 #'        the Brickset username and password if they are not available from
 #'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
 #' @return a data.frame with all sets from the given year.
+#' ```{r, child = "man/rmd/legosets.Rmd"}
+#' ```
 #' @export
 getSets <- function(year,
 					key = getOption('brickset_key'),
 					...) {
+	if(missing(year)) {
+		stop('year parameter is required')
+	}
 	userHash <- getUserHash(key = key, ...)
 
 	sets <- httr::GET(paste0(brickset_api_endpoint, 'getSets?apiKey=', key,
 							'&userHash=', userHash,
-							'&params={year:', year, ',pageSize:1000}'))
+							'&params={year:', year, ',pageSize:2000}'))
 	if(http_error(sets)) {
 		stop(paste0('Error getting sets: ', http_status(sets)$message))
 	}

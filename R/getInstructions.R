@@ -1,12 +1,15 @@
 #' Download list of instructions for given set.
 #'
+#' Brickset API documentation is available here:
+#' https://brickset.com/article/52664/api-version-3-documentation
+#'
 #' @param setID the ID of the set (see \code{data(legosets)})
 #' @param setNumber the set number from on the LEGO box
 #' @param key the Brickset API key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including
 #'        the Brickset username and password if they are not available from
 #'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.
-#' @return a data.frame with the reviews.
+#' @return a data.frame with the instructions.
 #' @export
 getInstructions <- function(setID,
 							setNumber,

@@ -2,7 +2,13 @@ brickset_api_endpoint <- 'https://brickset.com/api/v3.asmx/'
 
 #' R package to interface with the Brickset API for getting data about LEGO.
 #'
-#' @name brickset-package
+#' You can request an API key on the Brickset website here:
+#' http://brickset.com/tools/webservices/requestkey
+#'
+#' The API key can be passed as function parameter or may be set globally using:
+#'
+#' \code{options(brickset_key = YOUR_API_KEY)}
+#' @name brickset
 #' @docType package
 #' @title R package to interface with the Brickset API for getting data about LEGO.
 #' @author \email{jason@@bryer.org}
