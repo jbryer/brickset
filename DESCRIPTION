@@ -1,20 +1,28 @@
-Package: brickset
 Type: Package
-Title: R package to interface with the Brickset API for getting data about LEGO
+Package: brickset
+Title: Interface with the Brickset API for Getting Data About LEGO
 Version: 2022.0.0
 Date: 2023-03-21
 Author: Jason Bryer
 Maintainer: Jason Bryer <jason@bryer.org>
-Description: R package to interface with the Brickset API for getting data about 
-	LEGO sets. The package also includes data sets that can be used for teaching
-	and learning without the need of a Brickset account and API key.
+Description: R package to interface with the Brickset API
+    <https://brickset.com/article/52664/api-version-3-documentation> for
+    getting data about LEGO sets. The package also includes data sets that
+    can be used for teaching and learning without the need of a Brickset
+    account and API key.
 License: GPL (>= 3)
-LazyData: TRUE
 URL: https://github.com/jbryer/brickset,
     https://jbryer.github.io/brickset/
 BugReports: https://github.com/jbryer/brickset/issues
-Imports: dplyr, jsonlite, httr
-Suggests: ggplot2, DT, knitr
+Imports: 
+    dplyr,
+    httr,
+    jsonlite
+Suggests: 
+    DT,
+    ggplot2,
+    knitr
+Encoding: UTF-8
+LazyData: TRUE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Encoding: UTF-8

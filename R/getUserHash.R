@@ -6,7 +6,7 @@
 #' valid and if it expired a new hash will be requested.
 #'
 #' Brickset API documentation is available here:
-#' https://brickset.com/article/52664/api-version-3-documentation
+#' https://brickset.com/article/52664/api-version-3-documentation/
 #'
 #' @param username the Brickset username.
 #' @param password the Brickset password.

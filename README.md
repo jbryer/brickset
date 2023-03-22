@@ -4,18 +4,24 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
+[![](https://img.shields.io/badge/devel%20version-2022.0.0-blue.svg)](https://github.com/jbryer/brickset)
+[![](https://www.r-pkg.org/badges/version/brickset)](https://cran.r-project.org/package=brickset)
+[![CRAN
+checks](https://badges.cranchecks.info/summary/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)
 <!-- badges: end -->
 
 **Author:** Jason Bryer, Ph.D. <jason.bryer@cuny.edu>  
 **Website:** <https://github.com/jbryer/brickset>
 
 This package provides functions to access data about
-[LEGO](https://lego.com) sets from the [Brickset](https://brickset.com)
-website. The package also contains a `data.frame` with all LEGO sets (n
-= 18,455) from 1970 through 2022. This data set was created using the
-`getSets` function and it is recommended that you use this data frame to
-reduce the number of API calls. See the [build.R](build.R) script for
-how the data frame was created. Information about the variables is
+[LEGO](https://www.lego.com/) sets from the
+[Brickset](https://brickset.com/) website. The package also contains a
+`data.frame` with all LEGO sets (n = 18,455) from 1970 through 2022.
+This data set was created using the `getSets` function and it is
+recommended that you use this data frame to reduce the number of API
+calls. See the
+[build.R](https://github.com/jbryer/PSAboot/blob/master/build.R) script
+for how the data frame was created. Information about the variables is
 included below.
 
 The `brickset` package can be installed from Github with the following
@@ -29,7 +35,7 @@ remotes::install_github('jbryer/brickset')
 
 To use the Brickset API, you must first create a [Brickset
 account](https://brickset.com/signup) and request an [API
-key](http://brickset.com/tools/webservices/requestkey). The full
+key](https://brickset.com/tools/webservices/requestkey). The full
 Brickset API documentation is available here:
 <https://brickset.com/article/52664/api-version-3-documentation>
 
@@ -57,7 +63,7 @@ brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2023-03-22T00:00:00Z    14
+    ## 1 2023-03-22T00:00:00Z    15
     ## 2 2023-03-21T00:00:00Z     2
 
 The `getSets` function returns all LEGO sets from the given year.

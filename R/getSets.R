@@ -1,7 +1,7 @@
 #' Downloads LEGO data from Brickset.
 #'
 #' Brickset API documentation is available here:
-#' https://brickset.com/article/52664/api-version-3-documentation
+#' https://brickset.com/article/52664/api-version-3-documentation/
 #'
 #' @param year the year of data to download.
 #' @param key the Brickset key.

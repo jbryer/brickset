@@ -1,4 +1,5 @@
 # Build the package
+usethis::use_tidy_description()
 devtools::document()
 devtools::install()
 devtools::build()

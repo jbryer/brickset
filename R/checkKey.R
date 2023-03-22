@@ -1,7 +1,7 @@
 #' Check the Brickset API key.
 #'
 #' You can request an API key on the Brickset website here:
-#' http://brickset.com/tools/webservices/requestkey
+#' https://brickset.com/tools/webservices/requestkey/
 #'
 #' The API key can be passed as function parameter or may be set globally using:
 #'

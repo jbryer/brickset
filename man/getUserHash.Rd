@@ -28,5 +28,5 @@ valid and if it expired a new hash will be requested.
 }
 \details{
 Brickset API documentation is available here:
-https://brickset.com/article/52664/api-version-3-documentation
+https://brickset.com/article/52664/api-version-3-documentation/
 }

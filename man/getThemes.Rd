@@ -18,7 +18,7 @@ a data.frame with the themes.
 }
 \description{
 Brickset API documentation is available here:
-https://brickset.com/article/52664/api-version-3-documentation
+https://brickset.com/article/52664/api-version-3-documentation/
 }
 \examples{
 \dontrun{

@@ -10,6 +10,9 @@ editor_options:
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
+`r badger::badge_devel("jbryer/brickset", "blue")`
+`r badger::badge_cran_release("brickset")`
+`r badger::badge_cran_checks("brickset")`
 <!-- badges: end -->
 
 **Author:** Jason Bryer, Ph.D. jason.bryer@cuny.edu  
@@ -23,7 +26,7 @@ data("legosets", package = 'brickset')
 source('brickset_config.R')
 ```
 
-This package provides functions to access data about [LEGO](https://lego.com) sets from the [Brickset](https://brickset.com) website. The package also contains a `data.frame` with all LEGO sets (n = `r prettyNum(nrow(legosets), big.mark = ',')`) from `r min(legosets$year)` through `r max(legosets$year)`. This data set was created using the `getSets` function and it is recommended that you use this data frame to reduce the number of API calls. See the [build.R](build.R) script for how the data frame was created. Information about the variables is included below.
+This package provides functions to access data about [LEGO](https://www.lego.com/) sets from the [Brickset](https://brickset.com/) website. The package also contains a `data.frame` with all LEGO sets (n = `r prettyNum(nrow(legosets), big.mark = ',')`) from `r min(legosets$year)` through `r max(legosets$year)`. This data set was created using the `getSets` function and it is recommended that you use this data frame to reduce the number of API calls. See the [build.R](https://github.com/jbryer/PSAboot/blob/master/build.R) script for how the data frame was created. Information about the variables is included below.
 
 The `brickset` package can be installed from Github with the following command:
 
@@ -33,7 +36,7 @@ remotes::install_github('jbryer/brickset')
 
 ## Brickset API
 
-To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](http://brickset.com/tools/webservices/requestkey). The full Brickset API documentation is available here: https://brickset.com/article/52664/api-version-3-documentation
+To use the Brickset API, you must first create a [Brickset account](https://brickset.com/signup) and request an [API key](https://brickset.com/tools/webservices/requestkey). The full Brickset API documentation is available here: https://brickset.com/article/52664/api-version-3-documentation
 
 Most of the functions require a Brickset username, password, and API key. You can pass these as parameters, or you can set these options:
 
