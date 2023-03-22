@@ -11,6 +11,7 @@ library(brickset)
 ls('package:brickset')
 data("legosets", package = 'brickset')
 
+library(ggplot2)
 names(legosets)
 dim(legosets)
 
@@ -70,4 +71,3 @@ legosets <- legosets %>%
 		   DE_dateLastAvailable = as.Date(DE_dateLastAvailable))
 save(legosets, file = 'data/legosets.rda')
 tools::resaveRdaFiles('data/legosets.rda')
-# NOTE: Need to reinstall the package after the legosets.rda file is saved

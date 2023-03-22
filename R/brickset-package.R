@@ -12,7 +12,7 @@ brickset_api_endpoint <- 'https://brickset.com/api/v3.asmx/'
 #' @import jsonlite
 NULL
 
-#' Lego sets from 1970 through 2020.'
+#' Lego sets from 1970 through 2022.
 #'
 #' This dataset was built using the \code{\link{getSets}} function. For working
 #' with the LEGO sets data frame this pre-built data is preferred as it will
@@ -20,6 +20,9 @@ NULL
 #' \code{rating} and \code{reviewCount} may be out-of-date and inaccurate. The
 #' remaining variables are relatively static.
 #'
+#' @format A data.frame.
+#' ```{r, child = "man/rmd/legosets.Rmd"}
+#' ```
 #' @name legosets
 #' @docType data
 #' @source \url{https://brickset.com}

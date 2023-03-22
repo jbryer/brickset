@@ -61,7 +61,7 @@ brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2023-03-21T00:00:00Z     1
+    ## 1 2023-03-21T00:00:00Z     2
 
 The `getSets` function returns all LEGO sets from the given year.
 
@@ -87,21 +87,21 @@ head(sets2021, n = 3)
     ## 2 LEGO exclusive           18         179.99  2021-08-02T00:00:00Z
     ## 3         Retail           18          59.99  2021-01-02T00:00:00Z
     ##   US_dateLastAvailable UK_retailPrice UK_dateFirstAvailable
-    ## 1                 <NA>         169.99  2021-01-01T00:00:00Z
+    ## 1 2023-03-21T00:00:00Z         169.99  2021-01-01T00:00:00Z
     ## 2 2022-11-12T00:00:00Z         139.99  2021-08-01T00:00:00Z
-    ## 3                 <NA>          54.99  2021-01-01T00:00:00Z
+    ## 3 2023-03-21T00:00:00Z          54.99  2021-01-01T00:00:00Z
     ##   UK_dateLastAvailable CA_retailPrice CA_dateFirstAvailable
-    ## 1                 <NA>         269.99  2021-01-02T00:00:00Z
+    ## 1 2023-03-21T00:00:00Z         269.99  2021-01-02T00:00:00Z
     ## 2 2022-11-29T00:00:00Z         249.99  2021-08-03T00:00:00Z
-    ## 3                 <NA>          79.99  2021-01-02T00:00:00Z
+    ## 3 2023-03-21T00:00:00Z          79.99  2021-01-02T00:00:00Z
     ##   CA_dateLastAvailable DE_retailPrice DE_dateFirstAvailable
     ## 1 2023-03-08T00:00:00Z         199.99  2021-01-02T00:00:00Z
     ## 2 2022-11-12T00:00:00Z         159.99  2021-08-02T00:00:00Z
     ## 3 2023-03-08T00:00:00Z          59.99  2021-01-02T00:00:00Z
     ##   DE_dateLastAvailable height width depth weight
-    ## 1                 <NA>   47.6  57.7  11.8  4.012
+    ## 1 2023-03-21T00:00:00Z   47.6  57.7  11.8  4.012
     ## 2 2022-11-30T00:00:00Z   37.4  57.8  11.2  2.945
-    ## 3                 <NA>   38.2  26.2   7.1  0.760
+    ## 3 2023-03-21T00:00:00Z   38.2  26.2   7.1  0.760
     ##                                         thumbnailURL
     ## 1 https://images.brickset.com/sets/small/10278-1.jpg
     ## 2 https://images.brickset.com/sets/small/10279-1.jpg

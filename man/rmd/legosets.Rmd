@@ -1,0 +1,10 @@
+```{r, echo=FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE}
+library(brickset)
+data(legosets, package = 'brickset')
+cat('\\describe{\n')
+for(i in seq_len(ncol(legosets))) {
+	cat(paste0('\\item{', names(legosets)[i], '}{', class(legosets[,i]), '; ', 
+			   length(unique(legosets[,i])), ' unique values}\n'))
+}
+cat('}')
+```

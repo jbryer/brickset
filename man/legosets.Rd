@@ -3,7 +3,46 @@
 \docType{data}
 \name{legosets}
 \alias{legosets}
-\title{Lego sets from 1970 through 2020.'}
+\title{Lego sets from 1970 through 2022.}
+\format{
+A data.frame.
+\describe{
+\item{setID}{integer; 18455 unique values}
+\item{name}{character; 15372 unique values}
+\item{year}{integer; 53 unique values}
+\item{theme}{character; 154 unique values}
+\item{themeGroup}{character; 16 unique values}
+\item{subtheme}{character; 901 unique values}
+\item{category}{character; 7 unique values}
+\item{released}{logical; 2 unique values}
+\item{pieces}{integer; 1403 unique values}
+\item{minifigs}{integer; 34 unique values}
+\item{bricksetURL}{character; 18455 unique values}
+\item{rating}{numeric; 31 unique values}
+\item{reviewCount}{integer; 64 unique values}
+\item{packagingType}{character; 18 unique values}
+\item{availability}{character; 10 unique values}
+\item{agerange_min}{integer; 16 unique values}
+\item{US_retailPrice}{numeric; 142 unique values}
+\item{US_dateFirstAvailable}{Date; 881 unique values}
+\item{US_dateLastAvailable}{Date; 2125 unique values}
+\item{UK_retailPrice}{numeric; 210 unique values}
+\item{UK_dateFirstAvailable}{Date; 825 unique values}
+\item{UK_dateLastAvailable}{Date; 1984 unique values}
+\item{CA_retailPrice}{numeric; 162 unique values}
+\item{CA_dateFirstAvailable}{Date; 641 unique values}
+\item{CA_dateLastAvailable}{Date; 1808 unique values}
+\item{DE_retailPrice}{numeric; 155 unique values}
+\item{DE_dateFirstAvailable}{Date; 428 unique values}
+\item{DE_dateLastAvailable}{Date; 1176 unique values}
+\item{height}{numeric; 241 unique values}
+\item{width}{numeric; 286 unique values}
+\item{depth}{numeric; 279 unique values}
+\item{weight}{numeric; 1046 unique values}
+\item{thumbnailURL}{character; 17420 unique values}
+\item{imageURL}{character; 17420 unique values}
+}
+}
 \source{
 \url{https://brickset.com}
 }
