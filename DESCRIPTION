@@ -1,7 +1,7 @@
 Package: brickset
 Type: Package
 Title: R package to interface with the Brickset API for getting data about LEGO
-Version: 2022.0
+Version: 2022.0.0
 Date: 2023-03-21
 Author: Jason Bryer
 Maintainer: Jason Bryer <jason@bryer.org>
