@@ -1,6 +1,6 @@
 #' Download list of instructions for given set.
 #'
-#' @param setId the ID of the set (see \code{data(legosets)})
+#' @param setID the ID of the set (see \code{data(legosets)})
 #' @param setNumber the set number from on the LEGO box
 #' @param key the Brickset API key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including

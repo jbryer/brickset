@@ -1,6 +1,6 @@
 #' Downloads reviews for a LEGO set.
 #'
-#' @param setId the ID of the set (see \code{data(legosets)})
+#' @param setID the ID of the set (see \code{data(legosets)})
 #' @param key the Brickset API key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including
 #'        the Brickset username and password if they are not available from

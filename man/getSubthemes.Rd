@@ -7,7 +7,9 @@
 getSubthemes(theme, key = getOption("brickset_key"), ...)
 }
 \arguments{
-\item{theme}{the theme}
+\item{theme}{the theme.}
+
+\item{key}{the Brickset API key.}
 
 \item{...}{other parameters passed to \code{\link{getUserHash}} including
 the Brickset username and password if they are not available from

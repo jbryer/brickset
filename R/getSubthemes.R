@@ -1,6 +1,7 @@
 #' Returns a table of sub-themes for a given theme with number of sets and years active.
 #'
-#' @param theme the theme
+#' @param theme the theme.
+#' @param key the Brickset API key.
 #' @param ... other parameters passed to \code{\link{getUserHash}} including
 #'        the Brickset username and password if they are not available from
 #'        \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.

@@ -8,6 +8,7 @@ sticker.R
 bricks.png
 brickset.png
 README_files/*
-
+README.Rmd
 ^LICENSE\.md$
 ^\.github$
+brickset_config.R

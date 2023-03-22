@@ -7,6 +7,8 @@
 getInstructions(setID, setNumber, key = getOption("brickset_key"), ...)
 }
 \arguments{
+\item{setID}{the ID of the set (see \code{data(legosets)})}
+
 \item{setNumber}{the set number from on the LEGO box}
 
 \item{key}{the Brickset API key.}
@@ -14,8 +16,6 @@ getInstructions(setID, setNumber, key = getOption("brickset_key"), ...)
 \item{...}{other parameters passed to \code{\link{getUserHash}} including
 the Brickset username and password if they are not available from
 \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
-
-\item{setId}{the ID of the set (see \code{data(legosets)})}
 }
 \value{
 a data.frame with the reviews.
