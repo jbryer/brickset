@@ -18,9 +18,9 @@
 #' }
 getKeyUsageStats <- function(key = getOption('brickset_key')) {
 	usageStats <- httr::GET(paste0(brickset_api_endpoint, 'getKeyUsageStats?apiKey=', key))
-	if(http_error(usageStats)) {
-		stop(paste0('Error getting usage stats: ', http_status(usageStats)$message))
+	if(httr::http_error(usageStats)) {
+		stop(paste0('Error getting usage stats: ', httr::http_status(usageStats)$message))
 	}
-	df <- jsonlite::fromJSON(content(usageStats, as = 'text', encoding = "UTF-8"))$apiKeyUsage
+	df <- jsonlite::fromJSON(httr::content(usageStats, as = 'text', encoding = "UTF-8"))$apiKeyUsage
 	return(df)
 }

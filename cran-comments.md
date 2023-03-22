@@ -1,0 +1,1 @@
+This is an initial release. This is a combination of API and data package. Given that it is a data package I intend to only submit to CRAN once a year with updated data. I have used \dontrun for all examples since an API key is required.  Thank you for your time to review.

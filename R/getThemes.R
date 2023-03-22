@@ -22,10 +22,10 @@ getThemes <- function(key = getOption('brickset_key'),
 
 	themes <- httr::GET(paste0(brickset_api_endpoint, 'getThemes?apiKey=', key,
 							'&userHash=', userHash))
-	if(http_error(themes)) {
-		stop(paste0('Error getting themes: ', http_status(themes)$message))
+	if(httr::http_error(themes)) {
+		stop(paste0('Error getting themes: ', httr::http_status(themes)$message))
 	}
 
-	themes_json <- jsonlite::fromJSON(content(themes, as = 'text', encoding = "UTF-8"))
+	themes_json <- jsonlite::fromJSON(httr::content(themes, as = 'text', encoding = "UTF-8"))
 	return(themes_json[[3]])
 }

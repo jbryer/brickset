@@ -2,10 +2,14 @@
 devtools::document()
 devtools::install()
 devtools::build()
+devtools::build_readme()
 
 devtools::check(cran = TRUE)
 devtools::check_win_release()
 devtools::check_rhub()
+
+devtools::release()
+
 
 library(brickset)
 ls('package:brickset')

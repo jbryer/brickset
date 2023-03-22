@@ -27,10 +27,10 @@ getYears <- function(theme,
 	years <- httr::GET(paste0(brickset_api_endpoint, 'getYears?apiKey=', key,
 							'&userHash=', userHash,
 							'&Theme=', utils::URLencode(theme)))
-	if(http_error(years)) {
-		stop(paste0('Error getting years: ', http_status(years)$message))
+	if(httr::http_error(years)) {
+		stop(paste0('Error getting years: ', httr::http_status(years)$message))
 	}
 
-	years_json <- jsonlite::fromJSON(content(years, as = 'text', encoding = "UTF-8"))
+	years_json <- jsonlite::fromJSON(httr::content(years, as = 'text', encoding = "UTF-8"))
 	return(years_json[[3]])
 }

@@ -34,6 +34,6 @@ getInstructions <- function(setID,
 		stop(paste0('Error getting instructions: ', http_status(instructions)$message))
 	}
 
-	instructions_json <- jsonlite::fromJSON(content(instructions, as = 'text', encoding = "UTF-8"))
+	instructions_json <- jsonlite::fromJSON(httr::content(instructions, as = 'text', encoding = "UTF-8"))
 	return(instructions_json[[3]])
 }

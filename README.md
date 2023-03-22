@@ -57,7 +57,7 @@ brickset::getKeyUsageStats()
 ```
 
     ##              dateStamp count
-    ## 1 2023-03-22T00:00:00Z     9
+    ## 1 2023-03-22T00:00:00Z    14
     ## 2 2023-03-21T00:00:00Z     2
 
 The `getSets` function returns all LEGO sets from the given year.
@@ -124,7 +124,7 @@ The `getThemes` and `getSubthemes` returns information about LEGO
 themes.
 
 ``` r
-getThemes() %>% head(n = 3)
+getThemes() |> head(n = 3)
 ```
 
     ##             theme setCount subthemeCount yearFrom yearTo

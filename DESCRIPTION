@@ -13,7 +13,7 @@ LazyData: TRUE
 URL: https://github.com/jbryer/brickset,
     https://jbryer.github.io/brickset/
 BugReports: https://github.com/jbryer/brickset/issues
-Depends: dplyr, jsonlite, httr
+Imports: dplyr, jsonlite, httr
 Suggests: ggplot2, DT, knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

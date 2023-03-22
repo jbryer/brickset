@@ -23,11 +23,11 @@ getSets <- function(year,
 	sets <- httr::GET(paste0(brickset_api_endpoint, 'getSets?apiKey=', key,
 							'&userHash=', userHash,
 							'&params={year:', year, ',pageSize:2000}'))
-	if(http_error(sets)) {
-		stop(paste0('Error getting sets: ', http_status(sets)$message))
+	if(httr::http_error(sets)) {
+		stop(paste0('Error getting sets: ', httr::http_status(sets)$message))
 	}
 
-	sets_json <- jsonlite::fromJSON(content(sets, as = 'text', encoding = "UTF-8"))
+	sets_json <- jsonlite::fromJSON(httr::content(sets, as = 'text', encoding = "UTF-8"))
 	df <- sets_json[[3]]
 	if(ncol(df$LEGOCom$US)) {
 		names(df$LEGOCom$US) <- paste0('US_', names(df$LEGOCom$US))
@@ -47,15 +47,15 @@ getSets <- function(year,
 			  names(df$LEGOCom$US), names(df$LEGOCom$UK),
 			  names(df$LEGOCom$CA), names(df$LEGOCom$DE),
 			  names(df$dimensions), names(df$image))
-	df2 <- df %>%
-		mutate(agerange_min = df$ageRange$min) %>%
-		bind_cols(df$LEGOCom$US) %>%
-		bind_cols(df$LEGOCom$UK) %>%
-		bind_cols(df$LEGOCom$CA) %>%
-		bind_cols(df$LEGOCom$DE) %>%
-		bind_cols(df$dimensions) %>%
-		bind_cols(df$image) %>%
-		select(any_of(cols))
+	df2 <- df |>
+		dplyr::mutate(agerange_min = df$ageRange$min) |>
+		dplyr::bind_cols(df$LEGOCom$US) |>
+		dplyr::bind_cols(df$LEGOCom$UK) |>
+		dplyr::bind_cols(df$LEGOCom$CA) |>
+		dplyr::bind_cols(df$LEGOCom$DE) |>
+		dplyr::bind_cols(df$dimensions) |>
+		dplyr::bind_cols(df$image) |>
+		dplyr::select(dplyr::any_of(cols))
 
 	if(sets_json[['matches']] != nrow(df)) {
 		warning("Not all sets retrieved!") #TODO: Should loop back to get more

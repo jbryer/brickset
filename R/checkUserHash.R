@@ -22,6 +22,6 @@ checkUserHash <- function(key = getOption('brickset_key'),
 		message(paste0('Error checking user hash: ', http_status(checkUserHash)$message))
 		return(FALSE)
 	}
-	user_hash_json <- jsonlite::fromJSON(content(checkUserHash, as = 'text', encoding = "UTF-8"))
+	user_hash_json <- jsonlite::fromJSON(httr::content(checkUserHash, as = 'text', encoding = "UTF-8"))
 	return(user_hash_json$status == 'success')
 }

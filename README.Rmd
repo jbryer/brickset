@@ -72,7 +72,7 @@ names(reviews29830)
 The `getThemes` and `getSubthemes` returns information about LEGO themes.
 
 ```{r}
-getThemes() %>% head(n = 3)
+getThemes() |> head(n = 3)
 getSubthemes('Toy Story')
 getYears('Toy Story')
 ```

@@ -18,10 +18,10 @@ getSubthemes <- function(theme,
 	themes <- httr::GET(paste0(brickset_api_endpoint, 'getSubthemes?apiKey=', key,
 							'&userHash=', userHash,
 							'&Theme=', utils::URLencode(theme)))
-	if(http_error(themes)) {
-		stop(paste0('Error getting subthemes: ', http_status(themes)$message))
+	if(httr::http_error(themes)) {
+		stop(paste0('Error getting subthemes: ', httr::http_status(themes)$message))
 	}
 
-	themes_json <- jsonlite::fromJSON(content(themes, as = 'text', encoding = "UTF-8"))
+	themes_json <- jsonlite::fromJSON(httr::content(themes, as = 'text', encoding = "UTF-8"))
 	return(themes_json[[3]])
 }

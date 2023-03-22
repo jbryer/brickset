@@ -34,17 +34,17 @@ getReviews <- function(setID,
 	reviews <- httr::GET(paste0(brickset_api_endpoint, 'getReviews?apiKey=', key,
 							'&userHash=', userHash,
 							'&setID=', setID))
-	if(http_error(reviews)) {
-		stop(paste0('Error getting reviews: ', http_status(reviews)$message))
+	if(httr::http_error(reviews)) {
+		stop(paste0('Error getting reviews: ', httr::http_status(reviews)$message))
 	}
 
-	reviews_json <- jsonlite::fromJSON(content(reviews, as = 'text', encoding = "UTF-8"))
+	reviews_json <- jsonlite::fromJSON(httr::content(reviews, as = 'text', encoding = "UTF-8"))
 
 	df <- reviews_json[[3]]
 	cols <- c('author', 'datePosted', 'title', 'review', 'HTML', names(df$rating))
-	df2 <- df %>%
-		bind_cols(df$rating) %>%
-		select(any_of(cols))
+	df2 <- df |>
+		dplyr::bind_cols(df$rating) |>
+		dplyr::select(dplyr::any_of(cols))
 
 	return(df2)
 }

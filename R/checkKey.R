@@ -22,10 +22,10 @@
 #' }
 checkKey <- function(key = getOption('brickset_key')) {
 	checkKey <- httr::GET(paste0(brickset_api_endpoint, 'checkKey?apiKey=', key))
-	if(http_error(checkKey)) {
-		message(paste0('Error checking API key: ', http_status(checkKey)$message))
+	if(httr::http_error(checkKey)) {
+		message(paste0('Error checking API key: ', httr::http_status(checkKey)$message))
 		return(FALSE)
 	}
-	key_json <- jsonlite::fromJSON(content(checkKey, as = 'text', encoding = "UTF-8"))
+	key_json <- jsonlite::fromJSON(httr::content(checkKey, as = 'text', encoding = "UTF-8"))
 	return(key_json$status == 'success')
 }
