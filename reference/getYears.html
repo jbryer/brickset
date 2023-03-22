@@ -71,9 +71,28 @@ the Brickset username and password if they are not available from
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>a data.frame with the years of a given theme.</p>
-    </div>
+<p>a data.frame with the years of a given theme.</p><dl><dt>theme</dt>
+<dd><p>Name of the theme</p></dd>
 
+<dt>year</dt>
+<dd><p>Year</p></dd>
+
+<dt>setCount</dt>
+<dd><p>Number of sets released in the given year and theme</p></dd>
+
+
+</dl></div>
+
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>brickset_key <span class="op">=</span> <span class="st">'BRICKSET_KEY'</span>,</span></span>
+<span class="r-in"><span>        brickset_username <span class="op">=</span> <span class="st">'BRICKSET_UERNAME'</span>,</span></span>
+<span class="r-in"><span>        brickset_password <span class="op">=</span> <span class="st">'BRICKSET_PASSWORD'</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">getYears</span><span class="op">(</span><span class="st">'Architecture'</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 

@@ -71,9 +71,49 @@ the Brickset username and password if they are not available from
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
     
 
-<p>a data.frame with the reviews.</p>
-    </div>
+<p>a data.frame with the reviews.</p><dl><dt>author</dt>
+<dd><p>Author of the review</p></dd>
 
+<dt>datePosted</dt>
+<dd><p>Date of the review</p></dd>
+
+<dt>title</dt>
+<dd><p>Title of the review</p></dd>
+
+<dt>review</dt>
+<dd><p>The text of the review</p></dd>
+
+<dt>HTML</dt>
+<dd><p>TRUE if the review contains HTML</p></dd>
+
+<dt>overall</dt>
+<dd><p>overall rating by the reviewer</p></dd>
+
+<dt>parts</dt>
+<dd><p>rating for the parts</p></dd>
+
+<dt>buildingExperience</dt>
+<dd><p>rating for the building experience</p></dd>
+
+<dt>playability</dt>
+<dd><p>rating for the playability</p></dd>
+
+<dt>valueForMoney</dt>
+<dd><p>rating for the value for money</p></dd>
+
+
+</dl></div>
+
+    <div class="section level2">
+    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>brickset_key <span class="op">=</span> <span class="st">'BRICKSET_KEY'</span>,</span></span>
+<span class="r-in"><span>        brickset_username <span class="op">=</span> <span class="st">'BRICKSET_UERNAME'</span>,</span></span>
+<span class="r-in"><span>        brickset_password <span class="op">=</span> <span class="st">'BRICKSET_PASSWORD'</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">getReviews</span><span class="op">(</span><span class="st">'31728'</span><span class="op">)</span> <span class="co"># Will return TRUE if the credentials are correct</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
+</code></pre></div>
+    </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
 
