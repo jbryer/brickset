@@ -21,5 +21,6 @@ login(
 the user hash used for other API calls.
 }
 \description{
-Login to the Brickset API.
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
 }

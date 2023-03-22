@@ -15,6 +15,7 @@
 #'         brickset_username = 'BRICKSET_UERNAME',
 #'         brickset_password = 'BRICKSET_PASSWORD')
 #' getThemes()
+#' }
 getThemes <- function(key = getOption('brickset_key'),
 					  ...) {
 	userHash <- getUserHash(key = key, ...)

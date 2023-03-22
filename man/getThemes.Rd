@@ -17,5 +17,14 @@ the Brickset username and password if they are not available from
 a data.frame with the themes.
 }
 \description{
-Returns a table of themes with number of sets and years active.
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
+}
+\examples{
+\dontrun{
+options(brickset_key = 'BRICKSET_KEY',
+        brickset_username = 'BRICKSET_UERNAME',
+        brickset_password = 'BRICKSET_PASSWORD')
+getThemes()
+}
 }

@@ -17,9 +17,16 @@ getUserHash(
 
 \item{key}{the Brickset API key.}
 }
+\value{
+the user hash for the current API session.
+}
 \description{
 Many of the Brickset API calls require a user to login. This function wraps
 the \code{\link{login}} function to managing the user hash returned from
 login across multiple API calls. It will also ensure that the hash is still
 valid and if it expired a new hash will be requested.
+}
+\details{
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
 }

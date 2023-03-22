@@ -2,7 +2,7 @@
 % Please edit documentation in R/getKeyUsageStats.R
 \name{getKeyUsageStats}
 \alias{getKeyUsageStats}
-\title{Check the Brickset API key.}
+\title{Get information about frequency of API usage for the given API key.}
 \usage{
 getKeyUsageStats(key = getOption("brickset_key"))
 }
@@ -10,9 +10,20 @@ getKeyUsageStats(key = getOption("brickset_key"))
 \item{key}{the API key}
 }
 \value{
-TRUE if the API key is fine.
+a data.frame with the number of times the key has been used.
+\describe{
+\item{dateStamp}{The date}
+\item{count}{The number of times the key was used for the given date}
+}
 }
 \description{
-You can request an API key on the Brickset website here:
-http://brickset.com/tools/webservices/requestkey
+Provides information about how frequently the API key has been used.
+}
+\examples{
+\dontrun{
+options(brickset_key = 'BRICKSET_KEY',
+        brickset_username = 'BRICKSET_UERNAME',
+        brickset_password = 'BRICKSET_PASSWORD')
+getKeyUsageStats()
+}
 }

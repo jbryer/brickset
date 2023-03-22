@@ -17,7 +17,27 @@ the Brickset username and password if they are not available from
 }
 \value{
 a data.frame with the reviews.
+\describe{
+\item{author}{Author of the review}
+\item{datePosted}{Date of the review}
+\item{title}{Title of the review}
+\item{review}{The text of the review}
+\item{HTML}{TRUE if the review contains HTML}
+\item{overall}{overall rating by the reviewer}
+\item{parts}{rating for the parts}
+\item{buildingExperience}{rating for the building experience}
+\item{playability}{rating for the playability}
+\item{valueForMoney}{rating for the value for money}
+}
 }
 \description{
 Downloads reviews for a LEGO set.
+}
+\examples{
+\dontrun{
+options(brickset_key = 'BRICKSET_KEY',
+        brickset_username = 'BRICKSET_UERNAME',
+        brickset_password = 'BRICKSET_PASSWORD')
+getReviews('31728') # Will return TRUE if the credentials are correct
+}
 }

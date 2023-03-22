@@ -17,7 +17,20 @@ the Brickset username and password if they are not available from
 }
 \value{
 a data.frame with the years of a given theme.
+\describe{
+\item{theme}{Name of the theme}
+\item{year}{Year}
+\item{setCount}{Number of sets released in the given year and theme}
+}
 }
 \description{
 Get a list of years for a given theme, with the total number of sets in each.
+}
+\examples{
+\dontrun{
+options(brickset_key = 'BRICKSET_KEY',
+        brickset_username = 'BRICKSET_UERNAME',
+        brickset_password = 'BRICKSET_PASSWORD')
+getYears('Architecture')
+}
 }

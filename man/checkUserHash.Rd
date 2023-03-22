@@ -18,3 +18,7 @@ TRUE if the API key is fine.
 You can request an API key on the Brickset website here:
 http://brickset.com/tools/webservices/requestkey
 }
+\details{
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
+}

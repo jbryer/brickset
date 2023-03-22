@@ -19,5 +19,6 @@ the Brickset username and password if they are not available from
 a data.frame with the subthemes.
 }
 \description{
-Returns a table of sub-themes for a given theme with number of sets and years active.
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
 }

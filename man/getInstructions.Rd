@@ -18,8 +18,9 @@ the Brickset username and password if they are not available from
 \code{getOption('brickset_username')} and \code{getOption('brickset_password')}.}
 }
 \value{
-a data.frame with the reviews.
+a data.frame with the instructions.
 }
 \description{
-Download list of instructions for given set.
+Brickset API documentation is available here:
+https://brickset.com/article/52664/api-version-3-documentation
 }
