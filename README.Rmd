@@ -5,7 +5,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-<a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" height="200" /></a>
+<a href='https://github.com/jbryer/brickset'><img src='man/figures/brickset.png' align="right" width="120" /></a>
 
 # An R package to interface with the Brickset.com API for getting data about LEGO sets
 
