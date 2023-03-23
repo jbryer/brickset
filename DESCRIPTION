@@ -7,11 +7,12 @@ Authors@R:
     person("Jason", "Bryer", , "jason@bryer.org", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2454-0402"))
 Maintainer: Jason Bryer <jason@bryer.org>
-Description: R package to interface with the 'Brickset' API
+Description: Interface with the 'Brickset' API
     <https://brickset.com/article/52664/api-version-3-documentation> for
-    getting data about LEGO sets. The package also includes data sets that
+    getting data about LEGO sets. Data sets that
     can be used for teaching and learning without the need of a 'Brickset'
-    account and API key.
+    account and API key are also included. Includes all LEGO since through
+    the end of 2022.
 License: GPL (>= 3)
 URL: https://github.com/jbryer/brickset,
     https://jbryer.github.io/brickset/
