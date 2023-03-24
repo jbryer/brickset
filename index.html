@@ -76,132 +76,139 @@
 </h1></div>
 <!-- badges: start -->
 
-<p><strong>Author:</strong> Jason Bryer, Ph.D. <a href="mailto:jason.bryer@cuny.edu" class="email">jason.bryer@cuny.edu</a><br><strong>Website:</strong> <a href="https://github.com/jbryer/brickset" class="external-link uri">https://github.com/jbryer/brickset</a></p>
+<p><strong>Author:</strong> Jason Bryer, Ph.D. <a href="mailto:jason@bryer.org" class="email">jason@bryer.org</a><br><strong>Website:</strong> <a href="https://jbryer.github.io/brickset/" class="uri">https://jbryer.github.io/brickset/</a></p>
 <p>This package provides functions to access data about <a href="https://www.lego.com/" class="external-link">LEGO</a> sets from the <a href="https://brickset.com/" class="external-link">Brickset</a> website. The package also contains a <code>data.frame</code> with all LEGO sets (n = 18,455) from 1970 through 2022. This data set was created using the <code>getSets</code> function and it is recommended that you use this data frame to reduce the number of API calls. See the <a href="https://github.com/jbryer/PSAboot/blob/master/build.R" class="external-link">build.R</a> script for how the data frame was created. Information about the variables is included below.</p>
-<p>The <code>brickset</code> package can be installed from Github with the following command:</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can download from CRAN using:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'brickset'</span><span class="op">)</span></span></code></pre></div>
+<p>Or the latest development version using the <code>remotes</code> package:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">'jbryer/brickset'</span><span class="op">)</span></span></code></pre></div>
+</div>
 <div class="section level2">
 <h2 id="brickset-api">Brickset API<a class="anchor" aria-label="anchor" href="#brickset-api"></a>
 </h2>
 <p>To use the Brickset API, you must first create a <a href="https://brickset.com/signup" class="external-link">Brickset account</a> and request an <a href="https://brickset.com/tools/webservices/requestkey" class="external-link">API key</a>. The full Brickset API documentation is available here: <a href="https://brickset.com/article/52664/api-version-3-documentation" class="external-link uri">https://brickset.com/article/52664/api-version-3-documentation</a></p>
 <p>Most of the functions require a Brickset username, password, and API key. You can pass these as parameters, or you can set these options:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>brickset_key <span class="op">=</span> <span class="st">'YOUR_API_KEY'</span>,</span>
 <span>        brickset_username <span class="op">=</span> <span class="st">'YOUR_USERNAME'</span>,</span>
 <span>        brickset_password <span class="op">=</span> <span class="st">'YOUR_PASSWORD'</span><span class="op">)</span></span></code></pre></div>
 <p>The <code>checkKey</code> function will verify that your API key is valid:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/checkKey.html">checkKey</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] TRUE</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/checkKey.html">checkKey</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] TRUE</span></span></code></pre></div>
 <p>You can check your API usage with the <code>getKeyUsageStats</code> function.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getKeyUsageStats.html">getKeyUsageStats</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">##              dateStamp count</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 2023-03-22T00:00:00Z    16</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 2023-03-21T00:00:00Z     2</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getKeyUsageStats.html">getKeyUsageStats</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt;              dateStamp count</span></span>
+<span><span class="co">#&gt; 1 2023-03-24T00:00:00Z     1</span></span>
+<span><span class="co">#&gt; 2 2023-03-23T00:00:00Z     2</span></span>
+<span><span class="co">#&gt; 3 2023-03-22T00:00:00Z    16</span></span>
+<span><span class="co">#&gt; 4 2023-03-21T00:00:00Z     2</span></span></code></pre></div>
 <p>The <code>getSets</code> function returns all LEGO sets from the given year.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">sets2021</span> <span class="op">&lt;-</span> <span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getSets.html">getSets</a></span><span class="op">(</span><span class="fl">2021</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">sets2021</span>, n <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb8"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="do">##   setID                     name year theme   themeGroup</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 31026           Police Station 2021 Icons Model making</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 31754 Volkswagen T2 Camper Van 2021 Icons Model making</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 31025           Flower Bouquet 2021 Icons Model making</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="do">##                       subtheme category released pieces minifigs</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Modular Buildings Collection   Normal     TRUE   2923        5</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 2                     Vehicles   Normal     TRUE   2207       NA</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 3         Botanical Collection   Normal     TRUE    756       NA</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="do">##                         bricksetURL rating reviewCount packagingType</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 https://brickset.com/sets/10278-1    4.4           4           Box</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 https://brickset.com/sets/10279-1    4.1           0           Box</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 https://brickset.com/sets/10280-1    4.3           3           Box</span></span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="do">##     availability agerange_min US_retailPrice US_dateFirstAvailable</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 LEGO exclusive           18         199.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 LEGO exclusive           18         179.99  2021-08-02T00:00:00Z</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 3         Retail           18          59.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="do">##   US_dateLastAvailable UK_retailPrice UK_dateFirstAvailable</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 1                 &lt;NA&gt;         169.99  2021-01-01T00:00:00Z</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 2022-11-12T00:00:00Z         139.99  2021-08-01T00:00:00Z</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 3                 &lt;NA&gt;          54.99  2021-01-01T00:00:00Z</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="do">##   UK_dateLastAvailable CA_retailPrice CA_dateFirstAvailable</span></span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="do">## 1                 &lt;NA&gt;         269.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 2022-11-29T00:00:00Z         249.99  2021-08-03T00:00:00Z</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="do">## 3                 &lt;NA&gt;          79.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="do">##   CA_dateLastAvailable DE_retailPrice DE_dateFirstAvailable</span></span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 2023-03-08T00:00:00Z         199.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 2022-11-12T00:00:00Z         159.99  2021-08-02T00:00:00Z</span></span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 2023-03-08T00:00:00Z          59.99  2021-01-02T00:00:00Z</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="do">##   DE_dateLastAvailable height width depth weight</span></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="do">## 1                 &lt;NA&gt;   47.6  57.7  11.8  4.012</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 2022-11-30T00:00:00Z   37.4  57.8  11.2  2.945</span></span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="do">## 3                 &lt;NA&gt;   38.2  26.2   7.1  0.760</span></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="do">##                                         thumbnailURL</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 https://images.brickset.com/sets/small/10278-1.jpg</span></span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 https://images.brickset.com/sets/small/10279-1.jpg</span></span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 https://images.brickset.com/sets/small/10280-1.jpg</span></span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="do">##                                              imageURL</span></span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 https://images.brickset.com/sets/images/10278-1.jpg</span></span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 https://images.brickset.com/sets/images/10279-1.jpg</span></span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 https://images.brickset.com/sets/images/10280-1.jpg</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">sets2021</span>, n <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="co">#&gt;   setID                     name year theme   themeGroup</span></span>
+<span><span class="co">#&gt; 1 31026           Police Station 2021 Icons Model making</span></span>
+<span><span class="co">#&gt; 2 31754 Volkswagen T2 Camper Van 2021 Icons Model making</span></span>
+<span><span class="co">#&gt; 3 31025           Flower Bouquet 2021 Icons Model making</span></span>
+<span><span class="co">#&gt;                       subtheme category released pieces minifigs</span></span>
+<span><span class="co">#&gt; 1 Modular Buildings Collection   Normal     TRUE   2923        5</span></span>
+<span><span class="co">#&gt; 2                     Vehicles   Normal     TRUE   2207       NA</span></span>
+<span><span class="co">#&gt; 3         Botanical Collection   Normal     TRUE    756       NA</span></span>
+<span><span class="co">#&gt;                         bricksetURL rating reviewCount packagingType</span></span>
+<span><span class="co">#&gt; 1 https://brickset.com/sets/10278-1    4.4           4           Box</span></span>
+<span><span class="co">#&gt; 2 https://brickset.com/sets/10279-1    4.1           0           Box</span></span>
+<span><span class="co">#&gt; 3 https://brickset.com/sets/10280-1    4.3           3           Box</span></span>
+<span><span class="co">#&gt;     availability agerange_min US_retailPrice US_dateFirstAvailable</span></span>
+<span><span class="co">#&gt; 1 LEGO exclusive           18         199.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt; 2 LEGO exclusive           18         179.99  2021-08-02T00:00:00Z</span></span>
+<span><span class="co">#&gt; 3         Retail           18          59.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt;   US_dateLastAvailable UK_retailPrice UK_dateFirstAvailable</span></span>
+<span><span class="co">#&gt; 1                 &lt;NA&gt;         169.99  2021-01-01T00:00:00Z</span></span>
+<span><span class="co">#&gt; 2 2022-11-12T00:00:00Z         139.99  2021-08-01T00:00:00Z</span></span>
+<span><span class="co">#&gt; 3                 &lt;NA&gt;          54.99  2021-01-01T00:00:00Z</span></span>
+<span><span class="co">#&gt;   UK_dateLastAvailable CA_retailPrice CA_dateFirstAvailable</span></span>
+<span><span class="co">#&gt; 1                 &lt;NA&gt;         269.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt; 2 2022-11-29T00:00:00Z         249.99  2021-08-03T00:00:00Z</span></span>
+<span><span class="co">#&gt; 3                 &lt;NA&gt;          79.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt;   CA_dateLastAvailable DE_retailPrice DE_dateFirstAvailable</span></span>
+<span><span class="co">#&gt; 1                 &lt;NA&gt;         199.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt; 2 2022-11-12T00:00:00Z         159.99  2021-08-02T00:00:00Z</span></span>
+<span><span class="co">#&gt; 3                 &lt;NA&gt;          59.99  2021-01-02T00:00:00Z</span></span>
+<span><span class="co">#&gt;   DE_dateLastAvailable height width depth weight</span></span>
+<span><span class="co">#&gt; 1                 &lt;NA&gt;   47.6  57.7  11.8  4.012</span></span>
+<span><span class="co">#&gt; 2 2022-11-30T00:00:00Z   37.4  57.8  11.2  2.945</span></span>
+<span><span class="co">#&gt; 3                 &lt;NA&gt;   38.2  26.2   7.1  0.760</span></span>
+<span><span class="co">#&gt;                                         thumbnailURL</span></span>
+<span><span class="co">#&gt; 1 https://images.brickset.com/sets/small/10278-1.jpg</span></span>
+<span><span class="co">#&gt; 2 https://images.brickset.com/sets/small/10279-1.jpg</span></span>
+<span><span class="co">#&gt; 3 https://images.brickset.com/sets/small/10280-1.jpg</span></span>
+<span><span class="co">#&gt;                                              imageURL</span></span>
+<span><span class="co">#&gt; 1 https://images.brickset.com/sets/images/10278-1.jpg</span></span>
+<span><span class="co">#&gt; 2 https://images.brickset.com/sets/images/10279-1.jpg</span></span>
+<span><span class="co">#&gt; 3 https://images.brickset.com/sets/images/10280-1.jpg</span></span></code></pre></div>
 <p>The <code>getReviews</code> function will return all reviews for a given set.</p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">reviews29830</span> <span class="op">&lt;-</span> <span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getReviews.html">getReviews</a></span><span class="op">(</span><span class="fl">29830</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">reviews29830</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="do">##  [1] "author"             "datePosted"         "title"             </span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="do">##  [4] "review"             "HTML"               "overall"           </span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  [7] "parts"              "buildingExperience" "playability"       </span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [10] "valueForMoney"</span></span></code></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">reviews29830</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  [1] "author"             "datePosted"         "title"             </span></span>
+<span><span class="co">#&gt;  [4] "review"             "HTML"               "overall"           </span></span>
+<span><span class="co">#&gt;  [7] "parts"              "buildingExperience" "playability"       </span></span>
+<span><span class="co">#&gt; [10] "valueForMoney"</span></span></code></pre></div>
 <p>The <code>getThemes</code> and <code>getSubthemes</code> returns information about LEGO themes.</p>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/getThemes.html">getThemes</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb12"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="do">##             theme setCount subthemeCount yearFrom yearTo</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1       4 Juniors       24             5     2003   2004</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Action Wheelers        9             0     2000   2001</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Advanced models       35            12     2000   2012</span></span></code></pre></div>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/getSubthemes.html">getSubthemes</a></span><span class="op">(</span><span class="st">'Toy Story'</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb14"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="do">##       theme          subtheme setCount yearFrom yearTo</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Toy Story Buildable Figures        2     2010   2010</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Toy Story     Original Film        2     2010   2010</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Toy Story       Toy Story 2        3     2010   2010</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 Toy Story       Toy Story 3        8     2010   2010</span></span></code></pre></div>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/getYears.html">getYears</a></span><span class="op">(</span><span class="st">'Toy Story'</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="do">##       theme year setCount</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Toy Story 2010       15</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/getThemes.html">getThemes</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="co">#&gt;             theme setCount subthemeCount yearFrom yearTo</span></span>
+<span><span class="co">#&gt; 1    {Unknown IP}        5             0     2023   2023</span></span>
+<span><span class="co">#&gt; 2       4 Juniors       24             5     2003   2004</span></span>
+<span><span class="co">#&gt; 3 Action Wheelers        9             0     2000   2001</span></span>
+<span><span class="fu"><a href="reference/getSubthemes.html">getSubthemes</a></span><span class="op">(</span><span class="st">'Toy Story'</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       theme          subtheme setCount yearFrom yearTo</span></span>
+<span><span class="co">#&gt; 1 Toy Story Buildable Figures        2     2010   2010</span></span>
+<span><span class="co">#&gt; 2 Toy Story     Original Film        2     2010   2010</span></span>
+<span><span class="co">#&gt; 3 Toy Story       Toy Story 2        3     2010   2010</span></span>
+<span><span class="co">#&gt; 4 Toy Story       Toy Story 3        8     2010   2010</span></span>
+<span><span class="fu"><a href="reference/getYears.html">getYears</a></span><span class="op">(</span><span class="st">'Toy Story'</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       theme year setCount</span></span>
+<span><span class="co">#&gt; 1 Toy Story 2010       15</span></span></code></pre></div>
 <p>The <code>getInstructions</code> will return a table with the URLs to the building instructions.</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">instructions</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/getInstructions.html">getInstructions</a></span><span class="op">(</span>setID <span class="op">=</span> <span class="fl">29830</span><span class="op">)</span></span>
-<span><span class="va">instructions</span></span></code></pre></div>
-<div class="sourceCode" id="cb18"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="do">##                                                                       URL</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313846.pdf</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313848.pdf</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313849.pdf</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313850.pdf</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="do">##                             description</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 BI 3103, 112+4/65+200G, 10270 V29 1/2</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 2   BI 3103, 96+4/65+200G,10270 V29 2/2</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="do">## 3   BI 3103, 112+4/65+200G, V39/142 1/2</span></span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="do">## 4    BI 3103, 96+4/65+200G, V39/142 2/2</span></span></code></pre></div>
+<span><span class="va">instructions</span></span>
+<span><span class="co">#&gt;                                                                       URL</span></span>
+<span><span class="co">#&gt; 1 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313846.pdf</span></span>
+<span><span class="co">#&gt; 2 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313848.pdf</span></span>
+<span><span class="co">#&gt; 3 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313849.pdf</span></span>
+<span><span class="co">#&gt; 4 https://www.lego.com/cdn/product-assets/product.bi.core.pdf/6313850.pdf</span></span>
+<span><span class="co">#&gt;                             description</span></span>
+<span><span class="co">#&gt; 1 BI 3103, 112+4/65+200G, 10270 V29 1/2</span></span>
+<span><span class="co">#&gt; 2   BI 3103, 96+4/65+200G,10270 V29 2/2</span></span>
+<span><span class="co">#&gt; 3   BI 3103, 112+4/65+200G, V39/142 1/2</span></span>
+<span><span class="co">#&gt; 4    BI 3103, 96+4/65+200G, V39/142 2/2</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="legosets-dataset">
 <code>legosets</code> Dataset<a class="anchor" aria-label="anchor" href="#legosets-dataset"></a>
 </h2>
 <p>The <code>legosets</code> data frame contains all LEGO sets (n = 18,455) from 1970 through 2022.</p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"legosets"</span>, package <span class="op">=</span> <span class="st">"brickset"</span><span class="op">)</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span><span class="va">legosets</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_bar</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">ggtitle</span><span class="op">(</span><span class="st">'Number of LEGO sets by year'</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">xlab</span><span class="op">(</span><span class="st">'Year'</span><span class="op">)</span> <span class="op">+</span> <span class="fu">ylab</span><span class="op">(</span><span class="st">'Number of LEGO Sets'</span><span class="op">)</span></span></code></pre></div>
-<p><img src="README_files/figure-gfm/legosets_by_year-1.png"><!-- --></p>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<p><img src="reference/figures/README-legosets_by_year-1.png" width="100%"></p>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="va">legosets</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">pieces</span>, y <span class="op">=</span> <span class="va">US_retailPrice</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
 <span>    <span class="fu">geom_point</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">ggtitle</span><span class="op">(</span><span class="st">'Cost of LEGO sets by number of pieces'</span><span class="op">)</span> <span class="op">+</span></span>
 <span>    <span class="fu">xlab</span><span class="op">(</span><span class="st">'Number of LEGO pieces'</span><span class="op">)</span> <span class="op">+</span> <span class="fu">ylab</span><span class="op">(</span><span class="st">'US Retail Price (dollars)'</span><span class="op">)</span></span></code></pre></div>
-<p><img src="README_files/figure-gfm/pieces_by_price-1.png"><!-- --></p>
+<p><img src="reference/figures/README-pieces_by_price-1.png" width="100%"></p>
 <p>The variables in the <code>legosets</code> data frame are:</p>
 <table class="table">
 <thead><tr class="header">
@@ -383,6 +390,11 @@
 </tbody>
 </table>
 </div>
+<div class="section level2">
+<h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
+</h2>
+<p>Please note that the brickset project is released with a <a href="https://jbryer.github.io/brickset/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+</div>
 </div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
@@ -401,6 +413,12 @@
 </ul>
 </div>
 
+<div class="community">
+<h2 data-toc-skip>Community</h2>
+<ul class="list-unstyled">
+<li><a href="CODE_OF_CONDUCT.html">Code of conduct</a></li>
+</ul>
+</div>
 
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
@@ -422,7 +440,7 @@
 <li><a href="https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 <li><a href="https://github.com/jbryer/brickset" class="external-link"><img src="https://img.shields.io/badge/devel%20version-2022.0.0-blue.svg"></a></li>
 <li><a href="https://cran.r-project.org/package=brickset" class="external-link"><img src="https://www.r-pkg.org/badges/version/brickset"></a></li>
-<li><a href="https://cran.r-project.org/web/checks/check_results_brickset.html" class="external-link"><img src="https://badges.cranchecks.info/summary/brickset.svg" alt="CRAN checks"></a></li>
+<li><a href="https://cran.r-project.org/web/checks/check_results_brickset.html" class="external-link"><img src="https://badges.cranchecks.info/flavor/release/brickset.svg" alt="CRAN Status"></a></li>
 </ul>
 </div>
 
