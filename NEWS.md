@@ -1,5 +1,6 @@
 # brickset (development version)
 
+* Added number, thumbnailURL, and imageURL to the data.frame returned by the getSets function.
 * Added code of conduct.
 * Fixed location of README figures.
 

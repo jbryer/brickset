@@ -29,7 +29,7 @@ getSets <- function(year,
 
 	sets_json <- jsonlite::fromJSON(httr::content(sets, as = 'text', encoding = "UTF-8"))
 	df <- sets_json[[3]]
-	if(ncol(df$LEGOCom$US)) {
+	if(ncol(df$LEGOCom$US) > 0) {
 		names(df$LEGOCom$US) <- paste0('US_', names(df$LEGOCom$US))
 	}
 	if(ncol(df$LEGOCom$UK) > 0) {
@@ -41,9 +41,9 @@ getSets <- function(year,
 	if(ncol(df$LEGOCom$DE) > 0) {
 		names(df$LEGOCom$DE) <- paste0('DE_', names(df$LEGOCom$DE))
 	}
-	cols <- c('setID', 'name', 'year', 'theme', 'themeGroup', 'subtheme', 'category',
+	cols <- c('setID', 'number', 'numberVariant', 'name', 'year', 'theme', 'themeGroup', 'subtheme', 'category',
 			  'released', 'pieces', 'minifigs', 'bricksetURL', 'rating', 'reviewCount',
-			  'packagingType', 'availability', 'agerange_min',
+			  'packagingType', 'availability', 'agerange_min', 'thumbnailURL', 'imageURL',
 			  names(df$LEGOCom$US), names(df$LEGOCom$UK),
 			  names(df$LEGOCom$CA), names(df$LEGOCom$DE),
 			  names(df$dimensions), names(df$image))
