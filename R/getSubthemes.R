@@ -23,5 +23,10 @@ getSubthemes <- function(theme,
 	}
 
 	themes_json <- jsonlite::fromJSON(httr::content(themes, as = 'text', encoding = "UTF-8"))
+
+	if(themes_json$status == 'error') {
+		stop(paste0('Error getting sets: ', themes_json$message))
+	}
+
 	return(themes_json[[3]])
 }

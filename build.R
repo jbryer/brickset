@@ -31,7 +31,7 @@ ggplot(legosets, aes(x = year)) + geom_bar() +
 source('brickset_config.R') # Need to define username, password, and key
 
 brickset::checkKey()
-brickset::getUserHash()
+( userHash <- brickset::getUserHash() )
 brickset::getKeyUsageStats()
 
 brickset::getThemes() %>% head()

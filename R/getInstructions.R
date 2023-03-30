@@ -35,5 +35,10 @@ getInstructions <- function(setID,
 	}
 
 	instructions_json <- jsonlite::fromJSON(httr::content(instructions, as = 'text', encoding = "UTF-8"))
+
+	if(instructions_json$status == 'error') {
+		stop(paste0('Error getting sets: ', instructions_json$message))
+	}
+
 	return(instructions_json[[3]])
 }

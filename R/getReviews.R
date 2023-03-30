@@ -40,6 +40,10 @@ getReviews <- function(setID,
 
 	reviews_json <- jsonlite::fromJSON(httr::content(reviews, as = 'text', encoding = "UTF-8"))
 
+	if(reviews_json$status == 'error') {
+		stop(paste0('Error getting sets: ', reviews_json$message))
+	}
+
 	df <- reviews_json[[3]]
 	cols <- c('author', 'datePosted', 'title', 'review', 'HTML', names(df$rating))
 	df2 <- df |>

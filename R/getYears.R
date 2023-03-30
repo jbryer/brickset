@@ -32,5 +32,10 @@ getYears <- function(theme,
 	}
 
 	years_json <- jsonlite::fromJSON(httr::content(years, as = 'text', encoding = "UTF-8"))
+
+	if(years_json$status == 'error') {
+		stop(paste0('Error getting sets: ', years_json$message))
+	}
+
 	return(years_json[[3]])
 }

@@ -28,6 +28,10 @@ getSets <- function(year,
 	}
 
 	sets_json <- jsonlite::fromJSON(httr::content(sets, as = 'text', encoding = "UTF-8"))
+	if(sets_json$status == 'error') {
+		stop(paste0('Error getting sets: ', sets_json$message))
+	}
+
 	df <- sets_json[[3]]
 	if(ncol(df$LEGOCom$US) > 0) {
 		names(df$LEGOCom$US) <- paste0('US_', names(df$LEGOCom$US))
