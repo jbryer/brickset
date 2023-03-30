@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
-[![](https://img.shields.io/badge/devel%20version-2022.0.0-blue.svg)](https://github.com/jbryer/brickset)
+[![](https://img.shields.io/badge/devel%20version-2022.0.1-blue.svg)](https://github.com/jbryer/brickset)
 [![](https://www.r-pkg.org/badges/version/brickset)](https://cran.r-project.org/package=brickset)
 [![CRAN
 Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)<!-- badges: end -->
@@ -66,10 +66,11 @@ You can check your API usage with the `getKeyUsageStats` function.
 ``` r
 brickset::getKeyUsageStats()
 #>              dateStamp count
-#> 1 2023-03-24T00:00:00Z     1
-#> 2 2023-03-23T00:00:00Z     2
-#> 3 2023-03-22T00:00:00Z    16
-#> 4 2023-03-21T00:00:00Z     2
+#> 1 2023-03-30T00:00:00Z     3
+#> 2 2023-03-24T00:00:00Z     2
+#> 3 2023-03-23T00:00:00Z     2
+#> 4 2023-03-22T00:00:00Z    16
+#> 5 2023-03-21T00:00:00Z     2
 ```
 
 The `getSets` function returns all LEGO sets from the given year.
