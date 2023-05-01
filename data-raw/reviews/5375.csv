@@ -1,0 +1,7 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"deluckybrick","2007-10-08T16:31:13.187Z","WHAT THE HECK AM I SUPPOSED TO DO WITH IT!","I got this set as a package deal with Mindstorms 2.0, and I really do not see any purpose whatsoever to it.  I tried everything.  I hooked it up to a motor and spun it backwards, I hooked it up to the RCX and turned it on, and nothing worked.  I guess you have to get the solar panel for it.  I would not recommend buying unless you have the solar panel or know how to use it.",FALSE,3,0,0,0,0
+"bort17","2008-01-25T18:31:17.247Z","Quite useful in some situations","I have only one of these capacitors, and it works pretty well.  I charge it using the 9v train speed regulator*, and it takes less than a minute to finish.  When it charged to its full capacity, a red light flashes.  The only problems with it is that it can't hold much power (3.125 joules), and the output is only 2.5 volts.  I imagine if you link several of them together with the same polarity, you could build a powerful and fast car.  
+
+*I just found out that the capacitor's maximum charging voltage is 4 volts, so I was probably breaking it with the speed regulator turned to its full output.
+
+Because the solar panel produces 3 volts, that would probably be best for charging the capacitor.  If you have a solar panel, or want an easy alternative to batteries, you should get this.  I don't think it comes with instructions, so good luck if you decide to buy it! ",FALSE,4,0,0,0,0

@@ -1,0 +1,107 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"chefkaspa","2020-09-06T21:08:43.467Z","Assembling the un-Available","<h3>Motivation</h3>
+
+<p>(<em>skip reading if you are only interested in technical aspects of the set</em>)<br />
+This was the set from second half of 2020 that i would have bought first. The Volvo is too big and in my opinion technic does not need to be remotely controlled.<br />
+Check my review about the cement mixer truck to read why this is of lesser interest to me.</p>
+
+<p>But, the set got cancelled about two weeks before its release. I was disappointed - mainly because of the several new parts respectively parts release in new colour (orange, dark grey).<br />
+Thanks to some user at lego forum the building instruction became available quickly. A check on the parts list revealed that I had almost all the parts except for the control+ battery box. I bought four lime 3x19 rotor wings from LEGO bricks&amp;parts so I am short by two of these as well.<br />
+Nonetheless, I decided that I might build the model: From as much as possible black pieces. Maybe as a means of protest because a black version would shout &quot;black OPs&quot; thus underlining the military aspect as much as possible.<br />
+I collected the required parts from my collection and put them aside undecided to build and hoping that I would be able to buy the set instead.</p>
+
+<p><img alt="""" src=""http://www.brickshelf.com/gallery/rothw/technic/42113/011_wr_33655k.png"" style=""width: 640px; height: 416px;"" /></p>
+
+<h3>Other Reviews</h3>
+
+<p>In the meantime (mid of July .. August 2020) it was reported by those that were able to get the set either as evaluation copy or from early purchase that there seems to be a severe problem in the drivetrain which would result in destruction of gear wheels.<br />
+Also, the build-in clutches for both propellers and tilt rotor drive were reported to be ineffective due to high threshold. These modules have too much friction to be triggered at a reasonable level of force.</p>
+
+<h3>Build</h3>
+
+<p>The original parts list have very few parts of odd colour that are often use to for complex models to clarify building steps. I assume that this is owed to the licensed set.</p>
+
+<p>You start with the lower half of the plane body working from middle towards rear and then to the front. The (new, plain) control+ battery box is incorporated such that the batteries can be removes from the bottom. It can be substituted 1:1 by control+ hub. See notes below on how to activate the control+ hub.</p>
+
+<p>Landing gear and bay ramp are operated by a lever setup that will be driven by a small linear actuator. In contrast with other recent models i find the construction easy to understand.</p>
+
+<p>Behind the cabin there are &quot;doors&quot; to access the battery box respectively the actuator for landing gear: These need to be connected only after to planes top has been added. They will be closed shut afterwards.<br />
+First less interesting part of the build is construction of panelling that covers the left &amp; right gear. The nice thing about these: They are attached only by a means of a few pins. Therefore, it could be possible to change their shape - to conceal the V22-like look.<br />
+At the end of part I the upper part of the cabin will be laid out.</p>
+
+<p><strong>Part II</strong><br />
+This will become the upper half of the planes body. It mainly consists of the gear&quot;box&quot;, the roof, and the lower wing part.<br />
+During build orientation of the module and the construction site are changed several times. Therefore, I found it difficult to understand the drivetrain setup, e.g. how the motor input is distributed from gear box towards the motorized functions.<br />
+Motor tilt and propeller rotation transmission are build into a 7x11 frame. This would ensure stability and proper alignment of gears and axles to keep friction low.<br />
+Upper and lower half of the plane are married in step 277. For me they came together easily (which i wasn&#39;t expecting).<br />
+The final steps will add bits to connect functions and secure the two parts.</p>
+
+<p><strong>Part III</strong><br />
+Wings and motor gondolas are added. You will build left and right separately = mirrored. I found this the least interesting part of the build.<br />
+After that the upper part of the chassis gets its finish. Tail and propellers are added last.</p>
+
+<p>My build time was stretched over four or five evenings taking more or less an hour each. I spent some extra time to check for colour choice of 3L friction pins and axles: would the position be visible at the end?</p>
+
+<h3>Functions</h3>
+
+<p>I have mentioned functions before together with -possible- issues.<br />
+The set has five of which four are powered by the control+ L-motor:</p>
+
+<ul>
+	<li>(counter) rotation of propellers</li>
+	<li>tilt = horizontal to vertical orientation of engine nacelles to represent vertical take-off and landing respectively flight mode</li>
+	<li>lower/raise of landing gear</li>
+	<li>open/close of rear bay door</li>
+</ul>
+
+<p>The sole manual function controls the pitch elevator by means of a lever at the planes tail.</p>
+
+<p>The last two powered function are working fine on my model. When you activate any of these two it will take a few moments before you would notice a movement. This will impair playability because you will often hear the grinding noise of the safety clutch in the linear actuators before you would disable the motor.<br />
+When retracted the landing gear cannot lift the plane from ground, which I wouldn&#39;t expect.</p>
+
+<p>I didn&#39;t use the new clutch for tilt function. Therefore, this works OK - sometimes the nacelles are not moving in parallel. I guess that this is attributed to some amount of backlash in the drive train.</p>
+
+<p>Instead of using the lime rotor blades from 42115 I chose to indicate the outline of the rotor blades by a framework made from axles.</p>
+
+<p><img alt=""alternative propeller "" src=""http://www.brickshelf.com/gallery/rothw/technic/42113/452_wrn_200808_112052k.png"" style=""width: 480px; height: 338px;"" /></p>
+
+<h3>Gear Issue</h3>
+
+<p>It has been observed by several owners that the 8-tooth gears (added in steps 221&amp;222 on p. 163f) are worn out very quickly. This will result in slipping of the motor drive. These three gears are used to transfer motor power to the &quot;reverse&quot; input of the gearbox. Unfortunately, this also includes the (sole) input for propeller rotation. If activated, you will first notice a whining noise of the motor indicating high load. It&#39;ll also take a fraction of a second before propellers start turning. Full speed is achieved within a second. However, all of this indicate (some) friction and most likely backlash in the gear train. Perhaps axles get twisted to. I would attribute this to friction due to length of the drive train and the weight of the propellers.<br />
+It would have been better to use direct input, e.g. bypassing the 8-tooth gears, from motor to gearbox for the propellers. This is not done, cf. step 231 (p. 174).</p>
+
+<p>On my version I noticed an imbalance in one of the motor gondolas that affects the whole drivetrain (noticeable at the middle 12-tooth bevel gear). It seems that you have to be very careful during build to get the best performance. Unfortunately, this is difficult to test by hand. This can be done only up to the gear box because the motor on the other side will block any testing beyond that.</p>
+
+<h3>Assessment</h3>
+
+<p>The finish model has about the same size as the earlier bi-propeller plane 42025 but its appearance is more massive due to the wide body, double tail, and big propeller nacelles. It is of heavy weight. This would impair &quot;swoosh-ability&quot;: I found it difficult to find proper hold of the model that would allow to lower the landing gear.</p>
+
+<p>It certainly corresponds to the technic line that this model features a gear box driving four different functions. However, I only consider the motorized propeller rotation to be useful for playing. The other three functions could have been manually driven by means of a simple lever or turning knob. There is certain ample room to fit something adequate into the chassis. At the same time, the damaging effect of propeller gear train could be addressed.</p>
+
+<p><br />
+Size comparison of recent technic aircraft:<br />
+<img alt=""comparison of 42113 (right) with 9396 (middle)"" src=""http://www.brickshelf.com/gallery/rothw/technic/42113/955_wr_33778.png"" style=""width: 640px; height: 376px;"" /></p>
+
+<p>42113 (right) and 9396 (middle)<br />
+(I added <a href=""https://rebrickable.com/mocs/MOC-21317/Ivan_M/ah-77-hunter-helicopter"">the black helicopter</a> model because it matches my version of 42113.)</p>
+
+<p>For comparison an older picture of 9396, 42025, and 42052:</p>
+
+<p><img alt=""9396, 42025, and 42052 at (approx) same scale"" src=""http://www.brickshelf.com/gallery/rothw/technic/42113/951_wr_26909.png"" style=""width: 640px; height: 413px;"" /></p>
+
+<p>I estimate that 9396, 42025, 42052, and 42113 are all of different scale.</p>
+
+<h3>Conclusion</h3>
+
+<p>42113 gets its points for being a new type of aircraft. And because it contains many parts in new colours.</p>
+
+<p>I found little playability and the motorized functions appear to have considerable issues. - Or is it me that struggles to properly assemble the newer models? (I couldn&#39;t get the 42110 to work properly.)</p>
+
+<h3>Hints</h3>
+
+<p>If you would like to replace the battery box by control+ hub you should consider how to activate the hub. The green push button is buried deep inside the chassis, underneath the L motor. You have to remove several parts to access it and I still had to use a small screwdriver. I found that a lever can be added that protrudes into the cockpit:</p>
+
+<p><img alt="""" src=""http://www.brickshelf.com/gallery/rothw/technic/42113/412_wrn_200809_105058k.png"" style=""width: 480px; height: 320px;"" /></p>
+
+<p>&nbsp;</p>
+",TRUE,3,5,4,3,1

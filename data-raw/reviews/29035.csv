@@ -1,0 +1,520 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"bearzat","2020-01-01T13:01:14.047Z","Come far muovere il set","<p><font style=""vertical-align: inherit;""><font style=""vertical-align: inherit;"">Nel complesso il set &egrave; straordinario alcune parti nuove sono aggiunte al mondo delle parti che secondo un mio pensiero forse troppe, il cucchiaio di un pezzo unico si pu&ograve; creare con varie parti, troppo banale, per la giocabilit&agrave; del set probabilmente non c&#39;era altra soluzione. </font><font style=""vertical-align: inherit;"">Apro una parentesi, negli ultimi anni Lego Technic ha creato un particolare scopo unico, con la conseguenza che sia solo usato in quel set. </font><font style=""vertical-align: inherit;"">La parte di controllo secondo un mio giudizio totalmente negativo, avendo speso 450euro, e un quarto della costruzione si fa riferimento a un lontano muovere i cingoli e la ralla mi sono trovati a dover rinunciare alla prova, non essendo in possesso di un telefono di ultima generazione e l&#39;impossibilit&agrave; di applicare l&#39;applicazione. </font><font style=""vertical-align: inherit;"">Domanda cosa devo fare? </font><font style=""vertical-align: inherit;"">Aquistare un telefono di ultima generazione? </font><font style=""vertical-align: inherit;"">O si potrebbe creare un Pad anche acquistabile separatamente, il cui potrebbe essere composto da schermo touch simile a un telefono e connessione, per poter far muovere le varie funzioni?</font></font></p>
+
+<p>&nbsp;</p>
+",TRUE,1,4,4,1,3
+"martiniman","2022-05-24T13:07:10.47Z","Awesome looking huge set with great parts that invites to fix playability issues.","<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Summary</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">To me the Liebherr R9800 excavator set is 3 things: a enormous realistic looking beast of a technic set, a truckload of useful parts in basic colours, and EV3 replacement potential thanks to the 2x4 port Bluetooth hubs. Serious flaw is the limited playability, yet there is room to fix this main grief.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><font face=""Calibri, sans-serif""><span style=""font-size: 14.666666984558105px;"">Edit January 2021: finally figured out how to use the Technic hubs at their full potential. PyBricks will allow you to use the hubs 100% identical as Spike Prime/Robot Inventor hubs, only caveat is they have 2 ports less.</span></font></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The machine is really impressive looking and pretty realistic. It dwarfs anything Lego has made before in the Technic range, both in size and weight.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Overview"" src=""https://www.martijnkoch.com/technic/42100-2.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><em>A classic minifig would be 1m65 next to the real R9800. The free space under the model is 96mm, the fig 44mm. The real free space is 3600mm, so at a 1:38 scale the man is 1m65. A little tiny, but it fits.</em></p>
+
+<p style=""margin-bottom:11px""><em><img alt=""Minifigs scale well."" src=""https://www.martijnkoch.com/technic/42100-6.jpg"" style=""width: 1032px; height: 688px;"" /></em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The parts are very useful, basic black, dark grey and white beams in big amounts and all lengths, ample 5x7 frames and the new 7x11 frames, 8 linear actuators of which 6 are in the new XL flavour, 7 motors, 2 Bluetooth hubs with 4 connectors each, tons of gears, turntables, axles, connectors.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">I&rsquo;ll dive into it later, but I have the idea the 2 Bluetooth hubs have great potential for creating EV3 like MOC&rsquo;s. The hubs offer the basis for great interactive models. The hardware itself is decent. It allows 4 sensors and actuators to communicate with a Bluetooth based microcontroller and it has 2 sensors built in (3 axis gyro and 3 axis accelerometer). If you compare it with the similarly expensive EV3 set, this gives much more motors, and you can buy some sensors later. With the 2 hubs you get 8 multifunction ports where the EV3 brick has 4 sensors and 4 actuator ports. I think you can even hook up more hubs to a single microcontroller for even more complex robotic systems.</span></span></span></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Unboxing and manual</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The box is full of numbered bags. The spread over 5 building phases is a bit weird (phase 6 is just 100 round bricks as stone load). Bags 1-3 include much more than bags 4-6. Downside of the numerous plastic bags is that you end up with lots of waste. I would like to see LEGO use paper in the future.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The manual is split in 2, it is the usual good quality print on a little too thin paper. There are some hiccups in the manual. There are some strange jumps at the end, where you work on the fences around the edge of the vehicle, then switch to pneumatic tires and then return to some random parts of fence again. Also the tubing steps are all presented from one side, where the model is too big and too heavy in the final phase to work like this. I would have preferred to see the piping being done on one side first, and then on the other side.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Dounting remainder of bricks."" src=""https://www.martijnkoch.com/technic/42100-12.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><em>Dounting amount of similar looking bricks makes phase 5 tough for kids.</em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">I understand the decoration is done after fixing the functionality, but it makes it hard for kids to finish everything. I would have put the boom as phase 5. That gives a better reward built-up towards finishing the complete model.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Another thing that can be puzzling is that sometimes small parts are added to the big model and you always see the complete model on a single page. Sometimes LEGO shows where to look with a yellow rectangle, but they even more often leave you in a &ldquo;Where is Wally&rdquo; situation where you have to carefully find the place where the bricks should be added.</span></span></span></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">New pieces</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The set uses a lot of very common parts in large quantities, but there are some nice new items:</span></span></span></p>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">2x28 teeth gears</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">6x XL linear actuators</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">2x PoweredUp Bluetooth hubs with 4 ports each</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">4x large sprocket wheels for the tracks</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">4x 7x11 beam frames in white</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The big new scoop</span></span></span></li>
+</ul>
+
+<p style=""margin-bottom:11px; margin-left:8px""><img alt=""Two of the new 7x11 beam frames frame the engine compartment."" src=""https://www.martijnkoch.com/technic/42100-9.jpg"" style=""width: 688px; height: 1032px;"" /></p>
+
+<p style=""margin-bottom:11px""><em>Two of the new 7x11 beam frames frame the engine compartment.</em></p>
+
+<p style=""margin-bottom:11px"">&nbsp;</p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Besides the new pieces, you get big amounts of some parts:</span></span></span></p>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">33 white and 16 dark grey flat panels</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">4 motors no. 2 (L) and 3 motors no.3 (XL)</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">108 gears in all variations, including 7 of the rather expensive 36 teeth black ones</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">More than 1000 pegs including 33 2M friction snap orange ones, 103 red 2M con bush+cross ones and 38 black 3M cross axles with friction snap ones.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Giant amounts of pneumatic connectors, pneumatic tubes, cross hole catches, 1 hole beams</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">28 beam frames 5x7</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">23 axe extensions that double as gearbox part</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">24 wedge belt wheels</span></span></span></li>
+</ul>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Although the new PoweredUp items look more modern than the previous Power Functions, both the motors and the hubs are glossy now. This means they are very scratch sensitive. One of my hubs looks really bad after some sliding on a wooden table already. The old battery boxes and motors have a slight matte finish which holds way better than these new modules. They feel a bit cheap because of this glossy finish.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Another annoying thing of the hubs is that the LED indicator is crazy bright. In dim light the Liebherr looks like a Christmas three with all the blue light coming to the Technic pin holes. But black tape comes to the rescue here.</span></span></span></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Building experience</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The building experience is nice overall and not repetitive. I had 2 kids from 7 and 9 built this, and I was their brick-searching assistant and called to action when 15 hole beams had to be put on 7 pins at once.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 1 deals with the track base. This part involves an insane amount of gears, for a big reduction in RPM for the driving, to turn the upper part around and lots of gears to guide the tracks. This phase is nice and challenging.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 2 builds the shell of the upper section. This part is mostly exterior as almost no functionality is in the main box. This is a little weird, usually Technic excavators or tracked cranes have a lot of tech in this part. As everything is driven with separate motors, and most motors are in the bom this phase is not very exciting. There is only a small gearing system to reduce speed on the only XL motor in the top part that drives the main 2 actuators.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 3 is another exciting one, as the boom gets built here. Even though the construction is far from realistic: the actuators are operated by electric motors inside the boom and the thickness is not used for the strength of the boom, it is a fun part of the building process.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Time to play!"" src=""https://www.martijnkoch.com/technic/42100-1.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">After phase 3 you basically have a working Liebherr sans operator cabin and other decoration. In my case the kids grabbed the phone and started playing with the model. I could not convince them to continue building phase 4 and 5. I did that myself. The parts from bags 4 and 5 all look very similar and it&rsquo;s pretty boring to finish the last 2 building phases.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 4 is basically the decoration of the main part with a operator cabin and motor/hydraulic system decorations. Here LEGO uses many classic bricks instead of Technic bricks.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Men in the cabin"" src=""https://www.martijnkoch.com/technic/42100-3.jpg"" style=""width: 500px; height: 750px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><em><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Lego man in the cabin, he fits nicely on the seat, which I made in blue. Technic seats should be blue!</span></span></span></em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 5 is basically the fencing phase and you will add the fake hydraulic tubes here. Since there are so many pneumatic tubes and connectors in the set, I felt invited to try a conversion to pneumatic. The XL pneumatic cylinders are a bit shorter than the XL actuators, but they are strong enough to lift the boom, so that could be a nice challenge</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Nice detailing."" src=""https://www.martijnkoch.com/technic/42100-4.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">In the end you have to admit phase 4 and 5 were worth to finish. The detailing is nice.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Phase 6 is no real phase, it is just emptying a bag with 100 round bricks as play load.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Scoop with stones."" src=""https://www.martijnkoch.com/technic/42100-10.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-top: 3px;""><em>Phase 6 just fills the scoop.</em></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Playability</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Playability is a bit of a thing with the Liebherr. LEGO clearly wants to connect the attention grabbing smart phones that are the main interest of their targeted 12-16 year audience with their Technic products. To control the model you need to download the Technic Control+ app for either Android or iOS. First remark: the app is humongous. Especially on iOS. On Android it is already a pretty huge 65MB , but on iOS it is totally insane with a 463,5 MB download! No idea why the iOS version is 7 times as big. I found out that the main reason for the bigness must be some short videos of the real R9800. The difference between iOS and Android app sizes could be caused by the use different video codes. Can&rsquo;t think of another reason for the big difference between the two.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">If you think about programming an app to control some motors, I think 10MB should be more than enough. A light version of the Control+ app without challenges and video&rsquo;s, but with customisable control layouts would be very welcome.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""The only manual controllable part."" src=""https://www.martijnkoch.com/technic/42100-8.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><em>There is one single part that needs manual operation, the retractable staircase.</em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">After the installation you can fire up the app, select the Liebherr and then you start with connecting the Bluetooth hubs. In the two days I used it I got two firmware updates for the hubs. The interval between the updates was very short. It takes about 1 minute to install a firmware update on hub 1, and then the procedure starts again on hub 2.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Now the app starts calibrating. Don&rsquo;t use the app before the model is finished, or the calibration turns into a very long and noisy experience as the motors don&rsquo;t &ldquo;feel&rdquo; the limits of the model yet.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">After the firmware update and calibration process you can start playing with the model. As we&rsquo;ve seen with LEGO&rsquo;s other software efforts, everything is depicted with icons only. There is NO text. And that is pretty cumbersome. You have to guess what everything does. The Liebherr can be controlled in three ways. The first is with a control panel mimicking the panel in the operator cabin. It gives 2 joysticks to operate the boom and rotate it, 2 handles to drive the base similar to a tank and 2 little buttons to open the scoop. The second option gives you a side view of the arm where you can move the joints directly to the desired position. The app then calculates the needed movements of all individual actuators. The third option is with pre-programmed sequences you can construct in a Blockly-like fashion as seen in Lego Boost, EV3 and Scratch. Again without text this is pretty vague and there are no options to construct loops or enter custom amounts (time, distance, angle) in the actuator functions.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Next to the three basic controlling options, LEGO throws in a series of very simple challenges with badges as reward. I&rsquo;m not entirely sure if the effect of this gamification part is to be desired. My kids were more into finishing all challenges as fast as possible than to truly operate the machine. The challenges range from driving up a hill, taking turns to load and unload tasks. But using the app to just drive around is the biggest challenge.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The main issue with the controls is that a phone does not give haptic feedback. With an old infrared controller you can watch your model while steering. With a phone that is not possible. You can&rsquo;t control it without looking at your device, and that totally kills the playability. You absolutely have no idea where to push without looking. Especially the operation of the left stick to turn the boom on the base and lift the boom is very frustrating. We ended up turning the boom every time we just wanted to lift it.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Another major fail of the current Technic Control+ app is that it only allows control of the current 3 PoweredUp Technic models, and nothing else. There is no possible way to customize a control panel for your MOC, nor to fix confusing controls like we saw on the left stick.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Rear"" src=""https://www.martijnkoch.com/technic/42100-11.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><em>The minifig is thinking of ways to overcome playability issues by building his own controller with an Arduino.</em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The good thing is that the Bluetooth communication protocol is well described and easy to implement with many microcontrollers available and the first Control+ libraries for Arduino are available. So just grab a Bluetooth add-on for your Arduino or grab a Microbit with built-in Bluetooth and start writing your own controlling code. Which turns your two PoweredUp hubs into a cheap Mindstorms alternative. If you add a couple of cheap Playstation thumbsticks to your Arduino you can even construct your own analogue remote control device with haptic feedback and sans restrictions on the model you can control.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">By the way: yes you can turn off the hubs, but it takes patience: hold the button for over 10 seconds, first you see the LED light blue for nearly 10 seconds, then you see 3 white flashes, and then other 3 very fast white flashes. Only after that you can release the button and make the hub shut down!</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">I experienced some syncing issues with an iPhone. If you kept the app running in the background, and want to connect again in a new playing session by pressing the two hub buttons on setup, it will fail. You need to force-quit the app and restart it after you&rsquo;ve shut down the hubs in an earlier session manually.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Last note on the playability: the Hub&rsquo;s do get angular movement data from the motors, but somehow this does not work completely accurate for the linear actuators. There is some drift in the range available on the actuators. After a while the actuators will start grinding at one end of the range. If this gets too bad, restart the calibrating procedure under the wrench icon.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Also the clutches in the base are too weak. The motors are strong enough but the clutches limit the power on the tracks so the Liebherr will have a hard time to turn around on long pile carpet. I guess the old 24 teeth coupling 3,5-6 Ncm is better suited for a torque limiting task.</span></span></span></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Looks</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The Liebherr excavator looks stunning. It is big, it is realistic looking, with nice details from the real deal, like the engines, the hydraulic system, fans for cooling, cabin details, ladders and fences.</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">A minor flaw is the fake tubing. On a real machine the hydraulic pipes are rather small, here they look too fat, and since they are fake it feels weird to add all these pneumatic tubes without having real pneumatic cylinders in the model. How awesome would it have been if Lego had made a dark grey pneumatic cylinder XXL, and two-way pump add-ons for the motors?</span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif""><img alt=""Weird dead-end tubing."" src=""https://www.martijnkoch.com/technic/42100-5.jpg"" style=""width: 1032px; height: 688px;"" /></span></span></span></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><em>Strange</em></span></span><em> dead-end on the tubes...</em></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">It is nice to see a model that skips the fancy-pants colour trend a lot of Technic suffers from lately. Even though a Chiron or a Land Rover may be designed to look realistic, the problem is your Technic collection gets more and more weird colours and half complete part collections per colour. For me Technic should stick to the classic colours: White, grey, dark grey, black, red, orange, yellow, lime, green and blue. This model fits the classic colours perfectly.</span></span></span></p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">Conclusion</span></span></span></span></span></h2>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The Liebherr 42100 is expensive, 350&euro; is no small price for a Technic set, but in my opinion you get value for money. You could say this model has:</span></span></span></p>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">2x 51515 Robot Creator equivalent hubs with internal battery compartment. These Spike Prime/51515 hubs do 150&euro; each.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Built in gyro sensors in the hubs, for EV3 these are 35&euro;.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">4 Large motors are like 12&euro; each, 3 XL motors like 15&euro; a piece. But steering servos are 25&euro;, and all 7 motors here have angle readout and can be used servo-like for steering mechanisms.</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">6 XXL linear actuators cost like 12&euro; per piece when bought from LEGO.</span></span></span></li>
+</ul>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">If you add this up, the electro-mechanical components are representing a value of 450&euro; already. In addition to that, you get over 4000 bricks &ldquo;for free&rdquo; that allow you to build almost anything you want (if you have some wheels as well).</span></span></span></p>
+
+<p style=""margin-bottom:11px""><img alt=""Cabin closeup"" src=""https://www.martijnkoch.com/technic/42100-7.jpg"" style=""width: 1032px; height: 688px;"" /></p>
+
+<p style=""margin-bottom:11px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">So in my opinion you get a great looking model, a decent building experience, awesome hardware (bricks, motors and hubs) and great value for money. The half-baked playing experience with the app invites you to craft a real good working controller yourself, and if you get that working, it even open ups the great world of Mindstorms like robots in an even more serious way. On an Arduino or Microbit you can code in C++ or Micro Python instead of LEGO&rsquo;s own crappy visual block programming.</span></span></span></p>
+
+<h2 style=""margin-bottom: 11px;"">Update 19-9-2020</h2>
+
+<p style=""margin-bottom:11px"">I just got external control working. The HUB&#39;s and motors do allow for easy programming through the Arduino IDE. You can buy some Spike Prime sensors and plug them in the hubs and start using this Liebherr as true EV4 Mindstorms kit. Excellent and much better set of bricks, in normal colours, not fancy ones, and more motors than in Spike Prime or LEGO Robot Creator.</p>
+
+<h2 style=""margin-bottom: 11px;"">Update 10-1-2021</h2>
+
+<p style=""margin-bottom:11px"">Running programs on the Hub itself, not through remote control, is possible. The first workable solution is coming from pybricks.com. Here&#39;s a <a href=""https://www.youtube.com/watch?v=8PZnSCcWVL0"" target=""_blank"">video</a> of a small line following robot made from Liebherr parts controlled by PyBricks. The Hub contains a STM32L431 ARM M4 processor at 80MHz, and even though it is less powerful than a true 51515 Robot hub at 100 MHz, it comes pretty close.</p>
+
+<h2 style=""margin-bottom: 11px;"">Update 24-5-2022</h2>
+
+<p style=""margin-bottom:11px"">Finally the much demanded software option for programming Lego has arrived! There is a Scratch plugin that works with Technic Control+ Hubs. Which is excellent, and even better than Pybricks! No more shitty Python code indentation rules or random import commands missing. Just snap your code together. Also the connection to the hub is way easier with Scratch. Just download Scratch Link, and run it from any browser. Pybricks needs custom firmware and only works in Chrome. Here some useful links:</p>
+
+<p style=""margin-bottom:11px"">Install this first (ignore the EV3 instructions):</p>
+
+<p style=""margin-bottom:11px""><a href=""https://scratch.mit.edu/ev3"">Scratch Link</a></p>
+
+<p style=""margin-bottom:11px"">Then go here:</p>
+
+<p style=""margin-bottom:11px""><a href=""https://bricklife.com/scratch-gui/"">Scratch GUI online editor with Lego extensions</a></p>
+
+<p style=""margin-top: 3px;"">Now click the bottom left blue button, choose the Lego Technic Control+ extension, press the power button on the hub and click &quot;start searching&quot;. Now you can program everything and read all sensors including the built in orientation sensor.</p>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">The good</span></span></span></span></span></h2>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Great selection of bricks</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">2 hubs and 7 motors give you a great start in the Powered Up system. The protocol is open and allows you to develop custom controllers and EV3 like robot programming and DIY remote controllers with haptic feedback. A nice challenge for STEAM classes!</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Fully programmable with Scratch on a Mac (10.10 and higher) or Windows (7 and higher) machine with browser and Bluetooth.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Fully 51515 robot brain capable hubs, with 2x4 ports instead of 1x6 ports. Same Bluetooth 5.1, similar ARM M4 processor. The small differences with a true Spike/51515 hub are: 2 ports less, no LED matrix, 80MHz instead of 100MHz, less flash memory.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Motors are all servo-like with angle readout and absolute positioning options.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">HUB&#39;s can be programmed with PyBricks in a similar fashion to the 51515 Robot Creator app. This time you just need a browser, so it works on Linux and Chromebooks too.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Good value for money, 400+ euro of actuators and hubs and then some 4000+ bricks added for the remaining 50&euro; (don&rsquo;t buy this at the RRP of 450&euro;! It is available for 100&euro; less.)</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Nice building process filling a good part of a school vacation.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Suitable for ages 7 and up. You only need to help once or twice as parent.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Good-looking, huge and realistic appearance.</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Kids love the app, so LEGO did some part of the app right: the gamification just pulls them into even more screen time.</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">It looks excellent without stickers. I love it when stickers don&#39;t add much.</span></span></span></li>
+</ul>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">The bad</span></span></span></span></span></h2>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The motors and hubs scratch very easily. Some already look more used than 10 yea&shy;r old Power Function battery boxes and motors.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Some Bluetooth connecting issues if you forgot to force quit app after playing session.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Very bright indicator lights on the hubs light up the whole model.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Some rattling of actuators and clutches indicates that both the drive train is not fully up to its task and that the calibration drifts over time.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">It is hard to pick up the play load with the scoop. It works better on carpet, but that makes the drive train reach its limits more often.</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">A bunch of &ldquo;Where is Wally&rdquo; pages in the instructions.</span></span></span></li>
+</ul>
+
+<h2 style=""margin-top:3px""><span style=""font-size:13pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri Light&quot;,sans-serif""><span style=""color:#2e74b5""><span style=""font-weight:normal"">The ugly</span></span></span></span></span></h2>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Playability with the app sucks. Without haptic feedback, this machine is nearly impossible to operate. You want to look at the action, not at your screen.</span></span></span></li>
+	<li style=""margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">The app has no support for MOC&rsquo;s, this kills creativity.</span></span></span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""font-size:11pt""><span style=""line-height:107%""><span style=""font-family:&quot;Calibri&quot;,sans-serif"">Insane app size on iOS. Not funny for kids who have a simple 5s or 5c from mom or dad.</span></span></span></li>
+</ul>
+",TRUE,5,5,4,3,5
+"mlt43","2020-04-25T12:53:44.04Z","Magnificent Excavator","<p>This much-anticipated set was a pleasure to build. Took me about 20 hours in total.</p>
+
+<p>The Control+ system is amazing, and it can be programmed to do a wide series of operations. Saying that,&nbsp;I found it&nbsp;quite difficult to operate the digging function cleanly and it certainly takes a bit of practice.</p>
+
+<p>As a whole, this enormous model has lots of great external detail, but obviously the seven motors and the two Control+ modules are a significant factor in the price. I like the longer linear actuators and the hydraulic pipework detail.</p>
+
+<p>I have just added the Light My Bricks lighting set from Elegant Bricks and it looks wonderful with all the floodlights blazing and flashing lights and even a rotating beacon.</p>
+
+<p>This is an expensive but must have model, with great playability. All it needs now is a matching scale Mining Truck to go with it.</p>
+",TRUE,5,5,5,5,5
+"h734802","2023-04-27T13:21:58.907Z","810 t Rulez","<h2 style=""margin-bottom: 11px;""><b>Pt. 2; So good (2021.08.19)</b></h2>
+
+<p style=""margin-bottom:11px"">I have already written a detailed review on this set (see Pt. 1 below), but I like it so much that I decided to write another, shorter review to make the decision of &quot;buy or not to buy&quot; easier for those who are reading. For more details, please refer to my Pt. 1 review.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>First the good things...</b></h3>
+
+<p style=""margin-bottom:11px""><b>It is addictive to play with!</b></p>
+
+<p style=""margin-bottom:11px"">Before I bought it, I thought that building it would be boring. But it turned out to be an incredibly interesting experience, due to the high number of pieces and the delightful building process.</p>
+
+<p style=""margin-bottom:11px"">The playability is very high thanks to the accurate and well-thought-out programmable movements. This is the first programmable set since 1995, with the 8485 Control Centre II being the last one. The movements of the boom, stick, and shovel are very good, and the rotation of the undercarriage and upper carriage is also synchronised. People who work with these machines say the same.</p>
+
+<p style=""margin-bottom:11px"">The appearance is excellent, and the dimensions are quite good for a LEGO set of this scale. It is just in the scale of a minifig, so you can play with everything in minifig scale.</p>
+
+<p style=""margin-bottom:11px"">The app itself is well-developed and has fewer bugs than it did in the beginning. I was initially hesitant to purchase the set due to the criticism the app received, but I ultimately encountered no major issues with it. As for why an app was used instead of a dedicated hardware controller, that is a difficult question. Both options have their own advantages and disadvantages when it comes to controlling the set.</p>
+
+<p style=""margin-bottom:11px"">The programming section is basically great, allowing you to link small movements into a longer program.</p>
+
+<p style=""margin-bottom:11px"">The hubs are capable of controlling the servo-motors in a delicate manner, and endpoints are determined as well. If the movements go out of range, you can always recalibrate the endpoints by pressing a single button. While the sounds during recalibration can be somewhat unpleasant, the inner clutches of the linear actuators (cylinders) are hopefully designed to handle this process as many times as necessary.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;... then some bad ones...</b></h3>
+
+<p style=""margin-bottom:11px"">Well, the clutches in the tracks and the turntable are way too weak but with a very cheap and easy modification you can make them strong enough. I don&rsquo;t recommend exchanging them for axle connectors.</p>
+
+<p style=""margin-bottom:11px"">The tracks themselves are a bit loose but easily fixable by raising the top rollers half a unit. They have also a negative camber because of the insufficient structure reinforcement. Easily fixable also.</p>
+
+<p style=""margin-bottom:11px"">I mentioned earlier that the program section is great, but there are some issues when using it. The friction on various surfaces, heavy motor load, and weak, slipping clutches can cause problems with your programs. The clutch problem can be solved easily, and the motor load problem is not so annoying, but it would be nice if the programmers could address it. The friction problem, on the other hand, is more difficult to solve.</p>
+
+<p style=""margin-bottom:11px"">Some more useful functions for the programs and movable app with your own program tiles would be better.</p>
+
+<p style=""margin-bottom:11px"">I guess the tilt sensors in the hubs are leaning, and unfortunately, there is no reset button to zero the angles.</p>
+
+<p style=""margin-bottom:11px"">Personally, I always have connection problems caused by the <i>Location service</i>, which is needed for BLE, along with the inferior programming of Android. It is easy to handle and not as common as far as I have read in other comments, but it can be very annoying at times.</p>
+
+<p style=""margin-bottom:11px"">But it is frustrating that if you only need <i>Control+</i> for one or two sets, you have to instal the entire oversized app, and it continues to grow larger with each update. This is a typical example of quantity over quality growth in today&#39;s technology. It&#39;s frustrating how difficult it is to make an app partially installable.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;... and the GUI</b></h3>
+
+<p style=""margin-bottom:11px"">Maybe the GUI has the most problems. Fixing them would be easy for the maker, but not for us.</p>
+
+<p style=""margin-bottom:11px"">One-touch control is not as big a deal as it appears in many comments and videos. (Those people have never worked with tracked excavators in real life &ndash; I have.) The points are not in the correct positions, and independent boom, stick, and shovel control by the points is nearly impossible.</p>
+
+<p style=""margin-bottom:11px"">The rotation angles in the <em>side sweep</em> and <em>up sweep menus</em> are sometimes different, and resetting them has no effect in the program tiles. It should have an effect for better playability.</p>
+
+<p style=""margin-bottom:11px"">Names of the program tiles would be better if they were shown on the timeline, and the 4 shortcut buttons should show your custom icons, not numbers.</p>
+
+<p style=""margin-bottom:11px"">Having an independent track control hardware button would be great (for the same reasons as mentioned above). Assigning directly from the original app to the controller to maintain limits and upper B and C motor synchronicity could be a solution, but it is not currently available.</p>
+
+<p style=""margin-bottom:11px; margin-left:8px"">----------</p>
+
+<p style=""margin-bottom:11px; margin-left:8px"">&nbsp;</p>
+
+<h2 style=""margin-bottom: 11px; margin-left: 8px;""><b>Pt. 1; 810 t Rulez (Mainly from 2021.05, rewrote many times)</b></h2>
+
+<p style=""margin-bottom:11px"">At last, I have acquired the <b>final piece of my Trinity</b> &ndash; something I had missed since my childhood &ndash; and I am going to write a review on it, as I did for the other two sets.</p>
+
+<p style=""margin-bottom:11px"">While I have given the set full points, it is important to note that nothing is perfect, which is why you will read about some features that are not so good alongside all the positive ones it has anyway.</p>
+
+<p style=""margin-bottom:11px""><i>My Trinity</i></p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2021/04/19/794IMG_7100.jpg[/img]</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;A Common Mistake</b></h3>
+
+<p style=""margin-bottom:11px"">First I have to write about the <b>mix-up</b> in types.</p>
+
+<p style=""margin-bottom:11px"">This set is a <b>front shovel</b> (or face or power shovel) type of the <a href=""https://www.liebherr.com/en/int/products/mining-equipment/mining-excavators/details/r9800.html"">Liebherr R 9800</a> series. That&rsquo;s why it is 810 tons, not 800 t as it is mentioned on the box. The <b>back shovel</b> (or back hoe) type is the one which is 800 t. Even in several <a href=""https://www.youtube.com/watch?v=njgDC-HTKrM"">official video</a>s that config is mixed... :|</p>
+
+<p style=""margin-bottom:11px"">The front shovel excavators are used mainly to dig above ground level, against walls, the back shovel or bucket excavators are used mainly to dig under ground level against horizontal surfaces. So, all the MOCs with back shovel, but short range of boom descent are not good ;)</p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2022/02/16/773bhvfs.jpg[/img]</p>
+
+<p style=""margin-bottom:11px"">The <b>100 pieces of round loads</b> are just for decoration on the shelf in the shovel. They are useless to play with. I just built a fish from them.</p>
+
+<p style=""margin-bottom:11px""><i>Good cat... err, Liebherr!</i></p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2021/04/19/388IMG_7093.jpg[/img]</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;The App</b></h3>
+
+<p style=""margin-bottom:11px"">It seems the app itself (not the controlling part) has been <b>developed</b> since the first and buggy version, but still there are issues that should be improved.</p>
+
+<ul>
+	<li style=""margin-left:16px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">The size. Why do I need to download and instal all the elements (program lines and mainly the pics!) if I have only one or two of the vehicles? It should be changed to <b>partially installable</b>.</span></li>
+	<li style=""margin-left:16px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Still there are connection failures. The connection is not plain <em>BT</em> but <em>BLE</em> and in Android because of negligent programming permissions for <em>BLE</em> is not separated well. But despite that on LEGO&rsquo;s homepage there isn&rsquo;t any collection of troubleshooting steps of connection failures. That&rsquo;s why I write few steps for the lucky ones who have the same problem.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px; margin-left:24px""><b>Solving a type of connection failure</b></p>
+
+<p style=""margin-bottom:11px; margin-left:24px"">I tried <i>Control+</i> on 4 different Android devices. On each device it worked differently: 1) didn&rsquo;t even run (a no-name phone); 2) run, but had <b>connection failures (Asus Zen tablet)</b>; 3) run without problem (Samsung Galaxy phone (I hate every Samsung stuff) and another no-name phone.</p>
+
+<p style=""margin-bottom:11px; margin-left:24px"">I usually use the Asus because that is big, and I&rsquo;m always bothering with the following steps to make the 2<sup>nd</sup> &ndash; and whichever is that, always the 2<sup>nd</sup> that is mainly the lower &ndash; hub to connect.</p>
+
+<ul>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">1) If the&nbsp;2<sup>nd</sup> hub refuses to connect, go quickly the <i>QS menu of the Android</i>.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">2) Turn the <i>Location Service </i>off and on again<i>.</i></span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">3) Go back to <i>Control+</i> and confirm its state (green).</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Do these steps quickly while the hub is blinking, and it will connect automatically. For me, it always works.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">If you were slow just turn on the hub again and repeat the process above.</span></li>
+</ul>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;The Hub</b></h3>
+
+<p style=""margin-bottom:11px"">There are <b>tilt sensors</b> in the hubs, and you can see their values in the GUI... but who knows which direction at first sight...</p>
+
+<p style=""margin-bottom:11px"">I had problem with the balance displayed and saw the same in some videos. For a special reason (see below) I turned the upper hub from where the data comes 180&deg; and the problem ceased (tilting directions got reversed on screen of course). What? It means the tilt sensors are leaning! Is mine <b>Chinese?</b> It seems it is not possible to recalibrate as LEGO says. And what about just pressing a fckng reset button in the GUI...?</p>
+
+<p style=""margin-bottom:11px"">Later on I rebuilt the set switched the hubs and the level display problem has gone. Very Interesting. Other hub is not Chines...</p>
+
+<p style=""margin-bottom:11px""><i>Upper hub built in 180&deg; turned and 3 unites closer to the centre</i></p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2021/05/10/845IMG_7115_2.jpg[/img]</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;Controlling</b></h3>
+
+<p style=""margin-bottom:11px"">I have mixed feeling towards the <b>GUI of control</b>. Obviously dedicated hardware should be better, but that is expensive. I have been thinking a lot about it.</p>
+
+<p style=""margin-bottom:11px"">Let&rsquo;s suppose the set will live long in your home until there will be no more smart devices like nowadays. Let&rsquo;s suppose you keep one of those old smartphones, keep its software in stasis and keep backup apps in case of emergency. That would work, but what&rsquo;s with the battery? That kind of hardware is always a problem. Of course if it has a dedicated hardware control that could also break and no more control. <b>Hard question</b>&hellip;</p>
+
+<p style=""margin-bottom:11px"">I worked &ndash; not just tried &ndash; such machines. I was wondering whether any of the programmers did so&hellip; You move the <b>tracks by pedals</b> with your legs. That means you can control by 4 limbs and 4 fingers (buttons on the control arms) in the same time. Here in the GUI the 2 buttons as for the fingers are good enough to open and close the shovel, but it is rather hard to control the tracks while moving the boom, stick and shovel synchronously. <b>Not good</b>. But there would be a solution: a controller with pressure sensitive front buttons for the tracks that a smart device can use. And there are such things on the market. Limits of the LAs&#39; and synchrony of upper motors B and C are still problem then that&#39;s why the best solution would be to <b>assign</b> every single button <b>from the original app to a controller</b>. But that is still not available :(</p>
+
+<p style=""margin-bottom:11px"">On the other hand the<b> movements</b> of the boom, stick and shovel are very good, and the rotation of the tracks and the engine house is synchronised. <b>Good job</b>.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;One Touch Control</b></h3>
+
+<p style=""margin-bottom:11px"">I have to say that the <i>One touch control</i> in the <i>side sweep menu</i> that everybody admires is <b>not a big deal</b>. I can say I hate that and never use.</p>
+
+<p style=""margin-bottom:11px"">The <b>points are not in the correct positions</b>. E.g. if you want to push the centre of gravity forward and make the moment pole of the shovel in horizontal level to the moment pole of the boom, the graphic won&#39;t match of real life. Mistake :(</p>
+
+<p style=""margin-bottom:11px""><b>Independent boom, stick and shovel control by the points is nearly impossible</b>, because except with the radial point of the boom you drag the whole thing in space wherever it can go. It should work like this:</p>
+
+<ul>
+	<li style=""margin-left:8px""><span style=""tab-stops:list 36.0pt"">radial points are only for rotating boom, stick and shovel one by one around their moment pole;</span></li>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""tab-stops:list 36.0pt"">touching the boom, stick and shovel anywhere else should move the whole attachment in space wherever it can go.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">The <b>rotation angles</b> in the <i>side sweep </i>and<i> up sweep menu</i> <b>are sometimes different</b>. It should work like this:</p>
+
+<ul>
+	<li style=""margin-bottom:11px; margin-left:8px""><span style=""tab-stops:list 36.0pt"">if I adjust 0&deg; in the <i>up sweep menu </i>then it should have effect resetting the angle in the program tiles too, because of the rotation clutch slipping and such things. It is very annoying when I start running a program and the upper carriage starts rotating seemly randomly because 0&deg; is already somewhere else.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">I had problem with the degree count and the limit of some LAs... sometimes. At last, I figured out that if a motor got <b>heavy load,</b> the hub couldn&#39;t measure the exact movements. In those cases the hub is always counting the same value inside with less real movement in real life.</p>
+
+<p style=""margin-bottom:11px"">There is problem with the <b>friction on various surfaces</b>. Just try to make (forward+turn)x4 using the preset programmes to make a square. Put the excavator on smooth surface then on hard carpet and see the difference. Hard thing how to solve.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;Programing</b></h3>
+
+<p style=""margin-bottom:11px"">T<b>he program section is good enough</b>. You can link small movements into a long program. Just the weak, incalculably slipping clutches make a mess of them. Names of the program tiles would be better to be shown on the timeline also and the 4 shortcut buttons should show your custom icons instead of numbers.</p>
+
+<p style=""margin-bottom:11px"">Sometimes having loop or inverse movement function would be better and editable program tiles also.</p>
+
+<p style=""margin-bottom:11px"">Moving the app from one device to another with your own program tiles is not available.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;Recalibration</b></h3>
+
+<p style=""margin-bottom:11px"">If you switch control devices you need to <b>recalibrate the hardware</b> unless you apply a trick:</p>
+
+<ul>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Move every single cylinders into limit and make the same program tiles in all devices.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Or just use a preset program which moves the thing in the same position. </span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Leave the machine in that position before exit the app.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">Here I need to mention that the scratching of the clutches inside the cylinders (linear actuators = LAs) during the process sounds painful. <b>How many times</b> can they do that before they wear out?</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;The Clutch Mod</b></h3>
+
+<p style=""margin-bottom:11px"">As we know there are other <b>3 clutches</b> in the machine. And as we know all are weak. I need to mention here that turntable Z60 needs silicone grease inside because its load is far too heavy, it is over than Lego can handle dry. I tried to replace one clutch. Better of not doing that, a gear almost broke because the motor and the transmission were too powerful. So <b>I modified them all to be stronger</b>. In that way I have no more problem with unnecessarily slipping clutches in the under carriage moving on deep carpet neither in the upper carriage turning while standing on steep slope.&nbsp; &nbsp;</p>
+
+<p style=""margin-bottom:11px""><i>Here is a stronger clutch as it should be.</i></p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2021/04/26/250IMG_7103.jpg[/img]</p>
+
+<p style=""margin-bottom:11px"">I don&#39;t know how to modify the clutches in pure LEGO way.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;Centre of Gravity Mod</b></h3>
+
+<p style=""margin-bottom:11px"">There is another related issue about that: the <b>centre of gravity of the upper carriage</b>. The position of the upper hub is too far from the centre, but fortunately it is easily fixable by the 4 orange pins holding the hub. I put it as inside position as possible and turned 180&deg; to be able to open the battery lid. (Unfortunately the level displayed on screen also got turned.)</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;The Track Mod</b></h3>
+
+<p style=""margin-bottom:11px"">The <b>tracks are loose</b>. When the subsidence is too much, in reverse the tracks jump on the sprocket-wheels. To get them tighten I adjusted the top rollers. They all needed half a unit raising...</p>
+
+<p style=""margin-bottom:11px""><i>by rubber bands...:)</i></p>
+
+<p style=""margin-bottom:11px"">[img]http://www.kepfeltoltes.eu/images/2021/05/07/949IMG_7111.jpg[/img]</p>
+
+<p style=""margin-bottom:11px"">Many bricks are needed to make in pure LEGO way.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>The Negative Camber Mod</b></h3>
+
+<p style=""margin-bottom:11px"">If you check some photos, videos even official ones or just your own excavator you can see the <b>negative camber of the tracks</b>. I fixed it by some extra beams between the motors and at the rear part. Front originally has one.</p>
+
+<p style=""margin-bottom:11px"">[img]https://www.kepfeltoltes.eu/images/2023/04/24/763IMG_20230424_154157.jpg[/img]</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;Some Other Issues</b></h3>
+
+<p style=""margin-bottom:11px"">Why didn&rsquo;t LEGO release the set with <b>minifig?</b> Just for fun. It just fits into! I made a tiny mod: I had 2 extra asymmetric, grey pins in the box, so I made 1 studs on the platform just behind the PLC box, and 1 more elsewhere. In that way my minifig can stand there also :)</p>
+
+<p style=""margin-bottom:11px""><i>&quot;I&#39;m just fixing some nasty PLC problems...&quot;</i></p>
+
+<p style=""margin-bottom:11px"">[img]https://www.kepfeltoltes.eu/images/2021/04/19/991IMG_7102.jpg[/img]</p>
+
+<p style=""margin-bottom:11px"">I had a<b> &ldquo;wandering shovel&rdquo;</b> in my box, and it did this. Why isn&rsquo;t it fixed somewhere?</p>
+
+<p style=""margin-bottom:11px""><i>It was not the mice, it was the shovel.</i></p>
+
+<p style=""margin-bottom:11px; margin-left:8px"">[img]http://www.kepfeltoltes.eu/images/2021/04/19/269IMG_7084.jpg[/img]</p>
+
+<p style=""margin-bottom:11px"">I was tired one day when I was dealing with the built and one plastic bag escaped under a small table. I was shocked when I didn&rsquo;t find a bunch of parts among the bags no. 5. It is a common question, but if there is a part list at the end of the building instruction booklets why there is no <b>plastic bag list </b>for those big sets?</p>
+
+<p style=""margin-bottom:11px"">&nbsp;</p>
+
+<h3 style=""margin-bottom: 11px;""><b>&nbsp;How to Play</b></h3>
+
+<p style=""margin-bottom:11px""><b>I made 3 videos</b> on the same trick that is very common among the tracked excavator drivers.</p>
+
+<ul>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">The <a href=""https://www.youtube.com/watch?v=KRj_6IhvypE"">1<sup>st</sup> video</a> is without exercise, the slowest one.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">The <a href=""https://www.youtube.com/watch?v=I8900Zrh15g"">2<sup>nd</sup> video</a> is programmed. You can see how the rotation clutch slipping makes a bit mess of the original movements.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">The <a href=""https://www.youtube.com/watch?v=_mTkx_f3bcw"">3<sup>rd </sup>video</a>, the shortest one, is after some exercise to get to used to the s***ty track control. Programmed, with enforced clutches, focused on the happenings with original sound.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">There are other tricks <a href=""https://www.youtube.com/watch?v=cnnSpkxFIPo"">here</a> and <a href=""https://www.youtube.com/watch?v=hwOu9L2cQmQ"">here</a>, but because of the type (front shovel) and the weight of the original machine it is impossible to do many of them. It is not problem just a fact.</p>
+
+<p style=""margin-bottom:11px"">I have already written about the one touch control. Just forget it, doesn&#39;t work properly.</p>
+
+<p style=""margin-bottom:11px""><b>Learn to control with the joysticks</b> they are great, no matter what the ones who have never worked such machines say (you can find comments here and there, where people who worked with the same machine tell the joysticks great as well). Track &quot;pedals&quot; still suck but to fix those you will need a BT controller with 4 pressure sensitive buttons on the front for index and middle fingers (track: LF-LB-RF-RB). Here are some instructions how to memorise easily what does what.</p>
+
+<ul>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Pushing forward = &quot;out&quot; of you moves (the boom and stick) forward = &quot;out&quot;.</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Pushing backward = &quot;in&quot;to you evidently causes movements backward = &quot;in&quot;</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Pushing &quot;out&quot; of centre moves (the shovel) &quot;out&quot;</span></li>
+	<li style=""margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Pushing &quot;in&quot;to centre evidently moves (the shovel) &quot;in&quot;</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">Then first, <b>reinforce</b> (do not change to axle connectors!) <b>all the clutches and get tighten the tracks</b> as I wrote above, and you will get a totally different experience than before. Then you can change the position of the upper hub also. That helps a bit also.</p>
+
+<p style=""margin-bottom:11px"">The LEGO model is not as powerful as the original one. <b>Don&#39;t lift heavy</b> things.</p>
+
+<p style=""margin-bottom:11px"">LEGO is basically designed for indoor use. Sand and dust can go into the axle holes. The cylinders (LAs) have grease inside: grease+sand is not a good combination. <b>Think before going outdoor</b>.</p>
+
+<p style=""margin-bottom:11px"">And now, imagine the area where the original ones work: huge, comparing to the sizes of the machines. Just forget the 100 pieces of round bricks, forget even 1000 or 10000 pieces of them. <b>You will need a mountain</b> where you can make trails, levels and where you have &quot;endless&quot; walls, since front shovel types are for walls. E.g. in <a href=""https://www.youtube.com/watch?v=N9yB-ITD2QY"">this video</a> from 3:44.</p>
+
+<p style=""margin-bottom:11px"">Have a good LEGO time.</p>
+
+<h3 style=""margin-bottom: 11px;""><b>Summary</b></h3>
+
+<p style=""margin-bottom:11px""><b>Pros</b></p>
+
+<ul>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Well, I gave it 25 from 25. Maybe the <i>Control+</i> has some issues. In LEGO&#39;s survey <i>Control+ </i>was the only one I gave 7/10.</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">It is <b>addictive</b> to play with it.</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Very well thought <b>movements</b> and <b>programing</b>.</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">I think this is a set you don&rsquo;t need to modify the look because it is just perfect. Here are 2 videos: <a href=""https://www.youtube.com/watch?v=CjX4u27ouJI"">one</a> is not a LEGO model, but the <a href=""https://www.youtube.com/watch?v=GfCm7FjGbgk"">other</a> is this LEGO model comparing to the not LEGO model. <b>Excellent.</b></span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">For me <b>building was also excessively interesting, parts, playability and value of course good</b>.</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt""><b><i>Control+</i></b><b> is developed</b>, got better than I thought. Changing it to full hardware would obliviously better but more expensive. Lifetime is a hard question in both cases.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px""><b>Cons</b></p>
+
+<ul>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Sometimes<b> <em>BLE</em> connection failure </b>in Android (caused by the <i>Location Service</i>).</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt""><b>GUI</b> should have <b>partial installation</b>.</span></li>
+	<li style=""margin-left:24px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Some <b>functions in the GUI should be improved</b>, such as:</span>
+	<ul style=""list-style-type:circle"">
+		<li style=""margin-left:8px; margin-bottom:11px""><span style=""tab-stops:list 72.0pt"">motion point positions and way of working;</span></li>
+		<li style=""margin-left:8px; margin-bottom:11px""><span style=""tab-stops:list 72.0pt"">rotation angle collation: in 2 menus, and resetting effect in the program tiles;</span></li>
+		<li style=""margin-left:8px; margin-bottom:11px""><span style=""tab-stops:list 72.0pt"">editable and movabel program tiles, some more useful functions;</span></li>
+		<li style=""margin-left:8px; margin-bottom:11px""><span style=""tab-stops:list 72.0pt"">independent track control hardware button would be super &rarr; assigning directly from the original app to controller. </span></li>
+	</ul>
+	</li>
+	<li style=""margin-left:25px; margin-bottom:11px""><span style=""tab-stops:list 36.0pt"">Weak but easily fixable <b>clutches, </b>loose and negative camber but easily fixable <b>tracks</b>.</span></li>
+</ul>
+
+<p style=""margin-bottom:11px"">&nbsp;</p>
+
+<p style=""margin-bottom:11px; margin-left:8px""><i>Hi, I live here and work nearby with this. Please, check my </i><a href=""https://www.youtube.com/watch?v=_mTkx_f3bcw""><i>videos</i></a><i>.</i></p>
+
+<p style=""margin-bottom:11px; margin-left:8px"">[img]http://www.kepfeltoltes.eu/images/2021/04/19/820IMG_7096.jpg[/img]</p>
+",TRUE,5,5,5,5,5

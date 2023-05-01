@@ -2,6 +2,7 @@
 
 export(checkKey)
 export(checkUserHash)
+export(download_reviews)
 export(getInstructions)
 export(getKeyUsageStats)
 export(getReviews)
@@ -20,3 +21,4 @@ importFrom(httr,content)
 importFrom(httr,http_error)
 importFrom(httr,http_status)
 importFrom(jsonlite,fromJSON)
+importFrom(piggyback,pb_download)

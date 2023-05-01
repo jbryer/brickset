@@ -1,0 +1,98 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"chefkaspa","2020-11-15T12:25:28.437Z","Not quite the offroader that you expected","<h3>Box</h3>
+
+<p><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/014_wr_33926k.png"" style=""width: 640px; height: 458px;"" /></p>
+
+<p>The box has the same size as #42030, #42043, #42070, #42078. It is filled well: There is a cardbox and bags for steps 2, 3, and 4. The white box contains bags for step 1, wheels, the box that hold the Control+ parts (hub, motors) and the instruction manual.<br />
+are&nbsp;<br />
+(for comparison: the tray measures 40 x 60 cm&sup2;)</p>
+
+<p>You get plenty of yellow parts and panels augmented with some black and, since you got a Volvo model some green and orange speckles. The inner structure has mostly grey and yellow. Designers kindly restrained from using excessive colour coding of parts.</p>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/604_wrn_201018_125333k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/604_wrn_201018_125333k.png"" style=""width: 320px; height: 197px;"" /></a><a href=""https://brickshelf.com/gallery/rothw/technic/42114/607_wrn_201018_125725k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/607_wrn_201018_125725k.png"" style=""width: 320px; height: 210px;"" /></a></p>
+
+<p><strong>Remarkable parts:</strong><br />
+- three differentials of the new style (#42109, 5 internal gears, 12:28 gear ratio on input)<br />
+- several panels in yellow for the first time<br />
+- Powered up servo motor&nbsp;<br />
+- two XL linear actuators (#42100, #42108)</p>
+
+<h3>Build process</h3>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/621_wrn_201018_130142k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/621_wrn_201018_130142k.png"" style=""width: 320px; height: 159px;"" /></a></p>
+
+<p><strong>Section 1</strong> covers the two rear axles and the motorized gearbox. Construction of the gear box appears to be very solid as it mainly uses liftarms, e.g. not heavy relying on connectors (cf. #42110).&nbsp;<br />
+It has been reported a few times that newer gears as the red 16-tooth and the tan 20-tooth might induce quite a bit of friction. Therefore I replaced these by older types. For gearbox switches I put in the dark grey ones.&nbsp;</p>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/623_wrn_201019_191143k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/623_wrn_201019_191143k.png"" style=""width: 320px; height: 217px;"" /></a></p>
+
+<p><strong>Section 2</strong> will give you the front chassis and the articulated joint. At the end of it, front and rear part will be connected.</p>
+
+<p>If you are curious and perhaps tired from building process you might start to play with what you&#39;ve got so far. However, if you put on the wheels you will notice that you cannot push the chassis around.<br />
+The default or neutral position of the gearbox is the one, that will eventually power the trough. Propulsion train is locked - you might have wondered why one side of the clutch has been fixed to the chassis (steps 46..49 in section 1). Therefore, input of the old style differential that distributed power to front and read axles is blocked. If turned by hand wheels will rotate in opposite directions. This also prohibits pushing around the truck by hand.<br />
+To get the chassis going requires to put in batteries into the technic hub and connect the motors (cf. steps 346 + 347). Start the Control+ App on your bluetooth device and select the control scheme for the hauler.<br />
+When the connection has been established expect to wait for the inevitable firmware upgrade to finish. - That must be some laziness of LEGO company: All three Control+ models that I got so far (from first to last) are performing a firmware upgrade. You would think that newer hubs would get updated before being put into the box...</p>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/625_wrn_201020_190707k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/625_wrn_201020_190707k.png"" style=""height: 223px; width: 320px;"" /></a><br />
+&nbsp;</p>
+
+<p><strong>Section 3</strong> completes the front of the model. I found this the least interesting part as you are building a lot of left and right versions of the same thing.</p>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/627_wrn_201021_192216k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/627_wrn_201021_192216k.png"" style=""width: 320px; height: 221px;"" /></a></p>
+
+<p><strong>Section 4</strong> is dedicated to the trough. I wondered a few times why the designers came up with a particular setup. I guess this is owed to balance stability and weight. The final result has some remaining gaps that may be passed by any 1x1 element.<br />
+Last steps are fixing the trough to the chassis, connecting the linear actuators and adding the wheels (if you haven&#39;t done so before).</p>
+
+<h3>Completed Model</h3>
+
+<p><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/011_wr_33906k.png"" style=""width: 640px; height: 438px;"" /></p>
+
+<p>The finished hauler is a big truck. I believe that is something we have to expect from any Control+ model since the size of the battery box will put a constraint to the dimension.<br />
+The chassis is similar to the all terrain truck #42070 (you can find some pictures <a href=""https://www.eurobricks.com/forum/index.php?/forums/topic/167871-technic-model-comparison/&amp;page=9"">here</a>) but due to the trough it appears to be somewhat bigger - it is almost a wide as the body of the Liebherr excavator (#42100).<br />
+Some reviews are complaining that the articulated link is -too- loose. I do not think so.</p>
+
+<p>The moving parts in the motor (&quot;cylinders&quot;) have an additional 3M beam attached to them. This has little function but I believe it adds to the &#39;sound&#39; of the fake motor when driving the truck: It is much more sound than other engines (e.g. #42078).&nbsp;</p>
+
+<h3>Functional Model</h3>
+
+<p>Using this truck requires a control device that connects via bluetooth. Only BLE devices will work so check the technical data of your mobile phone.<br />
+Prior to the first test drive the hub will be flashed with a firware upgrade as mentioned above. During this procedure, the LED on the hub changes between red, green, and blue. If all works well it will then switch to a steady blue. This indicates an established connection. After chosing the control for the hauler you will be directed to the motor setup. It takes a couple of minutes to calibrate the motors that switches the gearbox respectively control the steering angle. Make sure that the truck has some space to move back- and forward - For me it took &nbsp;less than the +/- 1 m shown in the App.</p>
+
+<p>This is the main control panel:</p>
+
+<p><a href=""https://brickshelf.com/gallery/rothw/technic/42114/804_wrn_201025_125314k.png""><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/804_wrn_201025_125314k.png"" style=""width: 640px; height: 351px;"" /></a><br />
+Driving + steering is achieved by moving you finger inside the box in the lower left: Speed appears to be proportional to the distance from the icon in the middle. If you move outside the box, the truck will stop. This is not very suitable if you have strong fingers - or a small screen. You can delimit the speed by setting the lever on the right side.<br />
+Tipping function is activated by the two switches (up/down). The green signal indicates that the trough is moving and therefore driving isn&#39;t possible.<br />
+Switching gears comes with a whining sound from the electrical motor before next action happens.<br />
+The turning radius of the truck is enormous. In a small room there would be a lot of back-and-forward manoeuvring to do a 180&deg; turn.&nbsp;<br />
+From a model of the hauler kind you would expect some off-road capability. Remember that you used 4 differentials during building. However:<br />
+In my room, there is a carpet of (ca) 2 cm height. If the truck doesn&#39;t hit the rim perpendicular, the middle rear axle will come off the ground. As the wheels can spin free all propulsion force will be lost. The model cannot climb the carpet.</p>
+
+<p>About the lifting capability: I put in a 500 g bag of cornflakes. There was no sign that the motor or drivetrain could not deal with that load. My only criticism is that there slope of the raised trough is too shallow for a complete unload.</p>
+
+<h3>Rating</h3>
+
+<p>The hauler relates solely on the Control+ App. There a no manual functions. In contrast, the #42070 Tow Truck could be driven by hand (https://brickset.com/reviews/52928).<br />
+I consider the control panels for drive and steering too small. Even though it is a one-touch setup the sensitive area is to small to have good control on the functions.<br />
+Manoeuvrability is limited as I described above.<br />
+&nbsp;</p>
+
+<p><img alt="""" src=""https://brickshelf.com/gallery/rothw/technic/42114/714_wr_33854k.png"" style=""width: 640px; height: 361px;"" /></p>
+",TRUE,3,4,4,2,3
+"Oldbluedog","2022-11-09T11:02:53.577Z","Overall good but …..","<p>A good build that was challenging at times based on plan interpretation.&nbsp;<br />
+&nbsp;</p>
+
+<p>There is quite a flaw as the front half of the model and the rear half are only attached by a single pivot point that can&#39;t handle the model weight even in the build process.&nbsp;<br />
+&nbsp;</p>
+
+<p>When it comes apart, a driveshaft slips out of the front diff and the small cog becomes loose and free. The universal joint on the driveshaft separates as a unit. Both take considerable work to rebuild with a lot of disassembly or difficult manipulation.&nbsp;<br />
+&nbsp;</p>
+
+<p>The last time it came apart was during one of the driving challenges.&nbsp;<br />
+&nbsp;</p>
+
+<p>The model is also quite slow BUT it does mimic loaded situations and terrain. I was running it on carpet but overall I was disappointed with its speed and power available.&nbsp;<br />
+&nbsp;</p>
+
+<p>I bought the set as parts for a Rebrickable Volvo Grader build and built the actual model first.&nbsp;</p>
+",TRUE,4,4,4,2,3

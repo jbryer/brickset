@@ -20,11 +20,13 @@ BugReports: https://github.com/jbryer/brickset/issues
 Imports: 
     dplyr,
     httr,
-    jsonlite
+    jsonlite,
+    piggyback
 Suggests: 
     DT,
     ggplot2,
-    knitr
+    knitr,
+    shiny
 Encoding: UTF-8
 LazyData: TRUE
 Roxygen: list(markdown = TRUE)

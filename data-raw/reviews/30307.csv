@@ -1,0 +1,47 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"martiniman","2022-10-11T21:23:02.12Z","Great Mindstorms Hub on a budget","<p>Just a quick review of the Technic Control+ Hub.</p>
+
+<p>I got two of these as part of the 42100 Liebherr set, and found out these are great Mindstorms Hubs on a budget.</p>
+
+<h3>Hardware</h3>
+
+<p>The Hub runs on a STM32L431RCT6 microcontroller at 80MHz. The Spike Prime/Mindstorms Hub has a similar chip at 100MHz.</p>
+
+<p>The Flash memory is 256kB with 64kB of RAM.</p>
+
+<p>The Spike Prime/Mindstorms hub has 1MB of Flash and 320kB of RAM and another 32MB external storage.</p>
+
+<p>Although the memory seems limited compared to the Spike/Mindstorms hub, you won&#39;t run into its limitations very fast. 256kB can already hold a lot of code.</p>
+
+<p>The Bluetooth connection is created through a Texas Instruments CC2640.</p>
+
+<p>The Hub has 4 ports, compatible with all Control+/Spike/Mindstorms motors and sensors. I tested it with the large, extra large, angular and large angular motors, the train motor, the colour sensor, the pressure sensor, distance sensor and the small WeDo colour sensor, train lights, everything works great.</p>
+
+<p>The Hub has the same accelerometer as the Spike/Mindstorms hub, so you can sense its orientation to the ground (tilt, roll and pitch). A must-have for self-balancing robots.</p>
+
+<p>Although the hub lacks the white-LED 5x5 matrix of the Spike/Mindstorms hub, you can attach the much nicer RGB matrix and you can control the internal RGB LED.</p>
+
+<h3>Software</h3>
+
+<p>To make best use of the Hub as Mindstorms on a budget robot brain, I recommend using the excellent tool on the website of Bricklife: Scratch GUI.</p>
+
+<p><a href=""https://bricklife.com/scratch-gui/"">https://bricklife.com/scratch-gui/</a></p>
+
+<p>This tool is better than anything Lego offers, as it is 100% scratch with extensions to control everything Lego Control+/Spike/Mindstorms and even Mario figures. Because you can also use the graphical possibilities of normal Scratch, you can make like a control panel for your robots. All is very easy to use.</p>
+
+<h3>Batteries</h3>
+
+<p>OK, this hub has no rechargeable 18650 cells as the Spike/Mindstorms hub, but 6 AA battery positions. You can put rechargeable NiMH cells in the hub to keep battery costs and waste down. It is not totally on par with modern Li-ION cells, but for me it is not a big problem. And remember that Lego&#39;s battery pack for the Mindstorms/Spike hub has a hefty price tag. 90&euro; for 2 18650 cells (costing 7&euro; per cell from a high quality brand like Samsung or Panasonic) in a plastic case is steep.</p>
+
+<h3>Pricing</h3>
+
+<p>This Control+ Hub will cost 80&euro; at Lego.com, but you can find it much cheaper in parted out sets from Bricklink sellers. In my experience you can get these for 20-25&euro;.</p>
+
+<p>I think a fair price at Lego for this hub would be 40&euro;, and if you compare it to the Spike Hub, that should be like 80&euro; considering 2 extra ports, a rudimentary LED matrix and a slightly improved microcontroller. A fair price for the Li-Ion Pack would in my opinion be 40&euro;, bringing the Mindstorms hub including battery to 120&euro;. If you buy the 51515 set, you get it for less than that considering all the motors and bricks you get with it. But reality is Lego roughly charges double for these hubs and batteries. So either get this hub as part of a Control+ set (<a href=""https://brickset.com/sets/42100-1/Liebherr-R-9800"">42100</a>, <a href=""https://brickset.com/sets/42109-1/App-Controlled-Top-Gear-Rally-Car"">42109</a>, <a href=""https://brickset.com/sets/42124-1/Off-Road-Buggy"">42124</a>, <a href=""https://brickset.com/sets/42124-1/Off-Road-Buggy"">42140</a> are the best bang-for-the-buck) or at Bricklink.</p>
+
+<h3>Conclusion</h3>
+
+<p>This smart battery box is a killer device. It allows you to program Lego robots on the cheap, with nearly all possibilities of a 239&euro; Mindstorms/Spike hub. Don&#39;t be turned down by the crappy software that Lego offers with Control+ sets. Treating this as a remote control receiver is a major turn-down of the hubs capabilities. I would advise to get the classic version while you can. The <a href=""https://brickset.com/parts/6375901/hub-no-2"">new model</a> has a battery holder that is locked in place with 4 screws, highly annoying.</p>
+
+<p>Happy robot making!</p>
+",TRUE,5,5,4,5,4

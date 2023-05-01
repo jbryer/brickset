@@ -1,0 +1,164 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"martiniman","2022-11-01T21:42:22.787Z","Best ever Lego (robot) set hampered by bad software, which can be fixed.","<p>&nbsp;</p>
+
+<p>At school, we have a lot of EV3 sets, and as educator I was thinking to get one of the EV3 sets myself, now they are cleared from stock. Yet I was also very much interested in the new system of Spike Prime and the Robot Inventor. So I did some reading before selecting the 51515 instead of <a href=""https://brickset.com/sets/45678-1/SPIKE-Prime-Set"">45678</a> or <a href=""https://brickset.com/sets/31313-1/Mindstorms-EV3"">31313</a>.</p>
+
+<p>Let me jump to conclusions straight away: EV3 is obsolete, and 51515 is better than 45678. Not only is it the best robot kit Lego ever made. It is the best Lego set ever made! No other set invites you to create your own designs so fast and so easy. It invites to play, that is what Lego should be all about. After 1 month with the 51515 Robot Inventor I am happy I did not pick an EV3 kit in clearance. I also found out there is a fourth competitor: the <a href=""https://brickset.com/reviews/56137"">42100</a> is a worthy contender in the LEGO robot arena!</p>
+
+<p>Update: This set and Technic Control + Hubs can now be programmed with Scratch. This is long awaited option on the software side. Volunteers delivered what Lego forgot.</p>
+
+<p><a href=""https://scratch.mit.edu/ev3"">Install Scratch Link here (Win 7 and up or Mac OS 10.10 and up)</a></p>
+
+<p><a href=""https://bricklife.com/scratch-gui/"">Visit Scratch with Lego extensions in your browser</a></p>
+
+<p>Click the blue button in the lower left corner to connect to the Mindstorms Hub.</p>
+
+<h2>Booklet</h2>
+
+<p>There is no booklet. It feels weird this premium price set does not come with instructions on paper. You can download the instructions for the 5 models as PDF from this website or from lego.com. The instructions are in the app too. But you will quickly understand this is a set that does not need building instructions. They are irrelevant because of your own creativity and the LEGO designs are very basic. You have to try very hard to finish a LEGO design. After you start in good faith to finish Gelo, Tricky or Blast, your brain definitely wants to build something else. You find yourself sticking random pieces and motors together and spitting out crazy inventions in a breeze. The most interesting build in the LEGO samples is the ball contraption. It gives you inspiration for your own Pitagora Suitchi&#39;s (????????).</p>
+
+<h2>Parts</h2>
+
+<p>This is where the 51515 Robot Inventor kit really shines. One can debate whether the turquois colour is an outdated early nineties window frame powder coat colour, or an option for a hipster fixie bicycle. I don&#39;t like the fact that another Technic colour gets promoted, and wished Lego picked classic blue as accent colour, but this is a minor grief.</p>
+
+<p>The awesome thing is that the 51515 kit is astonishing when it comes to the building experience. NEVER EVER has a Lego set been this inviting to quick sketches of models and prototyping. It reminds me of those classic 5 in 1 Technic sets, but it is even better. All parts cater to this great building experience:</p>
+
+<ul>
+	<li>The motors have better hole placements for building</li>
+	<li>The large rectangular frames make fast building really easy</li>
+	<li>The hamburger bricks offer new ways to connect pieces</li>
+	<li>The wheels have many pin holes</li>
+	<li>The new baseplate is very welcome</li>
+	<li>The selection of bricks is offering many, many models</li>
+	<li>There are plenty of gears in every size</li>
+	<li>The ball, the guns, all add to the fun.</li>
+</ul>
+
+<p><img alt="""" src=""https://www.lego.com/cdn/product-assets/element.img.lod5photo.192x192/6295161.jpg"" style=""width: 192px; height: 192px;"" /></p>
+
+<p>Large frames! 2x 11x15 and 2x 7x11</p>
+
+<p><img alt="""" src=""https://www.lego.com/cdn/product-assets/element.img.lod5photo.192x192/6252655.jpg"" style=""width: 192px; height: 192px;"" /></p>
+
+<p>9x hamburger-connectors</p>
+
+<p><img alt="""" src=""https://www.lego.com/cdn/product-assets/element.img.lod4photo.192x192/6252639.jpg"" style=""width: 192px; height: 192px;"" /></p>
+
+<p>Technic-base-plate</p>
+
+<p><img alt="""" src=""https://www.lego.com/cdn/product-assets/element.img.lod5photo.192x192/6287602.jpg"" style=""width: 192px; height: 192px;"" /></p>
+
+<p>The new wheels are better suited for driving in straight lines.</p>
+
+<p>This is the first thing where it totally blasts EV3 away. Building models with EV3 is a horrible experience. The selection of bricks is bad, the easy frames and connectors are missing, the motors have a horrible shape and the connectors on sensors are not very practical. 51515 is a breeze when it comes to building.</p>
+
+<p>Small annoyance: the &quot;casters&quot; to keep Blast up right are not suited for stone/concrete floors. Buy yourself a <a href=""https://education.lego.com/en-us/products/lego-mindstorms-education-replacement-pack-3/2000702"">Mindstorms Ball Caster expansion pack</a> fix the models with casters. They can be bought for like 8&euro; per set of 2.</p>
+
+<h2>Electronics</h2>
+
+<p>The new hub is great: it has plenty of oomph when it comes to processing power. It is not a full Linux machine like EV3 was, but it is so much faster in use. No endless boot sequence, no slow user interface. Again this set breaths fast prototyping.</p>
+
+<p>The screen is a bit bland, LEGO should have used a 25 NeoPixel array on this with addressable colour,&nbsp; but the screen is OK. It has scrolling text capability, so you can display values on it if you really need to. Somehow it looks more classy than any screen before, and I doubt this wil feel as outdated as a former Mindstorms set in 2030.</p>
+
+<p>The plugs are a great step forward. Many LEGO fans hate the fact they are attached, but I like it. The plug is much sturdier, the cables are really flexible and the cables don&#39;t get lost. Also, the plugs can&#39;t break any longer.</p>
+
+<p>The motors are cool as well. You get four, they are very compact, and all include angle readout and absolute positioning.</p>
+
+<p>The sensors are awesome. They are much more accurate than before, and they have built-in LED lights to give your models blinking eyes and simulate emotions. Also, the sensors have better pin holes and more compact shapes, making it much easier to include them in your models.</p>
+
+<p>The hub has a Li-ION rechargeable battery, and it is OK. It is probably filled with 2 standard 18650 cells, so replacing them when dead should be cheap and straightforward (those cells are like 3&euro; a piece). But if the hub had 6x AA cells and the set was 100&euro; cheaper, that would have been ok as well.</p>
+
+<p>EV3 has a hub that is too big. The need to connect it for programming is making things more complicated compared to the 51515 set. The EV3 motors might be a tad stronger, their shape on the other hand kills all creativity. Smaller is way better than stronger here.</p>
+
+<h2>Awesome hardware</h2>
+
+<p>So that brings me to the most important conclusion: the hardware in this set is fabulous. Everything feels very well-thought-out. The selection of beams and frames, the electronics, the accessories, the gears: YOU DON&#39;T NEED A MANUAL to build something. Just try something and start programming it. I do miss a paper manual for the 5 LEGO designed models to try the set out. But really, forget about Charlie, Gelo, Tricky, Blast and MVP. They don&#39;t matter. This is first of all a set to exploit your OWN creativity! If you do need the cuteness of Tricky and Gelo, get the <a href=""https://brickset.com/sets/40413-1/Mini-Robots"">40413</a> mini-robot promo kit.</p>
+
+<h2>The Dark Side (Software)</h2>
+
+<p>Not all is white bread and rose gardens with 51515. When you want to program your model, you need some callosity. Things are not going to be fun with the app that LEGO offers with the kit. It is great that LEGO dropped their completely incomprehensible block-style programming invented for EV3 and Boost. Things were like those impossible IKEA manuals: everything with icons and pictures. There is nothing wrong with some words. Even if you don&#39;t speak English, a little English is better than trying to push everything into icons and graphics.</p>
+
+<p>So LEGO thought lets call MIT and ask them to borrow Scratch. MIT should have refused. The way LEGO implemented Scratch like programming does not work. I don&#39;t know where this idea comes from that every company wants its own apps. Don&#39;t change something that works perfectly. What we really need is that LEGO brings robot programming to Scratch, not Scratch into their own app. The Scratch website and app are fabulous. Not as good as they were, Scratch 2 was better when it comes to the user interface, but it is very respectable. If LEGO offered a nice plug-in, programming would have been really nice. With their own app things are from weird, to dumb, to totally awkward at times.</p>
+
+<p>It is a trend in programming, bring out alfa-releases of software. LEGO just joins this agile way of writing software: bring out an unfinished program and update it every week, or even more frequent. So be prepared to do a lot of updates. Every few days your hub or your motor needs to be updated. It gets really annoying.</p>
+
+<p>Then there is the user interface. This is really a cluttered mess in my opinion. There is hardly any room to put your code on a 1920x1080 screen, you can only fit like 10 blocks or so in the code space. The blocks of Scratch 3 waste a lot of screen space, and LEGO makes things worse by having a lot of overlays and side panels. And it means you need to scroll a lot, yet there are NO scrollbars. How awesome!</p>
+
+<p>The software for making your own remote controls is hardly usable, and it is a real pity things only work with PS4 and XBOX one controllers. No Wiimote support, no PS3 controller support, no generic Bluetooth PC gamepad support. If you don&#39;t have the latest console, you can&#39;t use it. Strange, because Bluetooth game pad HID interfaces all work on the same protocol.</p>
+
+<p>We spend a couple of hours trying to control a normal car: steering and propulsion. We failed. The app is not able to let you make something as simple as a remote controlled car with ease. And the worst part is you need to keep your LEGO app alive. There is no direct controller-to-hub talking, everything goes by the LEGO app and this introduces unacceptable lag.</p>
+
+<p>You might think the City Train remote works directly on the hub.... Think again. The Lego City remote is not compatible with the Spike, the Robot Inventor nor the Technic Hub. Why? Basic control of port A and B should be a basic option. Fix this LEGO!</p>
+
+<p>Then there is system requirements. Lego is very strict with this, too strict IMO. Windows 8.1 and OSX 10.11 are generally supported for the majority of software, yet the LEGO app demands the latest Windows 10 builds and OSX 10.14 and up.</p>
+
+<h2>The end of the Tunnel</h2>
+
+<p>The good thing about bad software is that it is not hardware. Bad hardware means you can bring it to the landfill. Bad software on the other hand, can often be replaced. And this is exactly what is happening right now in the open source community.</p>
+
+<p>New situation (as of 2022)</p>
+
+<p>The team of BrickLife has done an amazing job in fixing the software problem for good. They did exactly what I said Lego should have done right from the launch: extend Scratch with Lego controlling code blocks. Scratch rocks, it is very mature nowadays and can tackle serious programming challenges, and now you can control robots in Lego too! How awesome! Check the first paragraph on how to set this op.</p>
+
+<p>The Scratch software is usable in a wider variety of browsers than PyBricks, including Firefox and Safari. Many OS versions work: Windows 7 and up, Mac OS 10.10 and later. So that way-too-old laptop you have as school can be used in a construction classroom or the one you get from your parents to control the Lego.</p>
+
+<p>My original text here was:</p>
+
+<p><em>The best effort right now comes from the team that makes PyBricks. Funny thing: the PyBricks team also helps LEGO with the Python part of their own app.</em></p>
+
+<p><em>PyBricks is also pretty much beta, but even today it is way more usable than what LEGO offers. The only downside of Pybricks is that it requires Chrome or Chromium, as those browsers are the only ones capable of dealing with Bluetooth. They are not the best browsers to match our school privacy policies though. Chromium is the best option of the two to implement some student privacy with add-ons. On the bright-side: the crappy Chromebooks my kids get from school work great with PyBricks.</em></p>
+
+<h2>Why you might not need the 51515 Robot Inventor after all</h2>
+
+<p>That brings me by some weird final thought. BrickLife&#39;s Scratch extension is so good, it makes me think we might not need the 51515 kit at all. Off course, it is a very nice selection of parts that invites robot making the minute you open the box. But it is pretty expensive. So if you happen to have a Techic PoweredUp Hub in say the Liebherr, the Top Gear App-controlled car or the X-treme Off Roader, you&#39;re close to having a complete robot inventor set already. The Technic PoweredUp hub is 95% as good as the 51515 Robot Inventor hub! OK, it has 2 ports less, it lacks the matrix display, it lacks the rechargeable battery, but as smart hub to build robots, it works every bit as well. And (rechargeable) AA-cells are easily swapped on the fly. You can get the Technic hub for 20&euro;, that is just 8 beers, where the 51515 hub does 200&euro; on Bricklink. Get yourself 2 sensors, and maybe 1 or 2 extra (angular XL) motors, and you&#39;re ready to roll.</p>
+
+<p>Update 2022: Our school just did that last thing. We ordered a big heap of Control+ hubs, Spike sensors and new motors to breath new life in our EV3 collection. Our 16 boxes with EV3 kits got a new brain for under 300&euro; in total!</p>
+
+<h2>The Good</h2>
+
+<ul>
+	<li>Very fast robot prototyping. With a couple of black pins you can connect some motors to the hub and create a simple robot really quick.</li>
+	<li>Excellent set of beams, frames, gears, wheels, panels and motors to create robots YOURSELF. This is the best creativity oriented LEGO set ever!</li>
+	<li>The Bluetooth-hub works smooth and fast, has enough power and looks nice.</li>
+	<li>This set does not need a manual. Forget Charlie, Gelo, Blast, Tricky and MVP. You can do as good yourself!</li>
+	<li>The sensors are of good quality</li>
+	<li>The motors are excellent, compact, with useful rotation readout and absolute positioning</li>
+	<li>The cables and connectors are much nicer than any electric system LEGO made before</li>
+	<li>Now (2022) programmable in Scratch. The go-to option in my opinion to program Mindstorms, Spike or Technic hubs. Very friendly environment for educational and home use.</li>
+	<li>You can also program in PyBricks with Python language (not suited for education)</li>
+</ul>
+
+<h2>The Bad</h2>
+
+<ul>
+	<li>A paper manual with the models would have been more than welcome</li>
+	<li>The bluish-greenish colour is another fancy-pants colour in the Technic collection. I&#39;m not sure if this colour that flourished in eighties architecture is fresh and cool or a curse.</li>
+	<li>The plastic casters are not real casters, but a sacrifice-piece. I usually use black pins or <a href=""https://brickset.com/parts/4211483/connector-peg-w-knob"">grey half-pins</a> if I need something to be sanded away by floors. Not those nice looking bricks.</li>
+	<li>No nice storage box like Spike Prime has. Would be welcome for classroom use and would fit the price tag.</li>
+	<li>The set is targeted badly. It is presented to cater a childish audience, yet it happens to be a great set for testing out engineering concepts in the age 15-20, in the higher years of High school, or the early years of University.</li>
+	<li>The Liebherr 42100 might be the better robot kit for your money now Technic Hubs are everything as good. Read my Liebherr review and the prediction I made about the hubs.</li>
+	<li>Programming in Python has its drawbacks. The storage on the hub is rather small, so to fit say a Rubiks cube solver into the flash storage can be a puzzle. And Python is a resource hog: 10 times as slow, 5 times the RAM usage in comparison with C++.</li>
+</ul>
+
+<h2>The Ugly</h2>
+
+<ul>
+	<li>The app is obnoxious. I removed it after a few days and never bothered about it since. Luckily there is zero need to worry about this.&nbsp;It is a little step forward compared to the EV3 programming environment, which was a mission impossible. You&#39;ll get over it pretty fast once you start using PyBricks.</li>
+	<li>LEGO please stop with your plastic bags for packaging. Or at least make them flexible, silent and bio-degradable. My green waste container bags are perfect material. Unboxing makes a terrible lot of noise and mess!</li>
+	<li>The price is pretty steep at the 359&euro; suggested retail price, yet I managed to find one for 250&euro; from a local Bricklink seller. So there are nice deals out there. Which is strange: the best of 51515, 31313 and 45678 can be also the cheapest! Not so ugly after all. There are close to no good deals on Spike Prime for example.</li>
+	<li>Impossible set to buy for your school yet it is the best piece of educational Lego ever made. Lego is limiting online orders to 5 pieces max, and because it is no official Education set it is not sold by educational resellers. So you either have to treat 16 year old students as toddlers with pink and baby blue Spike bricks, or go through bells and hoops to get around the order limit.</li>
+	<li>Youtube Kids. Why is everybody (including TLC) posting video&#39;s about this set marking it &quot;For Kids&quot;. It is not for kids. It is a perfect set for young engineers age 15-25. Youtube Kids kills a nice discussion about what is possible with this fantastic hardware. If you read this and you make youtube videos: please never mark a Youtube Lego Mindstorms video &quot;for Kids&quot; again.</li>
+</ul>
+
+<h2>Much needed updates:</h2>
+
+<ul>
+	<li>LEGO please make a Scratch plugin. Instead of bringing Scratch into a LEGO app, bring a LEGO plugin into the Scratch app.</li>
+	<li>More sensors: we need a microphone, a GPS, an air quality/pressure/temperature sensor (Bosch BME680 equivanent).</li>
+	<li>An external display: give us a nice Neopixel RGB matrix display, 5x5 or 7x7 lights fitting the grid spacing of Technic.</li>
+	<li>Extension cords, male-female, and male-male with a breadboard connector on one side.</li>
+	<li>A super tiny motor, the size of the light-sensor.</li>
+	<li>Arduino IDE integration. Python is fun, but if we really want to do serious education with this, we want C++ coding. It will also allow easier integration in other physical computing classes.</li>
+	<li>If someone from PyBricks reads this: I know import is a standard in Python, but it&#39;s the messy side of Python. Why not auto-include your complete set of functions and only send those scripts to the hub that are called in code. So users can leave the import rules out.</li>
+</ul>
+",TRUE,5,5,5,5,4

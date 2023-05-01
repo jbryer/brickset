@@ -12,7 +12,8 @@ editor_options:
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
 `r badger::badge_devel("jbryer/brickset", "blue")`
 `r badger::badge_cran_release("brickset")`
-[![CRAN Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)<!-- badges: end -->
+[![CRAN Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)
+<!-- badges: end -->
 
 **Author:** Jason Bryer, Ph.D. jason@bryer.org  
 **Website:** https://jbryer.github.io/brickset/

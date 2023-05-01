@@ -1,0 +1,8 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"sjuip","2009-04-17T13:45:14.373Z","Worthwhile, but incomplete!","Finally, a good alternative for the 9V train motor. Especially in combination with the promising rechargeable battery box #8878!
+
+BUT: To make things complete, some items are missing:
+- a cable to connect it to the batteries (all other Power Functions motors have cables attached - this motor is useless without extension wire #8886)
+-  suspension sides (brick item 4493326). These were provided with the 9V motor set (# 10153) and with the RC Cargo Train (#7898).  These sides are truly missed, as they can not be ordered from Pick-a-Brick!
+",FALSE,4,0,0,0,0
+"Formentar","2010-07-21T06:09:09.2Z","Very weak","I ordered one of these to see if I could use it together with the rechargeable battery box. Sadly, the answer was that it doesn't work well at all. The motor isn't built to handle PWM, and in any case it's too weak or highly geared to pull much, at least with the 7.2 volts of the rechargeable battery. Even in a small train, the motor doesn't move at all on the lower speed settings, but just sits there making a sad whining noise. At higher settings (3 or 4) it starts to move, though it's so weak that the speed varies a lot in curves, on flex track and so forth. At the higher speeds you need a longer train, or it will fly off the track at the first curve, but then you'll just add to the problem of getting the train to move at all. I would only consider using this motor in a long passenger train, and then only with the on/off remote control (not the PWM train one).<br>",TRUE,1,2,1,2,2

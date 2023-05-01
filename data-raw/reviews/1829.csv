@@ -1,0 +1,51 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"A_Brickset_user","2004-12-06T16:09:34Z","Great!","This is a generic robotics kit. It means that only your imagination limits the creation of robots using 2 touch sensors, a light sensor and 2 motors, all connected to the so-called RCX.
+The RCX can be programmed using a IR (Infrared) link with your computer.
+The manual comes with some great basic ideas, like the Roverbot: a car that can drive around and when it hits something, it turns and goes another direction. On the cd-rom more ideas can be found, like a robotic arm: it seeks around for an object. When it sees the object, it grabs it and puts the object somewhere else.
+
+These examples show that very different models can be created with this set. So let your imagination go and build!
+
+One thing I dislike is that I wanted it to have more motors (with 3, you can do a lot more) and a light sensor extra, but.. you can't have it all :) (expansion sets are available too)",FALSE,4,0,0,0,0
+"A_Brickset_user","2005-02-14T16:24:52Z","Everybody's basic robot kit--w/o messy!","Well. What is there not to like about this set?...
+
+This kit rocks. A microcomputer (that, according to a book, has more computing power than Apollo 11's computers) that can be programmed with basic computer, lots of nice parts, and even BUILDING INSTRUCTIONS (my lifeline) for various robots that do nifty functions.",FALSE,4,0,0,0,0
+"A_Brickset_user","2005-02-16T04:27:56Z","Initial impressions on the RIS 2.0 (Contains Dutch plus French CD-Roms and Books)","I've now had the RIS 2.0 for a week, so here are my initial impressions.
+
+You may not really realise what 718 parts means when you buy the RIS, but when you open the box, it's immediately clear.. There's an enormous assortment of bricks in there, and in an amount that's not exhausted by any of the example models in either the constructopedia or on the CD-Rom. The inside of the box is compartimentalised which helps in sorting through the bricks.
+
+The constructopedia by the way is a very well done booklet that fully details building three introductory robot models plus some additional suggestions. The CD-Rom contains a further eight or so models, but in far less detail and these require some Technics building experience.
+Together, they cover a nice range of applications and solutions for construction problems (like having two functions on a single motor to both run and steer a wheeled vehicle).
+
+The RCX programming environment is a pleasant surprise as well. It's graphical, extremely intuitive and provides ample functionality. What is very nice to see, is how the complex insides of the microcontroller in the RCX are
+abstracted in the programming environment. An example is the programmable interrupt controller, which is represented by graphical program blocks representing sensors with actions and priorities. What's more, the CD-Rom takes you through a robot programming course step by step.
+
+All in all, this is a splendid way to get introduced to robotics and programming, and I highly recommend it if you can scrape the money together..
+
+Room for improvement:
+
+- Three motors. When you work with the RIS, you quickly discover that two motors is pushing it. For roverbots, the two motors are already used for full freedom of movement, so a third would be nice to work a grabber. For arms like the grabber on the CD-Rom, having two motors only means that the grabbing function is not independent of the raise/lower function. Of course, there are many solutions on the web for splitting power from a motor to independent axles to solve both the roverbot and grabber arm dilemmas. These do however still limit the amount of freedom, as power splits only go in a single direction.
+
+- Better quality control; the sound on my RCX doesn't work. Whether it's a hardware failure, or a firmware compatibility problem on the Dutch CD-Rom, I'm not sure yet. Not that I really care about sounds, but this really shouldn't happen.
+",FALSE,4,0,0,0,0
+"Exo_brick","2009-01-29T21:00:32.09Z","RIS 2.0, Mindstorms in its heyday","Wow! I think this set is better than my NXT! If I want to build a simple car to zip around using the remote, I can! With NXT, I have to program it to do that. I also built very complex bots.
+
+Pros:
+-a vast selection of parts
+-easy to use
+-great investment
+
+Cons:
+-Some bricks in here are useless!",FALSE,5,0,0,0,0
+"Imperial13","2007-07-12T16:46:40.997Z","Good!","i got this set for my dad for his bday. you really need to read the instructions. after we got the hang of it, we made a tank and are now trying to program it onto a remote control! fun but you need tons of experience to be good at it. not recommended if you've never programmed or our under ten years old.",FALSE,5,0,0,0,0
+"gome4","2009-08-29T07:20:54.403Z","great ","this is probably one of the greatest lego sets...ever
+you can build so many things
+
+pros
+can make anything
+can control it from your computer
+loads of technic pieces
+
+cons
+some of the more advanced creations take ages to build
+
+overall if you can afford this buy it, ive heard its better then nxt",FALSE,5,0,0,0,0

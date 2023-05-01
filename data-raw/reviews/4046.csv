@@ -1,0 +1,44 @@
+"author","datePosted","title","review","HTML","overall","parts","buildingExperience","playability","valueForMoney"
+"tatuvlakia","2012-02-01T14:06:58.27Z","Power your Lego!","This was bought with a train set, although I soon ended powering the train but also many other creations instead of constantly consuming batteries.<div><br></div><div>It includes pieces to build a little train lever accelerator or a rotating piece with limits for 4.5v and 12 sets.</div><div>It has a side plug to have powered train accessory buttons attached.</div><div><br></div><div>It also includes a nifty cardboard template for the creation of train layouts on a piece of paper.</div><div><br></div><div>It is a very useful set if you plan on using the old motors with static creations.</div><div><br></div><div>Superb train controller with a very smooth action.</div>",TRUE,4,3,2,4,3
+"Crazy_Chris","2017-12-21T18:09:50.93Z","Power is nothing without control","<p><strong>Overview</strong><br />
+Year of release: 1980<br />
+Last year in catalog: 1990<br />
+Set type: supplemental<br />
+Generation (within grey era): 1.0<br />
+Predecessor (within grey era): none<br />
+Successor (within grey era): none</p>
+
+<p><strong>Description</strong><br />
+This is more than just a power supply, it is the heart of your train layout. You can use the speed throttle knob element to adjust the power from zero to 12 volts. If you use the throttle knob element bottom up, the output will be limited to 4,5 volts, therefore enabling it to run technic motors.<br />
+Instead of using the know, you can also build a lever. This does not improve the handling, but it looks pretty good.<br />
+On the left side, there is a connector dock where the remote controllers can be added. This may result in a huge control desk that looks streamlined and very impressive.</p>
+
+<p><strong>Variants and alternate parts</strong><br />
+During the years, there were different revisions, but the housing always looks the same. And of course, there are different plug types (UK or EU), depending on the country where it was sold.<br />
+More interestingly, there are two different set variants and three different box types:</p>
+
+<ul>
+	<li>1980 to 1981: box rectangular, no black plates 1x6 and 4x6 with corresponding picture on the box</li>
+	<li>1982 to 1989: box rectangular, with black plates 1x6 and 4x6, with corresponding picture on the box</li>
+	<li>1990: square box, same content as former version</li>
+</ul>
+
+<p><strong>Personal opinion</strong><br />
+Not much to say in this section. It was really expensive, but you need it to run every 12v train. Today, you get them rather cheap, so it is no problem to buy more than one and to create various electric circuits in your train layout.</p>
+",TRUE,3,2,3,5,3
+"RapidAssistant","2023-01-03T13:33:51.223Z","Indispensible for all '80s Trains and Technic AFOLs","<p>7864 was the heart of the 12V &quot;grey era&quot; train system, and provided more functionality than the previous &quot;blue&quot; transformer 741.&nbsp; As well as a variable output from 0-12V, there is a constant output 12V socket on the side that is used to power either light bricks, or you can dock the remote control switches for signals, points, decouplers or the electric level crossing.&nbsp; There is also a sealed 13V constant voltage output but this is not used.</p>
+
+<p>Technic elements are provided to build a lever that can be put in place of the control knob, although it has quite a vague and sloppy action.&nbsp; But it&#39;s fun....</p>
+
+<p>Flip the control knob over, and it restricts its movement so that it will limit the variable output to 4.5V - this was intended for powering Technic motors (870/8700) but they can tolerate a certain amount of overvoltage, but they will eventually overheat and die if it is done too much!</p>
+
+<p>Being a children&#39;s toy, the 7864 has several safeguards:</p>
+
+<ul>
+	<li>It shouldn&#39;t be used as a general 12V power source.&nbsp; Connect a non-Lego motor that draws too much current and the built in overload protection will &quot;pulse&quot; the output.&nbsp; This also happens in normal use if you have too many trains running on the same layout, then you have to construct a layout with several independent circuits.</li>
+	<li>Both the variable and constant 12V outputs have short circuit protection and will cut out if wires are crossed, or if connected to a track layout that is inherently short-circuited.</li>
+	<li>The box is completely sealed and this is no way of accessing its internal parts without literally taking a saw to it and breaking the plastic.&nbsp; If you have a dead non/working example, then it cannot be repaired.</li>
+</ul>
+
+<p>7864s are very plentiful on the second hand market, and by the standards of most Lego 12V train accessories are relatively cheap to buy on eBay and BrickLink&nbsp;so you can afford to be picky.</p>
+",TRUE,3,2,1,5,4
