@@ -74,15 +74,15 @@ for(i in seq(1970, lubridate::year(Sys.Date()) - 1)) {
 }
 close(pb)
 
-legosets <- merge_csv_files(sets_path) %>%
-	mutate(US_dateFirstAvailable = as.Date(US_dateFirstAvailable),
-		   US_dateLastAvailable = as.Date(US_dateLastAvailable),
-		   UK_dateFirstAvailable = as.Date(UK_dateFirstAvailable),
-		   UK_dateLastAvailable = as.Date(UK_dateLastAvailable),
-		   CA_dateFirstAvailable = as.Date(CA_dateFirstAvailable),
-		   CA_dateLastAvailable = as.Date(CA_dateLastAvailable),
-		   DE_dateFirstAvailable = as.Date(DE_dateFirstAvailable),
-		   DE_dateLastAvailable = as.Date(DE_dateLastAvailable))
+legosets <- merge_csv_files(sets_path) |>
+	dplyr::mutate(US_dateFirstAvailable = as.Date(US_dateFirstAvailable),
+				  US_dateLastAvailable = as.Date(US_dateLastAvailable),
+				  UK_dateFirstAvailable = as.Date(UK_dateFirstAvailable),
+				  UK_dateLastAvailable = as.Date(UK_dateLastAvailable),
+				  CA_dateFirstAvailable = as.Date(CA_dateFirstAvailable),
+				  CA_dateLastAvailable = as.Date(CA_dateLastAvailable),
+				  DE_dateFirstAvailable = as.Date(DE_dateFirstAvailable),
+				  DE_dateLastAvailable = as.Date(DE_dateLastAvailable))
 save(legosets, file = 'data/legosets.rda')
 tools::resaveRdaFiles('data/legosets.rda')
 
