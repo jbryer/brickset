@@ -17,6 +17,9 @@ ls('package:brickset')
 data("legosets", package = 'brickset')
 ?legosets
 
+vignette(package = 'brickset')
+vignette('lego_more_expensive')
+
 library(ggplot2)
 names(legosets)
 dim(legosets)

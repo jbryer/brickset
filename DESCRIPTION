@@ -2,7 +2,7 @@ Type: Package
 Package: brickset
 Title: Interface with the Brickset API for Getting Data About LEGO Sets
 Version: 2025.0.0
-Date: 2025-01-21
+Date: 2025-01-26
 Authors@R: 
     person("Jason", "Bryer", , "jason@bryer.org", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2454-0402"))
@@ -19,17 +19,18 @@ BugReports: https://github.com/jbryer/brickset/issues
 Depends: 
     R (>= 2.10)
 Imports: 
-    bookdown,
     dplyr,
     httr,
     jsonlite,
-    piggyback
+    piggyback,
 Suggests: 
+    bookdown,
     DT,
     ggplot2,
     knitr,
     rmarkdown,
-    shiny
+    shiny,
+    scales
 Encoding: UTF-8
 LazyData: TRUE
 Roxygen: list(markdown = TRUE)
