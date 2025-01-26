@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   lego_more_expensive: lego_more_expensive.html
-last_built: 2025-01-26T23:45Z
+last_built: 2025-01-26T23:52Z
 urls:
   reference: https://jbryer.github.io/brickset/reference
   article: https://jbryer.github.io/brickset/articles
