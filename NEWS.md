@@ -1,3 +1,8 @@
+# brickset 2025.0.0
+
+* Added 2024 sets.
+* Added new vignette: "Is Lego Getting More Expensive?"
+
 # brickset 2024.0.0
 
 * Added 2023 sets.
