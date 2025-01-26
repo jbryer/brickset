@@ -1,66 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://jbryer.github.io/brickset/404.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/brickset.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/checkKey.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/checkUserHash.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/download_reviews.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getInstructions.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getKeyUsageStats.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getReviews.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getSets.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getSubthemes.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getThemes.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getUserHash.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/getYears.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/legosets.html</loc>
-  </url>
-  <url>
-    <loc>https://jbryer.github.io/brickset/reference/login.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://jbryer.github.io/brickset/404.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/LICENSE.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/articles/index.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/articles/lego_more_expensive.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/authors.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/index.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/news/index.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/brickset.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/checkKey.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/checkUserHash.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/download_reviews.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getInstructions.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getKeyUsageStats.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getReviews.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getSets.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getSubthemes.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getThemes.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getUserHash.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/getYears.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/index.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/legosets.html</loc></url>
+<url><loc>https://jbryer.github.io/brickset/reference/login.html</loc></url>
 </urlset>
+
