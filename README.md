@@ -4,10 +4,11 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jbryer/brickset/actions/workflows/R-CMD-check.yaml)
-[![](https://img.shields.io/badge/devel%20version-2022.0.1-blue.svg)](https://github.com/jbryer/brickset)
+[![](https://img.shields.io/badge/devel%20version-2025.0.0-blue.svg)](https://github.com/jbryer/brickset)
 [![](https://www.r-pkg.org/badges/version/brickset)](https://cran.r-project.org/package=brickset)
 [![CRAN
-Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)<!-- badges: end -->
+Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cran.r-project.org/web/checks/check_results_brickset.html)
+<!-- badges: end -->
 
 **Author:** Jason Bryer, Ph.D. <jason@bryer.org>  
 **Website:** <https://jbryer.github.io/brickset/>
@@ -15,7 +16,7 @@ Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cra
 This package provides functions to access data about
 [LEGO](https://www.lego.com/) sets from the
 [Brickset](https://brickset.com/) website. The package also contains a
-`data.frame` with all LEGO sets (n = 18,455) from 1970 through 2022.
+`data.frame` with all LEGO sets (n = 20,420) from 1970 through 2024.
 This data set was created using the `getSets` function and it is
 recommended that you use this data frame to reduce the number of API
 calls. See the
@@ -66,11 +67,7 @@ You can check your API usage with the `getKeyUsageStats` function.
 ``` r
 brickset::getKeyUsageStats()
 #>              dateStamp count
-#> 1 2023-03-30T00:00:00Z     3
-#> 2 2023-03-24T00:00:00Z     2
-#> 3 2023-03-23T00:00:00Z     2
-#> 4 2023-03-22T00:00:00Z    16
-#> 5 2023-03-21T00:00:00Z     2
+#> 1 2025-01-21T00:00:00Z    56
 ```
 
 The `getSets` function returns all LEGO sets from the given year.
@@ -78,46 +75,46 @@ The `getSets` function returns all LEGO sets from the given year.
 ``` r
 sets2021 <- brickset::getSets(2021)
 head(sets2021, n = 3)
-#>   setID                     name year theme   themeGroup
-#> 1 31026           Police Station 2021 Icons Model making
-#> 2 31754 Volkswagen T2 Camper Van 2021 Icons Model making
-#> 3 31025           Flower Bouquet 2021 Icons Model making
+#>   setID number numberVariant                     name year theme   themeGroup
+#> 1 31026  10278             1           Police Station 2021 Icons Model making
+#> 2 31754  10279             1 Volkswagen T2 Camper Van 2021 Icons Model making
+#> 3 31025  10280             1           Flower Bouquet 2021 Icons Model making
 #>                       subtheme category released pieces minifigs
 #> 1 Modular Buildings Collection   Normal     TRUE   2923        5
 #> 2                     Vehicles   Normal     TRUE   2207       NA
 #> 3         Botanical Collection   Normal     TRUE    756       NA
 #>                         bricksetURL rating reviewCount packagingType
-#> 1 https://brickset.com/sets/10278-1    4.4           4           Box
-#> 2 https://brickset.com/sets/10279-1    4.1           0           Box
-#> 3 https://brickset.com/sets/10280-1    4.3           3           Box
-#>     availability agerange_min US_retailPrice US_dateFirstAvailable
-#> 1 LEGO exclusive           18         199.99  2021-01-02T00:00:00Z
-#> 2 LEGO exclusive           18         179.99  2021-08-02T00:00:00Z
-#> 3         Retail           18          59.99  2021-01-02T00:00:00Z
-#>   US_dateLastAvailable UK_retailPrice UK_dateFirstAvailable
-#> 1                 <NA>         169.99  2021-01-01T00:00:00Z
-#> 2 2022-11-12T00:00:00Z         139.99  2021-08-01T00:00:00Z
-#> 3                 <NA>          54.99  2021-01-01T00:00:00Z
-#>   UK_dateLastAvailable CA_retailPrice CA_dateFirstAvailable
-#> 1                 <NA>         269.99  2021-01-02T00:00:00Z
-#> 2 2022-11-29T00:00:00Z         249.99  2021-08-03T00:00:00Z
-#> 3                 <NA>          79.99  2021-01-02T00:00:00Z
-#>   CA_dateLastAvailable DE_retailPrice DE_dateFirstAvailable
-#> 1                 <NA>         199.99  2021-01-02T00:00:00Z
-#> 2 2022-11-12T00:00:00Z         159.99  2021-08-02T00:00:00Z
-#> 3                 <NA>          59.99  2021-01-02T00:00:00Z
-#>   DE_dateLastAvailable height width depth weight
-#> 1                 <NA>   47.6  57.7  11.8  4.012
-#> 2 2022-11-30T00:00:00Z   37.4  57.8  11.2  2.945
-#> 3                 <NA>   38.2  26.2   7.1  0.760
+#> 1 https://brickset.com/sets/10278-1    4.3           4           Box
+#> 2 https://brickset.com/sets/10279-1    4.0           0           Box
+#> 3 https://brickset.com/sets/10280-1    4.1           3           Box
+#>     availability agerange_min
+#> 1 LEGO exclusive           18
+#> 2 LEGO exclusive           18
+#> 3         Retail           18
 #>                                         thumbnailURL
 #> 1 https://images.brickset.com/sets/small/10278-1.jpg
 #> 2 https://images.brickset.com/sets/small/10279-1.jpg
 #> 3 https://images.brickset.com/sets/small/10280-1.jpg
-#>                                              imageURL
-#> 1 https://images.brickset.com/sets/images/10278-1.jpg
-#> 2 https://images.brickset.com/sets/images/10279-1.jpg
-#> 3 https://images.brickset.com/sets/images/10280-1.jpg
+#>                                              imageURL US_retailPrice
+#> 1 https://images.brickset.com/sets/images/10278-1.jpg         199.99
+#> 2 https://images.brickset.com/sets/images/10279-1.jpg         179.99
+#> 3 https://images.brickset.com/sets/images/10280-1.jpg          59.99
+#>   US_dateFirstAvailable US_dateLastAvailable UK_retailPrice
+#> 1  2021-01-02T00:00:00Z 2024-02-05T00:00:00Z         169.99
+#> 2  2021-08-02T00:00:00Z 2022-11-12T00:00:00Z         139.99
+#> 3  2021-01-02T00:00:00Z                 <NA>          54.99
+#>   UK_dateFirstAvailable UK_dateLastAvailable CA_retailPrice
+#> 1  2021-01-01T00:00:00Z 2024-01-12T00:00:00Z         269.99
+#> 2  2021-08-01T00:00:00Z 2022-11-29T00:00:00Z         249.99
+#> 3  2021-01-01T00:00:00Z                 <NA>          79.99
+#>   CA_dateFirstAvailable CA_dateLastAvailable DE_retailPrice
+#> 1  2021-01-02T00:00:00Z 2024-02-05T00:00:00Z         199.99
+#> 2  2021-08-03T00:00:00Z 2022-11-12T00:00:00Z         159.99
+#> 3  2021-01-02T00:00:00Z                 <NA>          59.99
+#>   DE_dateFirstAvailable DE_dateLastAvailable height width depth weight
+#> 1  2021-01-02T00:00:00Z 2024-02-19T00:00:00Z   47.6  57.7  11.8  4.012
+#> 2  2021-08-02T00:00:00Z 2022-11-30T00:00:00Z   37.4  57.8  11.2  2.945
+#> 3  2021-01-02T00:00:00Z                 <NA>   38.2  26.2   7.1  0.760
 ```
 
 The `getReviews` function will return all reviews for a given set.
@@ -137,9 +134,9 @@ themes.
 ``` r
 getThemes() |> head(n = 3)
 #>             theme setCount subthemeCount yearFrom yearTo
-#> 1    {Unknown IP}        5             0     2023   2023
-#> 2       4 Juniors       24             5     2003   2004
-#> 3 Action Wheelers        9             0     2000   2001
+#> 1       4 Juniors       24             5     2003   2004
+#> 2 Action Wheelers        9             0     2000   2001
+#> 3 Advanced models       35            12     2000   2012
 getSubthemes('Toy Story')
 #>       theme          subtheme setCount yearFrom yearTo
 #> 1 Toy Story Buildable Figures        2     2010   2010
@@ -171,8 +168,8 @@ instructions
 
 ## `legosets` Dataset
 
-The `legosets` data frame contains all LEGO sets (n = 18,455) from 1970
-through 2022.
+The `legosets` data frame contains all LEGO sets (n = 20,420) from 1970
+through 2024.
 
 ``` r
 data("legosets", package = "brickset")
@@ -196,40 +193,42 @@ The variables in the `legosets` data frame are:
 
 |                       | Type      | Unique_Values |
 |:----------------------|:----------|--------------:|
-| setID                 | integer   |         18455 |
-| name                  | character |         15372 |
-| year                  | integer   |            53 |
-| theme                 | character |           154 |
-| themeGroup            | character |            16 |
-| subtheme              | character |           901 |
+| setID                 | integer   |         20420 |
+| number                | character |         18958 |
+| numberVariant         | integer   |            25 |
+| name                  | character |         17057 |
+| year                  | integer   |            55 |
+| theme                 | character |           163 |
+| themeGroup            | character |            17 |
+| subtheme              | character |          1000 |
 | category              | character |             7 |
 | released              | logical   |             2 |
-| pieces                | integer   |          1403 |
+| pieces                | integer   |          1543 |
 | minifigs              | integer   |            34 |
-| bricksetURL           | character |         18455 |
-| rating                | numeric   |            31 |
+| bricksetURL           | character |         20420 |
+| rating                | numeric   |            29 |
 | reviewCount           | integer   |            64 |
-| packagingType         | character |            18 |
-| availability          | character |            10 |
-| agerange_min          | integer   |            16 |
-| US_retailPrice        | numeric   |           142 |
-| US_dateFirstAvailable | Date      |           881 |
-| US_dateLastAvailable  | Date      |          2125 |
-| UK_retailPrice        | numeric   |           210 |
-| UK_dateFirstAvailable | Date      |           825 |
-| UK_dateLastAvailable  | Date      |          1984 |
-| CA_retailPrice        | numeric   |           162 |
-| CA_dateFirstAvailable | Date      |           641 |
-| CA_dateLastAvailable  | Date      |          1808 |
-| DE_retailPrice        | numeric   |           155 |
-| DE_dateFirstAvailable | Date      |           428 |
-| DE_dateLastAvailable  | Date      |          1176 |
-| height                | numeric   |           241 |
-| width                 | numeric   |           286 |
-| depth                 | numeric   |           279 |
-| weight                | numeric   |          1046 |
-| thumbnailURL          | character |         17420 |
-| imageURL              | character |         17420 |
+| packagingType         | character |            19 |
+| availability          | character |            11 |
+| agerange_min          | integer   |            18 |
+| thumbnailURL          | character |         19365 |
+| imageURL              | character |         19365 |
+| US_retailPrice        | numeric   |           173 |
+| US_dateFirstAvailable | Date      |          1090 |
+| US_dateLastAvailable  | Date      |          2324 |
+| UK_retailPrice        | numeric   |           224 |
+| UK_dateFirstAvailable | Date      |          1019 |
+| UK_dateLastAvailable  | Date      |          2224 |
+| CA_retailPrice        | numeric   |           188 |
+| CA_dateFirstAvailable | Date      |           851 |
+| CA_dateLastAvailable  | Date      |          2005 |
+| DE_retailPrice        | numeric   |           179 |
+| DE_dateFirstAvailable | Date      |           607 |
+| DE_dateLastAvailable  | Date      |          1402 |
+| height                | numeric   |           264 |
+| width                 | numeric   |           317 |
+| depth                 | numeric   |           307 |
+| weight                | numeric   |          1192 |
 
 ## Code of Conduct
 

@@ -2,6 +2,7 @@
 % Please edit documentation in R/brickset-package.R
 \docType{package}
 \name{brickset}
+\alias{brickset-package}
 \alias{brickset}
 \title{R package to interface with the Brickset API for getting data about LEGO.}
 \description{
@@ -14,6 +15,15 @@ https://brickset.com/tools/webservices/requestkey/
 The API key can be passed as function parameter or may be set globally using:
 
 \code{options(brickset_key = YOUR_API_KEY)}
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jbryer/brickset}
+  \item \url{https://jbryer.github.io/brickset/}
+  \item Report bugs at \url{https://github.com/jbryer/brickset/issues}
+}
+
 }
 \author{
 \email{jason@bryer.org}

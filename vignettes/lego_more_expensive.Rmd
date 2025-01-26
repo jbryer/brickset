@@ -1,0 +1,126 @@
+---
+title: "Is Lego Getting More Expensive?"
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    fig_caption: true
+    toc: false
+    number_sections: true
+pkgdown:
+  as_is: true
+vignette: >
+  %\VignetteIndexEntry{Is Lego Getting More Expensive?}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  out.width = '100%',
+  fig.width = 6,
+  fig.height = 4,
+  comment = "#>"
+)
+```
+
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE, error=FALSE}
+library(brickset)
+library(ggplot2)
+library(dplyr)
+data(legosets)
+theme_set(theme_minimal())
+```
+
+An often stated criticism of Lego is how expensive Lego has become over the years (see [here](https://latericius.com/en/blogs/blog/why-is-lego-so-expensive?srsltid=AfmBOoplSZ9QL8RiDaJaYW7PrehQiXqAmdTt3rPEI0J68gXdYA-LyIQr), [here](https://www.shopbrickify.com/s/stories/understanding-the-rise-of-lego-prices?srsltid=AfmBOorrcBWVpbAb_4PR3WiHaSQrBqOa3swCBhvEvkiD_zPe4mOaMwmY), and [here](https://thedirect.com/article/legos-expensive-why)). However, there are two ways to consider Lego costs: 1. price per set or 2. price per piece. As shown in Figure \@ref(fig:n-sets-by-year) the number of Lego sets released each year has increased substantially since 2000. The data for this analysis comes from the [Brickset](https://brickset.com) website. For many sets there is no price information available, especially before the year 2000. For more recent years there are several factors leading to missing retail price information including special and promotional sets that may not have has a cost. Regardless, this analysis only uses sets released since 2000 that have a US retail price available. Table \@ref(tab:lego-summary) provides the relevant summary statistics. 
+
+
+```{r n-sets-by-year, echo=FALSE, fig.cap='Number of Lego sets by year.'}
+ggplot(legosets, aes(x = year, fill = is.na(US_retailPrice))) + 
+	geom_bar() +
+	scale_fill_brewer('Retail price available', type = 'qual', palette = 7) +
+	ggtitle('Number of Lego sets by year') +
+	xlab('Year') + ylab('Number of Lego Sets') +
+	theme(legend.position = 'bottom')
+```
+
+
+
+```{r lego-summary, echo=TRUE}
+lego_summary <- legosets |>
+	dplyr::filter(
+		year >= 2000 &
+		pieces > 0
+		) |>
+	dplyr::mutate(
+		price_per_piece = US_retailPrice / pieces,
+		valid_set = !is.na(US_retailPrice) & !is.na(pieces)
+	) |>
+	# There are some electronic products we want to exclude
+	dplyr::filter(is.na(price_per_piece) | price_per_piece < 1) |> 
+	dplyr::group_by(year) |>
+	dplyr::summarise(
+		n = dplyr::n(),
+		n_valid = sum(valid_set),
+		mean_pieces = mean(pieces, na.rm = TRUE),
+		sd_pieces = sd(pieces, na.rm = TRUE),
+		mean_price = mean(US_retailPrice, na.rm = TRUE),
+		sd_price = sd(US_retailPrice, na.rm = TRUE),
+		mean_price_per_piece = mean(price_per_piece, na.rm = TRUE),
+		sd_price_per_piece = sd(price_per_piece, na.rm = TRUE)
+	)
+lego_summary |> 
+	as.data.frame() |> 
+	mutate(
+		mean_pieces = paste0(round(mean_pieces, digits = 2), ' (', round(sd_pieces, digits = 2), ')'),
+		mean_price = paste0(round(mean_price, digits = 2), ' (', round(sd_price, digits = 2), ')'),
+		mean_price_per_piece = paste0(round(mean_price_per_piece, digits = 2), ' (', round(sd_price_per_piece, digits = 2), ')')
+	) |>
+	dplyr::select(!dplyr::starts_with('sd_')) |>
+	dplyr::rename(Year = year, 
+				  `Number of sets` = n,
+				  `Sets with price` = n_valid, 
+				  `Pieces per set` = mean_pieces,
+				  `Set price` = mean_price,
+				  `Price per piece` = mean_price_per_piece) |>
+	knitr::kable(caption = 'Summary of Lego cost by year.', digits = 2)
+```
+
+
+Figures \@ref(fig:mean-price-per-piece) and \@ref(fig:mean-price-per-set) summarize the mean price per piece and mean price per set, respectively. As can be seen the average price per pieces has been relatively stable averaging around $`r round(mean(lego_summary$mean_price_per_piece), digits = 2)` per piece. However, the average price per set has risen to nearly $70 per set in 2024 from $40 in 2016. This can largely be explained by the fact that Lego sets have been getting larger over the last decade (see Figure \@ref(fig:mean-pieces-per-set)).
+
+```{r mean-price-per-piece, fig.cap='Average price (USD) per piece by year.'}
+ggplot(lego_summary, aes(x = year, y = mean_price_per_piece)) +
+	geom_path() +
+	geom_point(aes(size = n_valid)) +
+	scale_size('n Sets') +
+	scale_y_continuous(labels = scales::dollar_format(prefix="$")) +
+	expand_limits(y = 0) +
+	ylab('Average price per piece') + xlab('Year') +
+	ggtitle('Average price (USD) per piece by year')
+```
+
+```{r, mean-price-per-set, fig.cap='Average set price (USD) by year.'}
+ggplot(lego_summary, aes(x = year, y = mean_price)) +
+	geom_path() +
+	geom_point(aes(size = n_valid)) +
+	scale_size('n Sets') +
+	scale_y_continuous(labels = scales::dollar_format(prefix="$")) +
+	expand_limits(y = 0) +
+	ylab('Average set price') + xlab('Year') + 
+	ggtitle('Average set price (USD) by year')
+```
+
+
+```{r, mean-pieces-per-set, fig.cap='Average set price (USD) by year.'}
+ggplot(lego_summary, aes(x = year, y = mean_pieces)) +
+	geom_path() +
+	geom_point(aes(size = n_valid)) +
+	scale_size('n Sets') +
+	scale_y_continuous(labels = scales::dollar_format(prefix="$")) +
+	expand_limits(y = 0) +
+	ylab('Average pieces per set') + xlab('Year') + 
+	ggtitle('Average number of pieces per set by year')
+```

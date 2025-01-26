@@ -87,6 +87,34 @@ save(legosets, file = 'data/legosets.rda')
 tools::resaveRdaFiles('data/legosets.rda')
 
 ################################################################################
+# Rebrickable Downloads https://rebrickable.com/downloads/
+rebrickable_urls <- c(
+	'https://cdn.rebrickable.com/media/downloads/themes.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/colors.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/part_categories.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/parts.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/part_relationships.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/elements.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/sets.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/minifigs.csv.gz'
+	# 'https://cdn.rebrickable.com/media/downloads/inventories.csv.gz',
+	# 'https://cdn.rebrickable.com/media/downloads/inventory_parts.csv.gz',
+	# 'https://cdn.rebrickable.com/media/downloads/inventory_sets.csv.gz',
+	# 'https://cdn.rebrickable.com/media/downloads/inventory_minifigs.csv.gz'
+)
+
+rebrickable_path <- 'data-raw/rebrickable/'
+dir.create(rebrickable_path, showWarnings = FALSE, recursive = TRUE)
+for(i in rebrickable_urls) {
+	zip_file <- paste0(rebrickable_path, '/', basename(i))
+	download.file(i, zip_file)
+	R.utils::gunzip(zip_file)
+}
+
+df <- read.csv('data-raw/rebrickable/colors.csv')
+usethis::use_data(df)
+
+################################################################################
 # Build the reviews dataset
 library(brickset)
 library(ggplot2)
