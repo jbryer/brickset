@@ -99,19 +99,22 @@ rebrickable_urls <- c(
 	'https://cdn.rebrickable.com/media/downloads/part_relationships.csv.gz',
 	'https://cdn.rebrickable.com/media/downloads/elements.csv.gz',
 	'https://cdn.rebrickable.com/media/downloads/sets.csv.gz',
-	'https://cdn.rebrickable.com/media/downloads/minifigs.csv.gz'
-	# 'https://cdn.rebrickable.com/media/downloads/inventories.csv.gz',
-	# 'https://cdn.rebrickable.com/media/downloads/inventory_parts.csv.gz',
-	# 'https://cdn.rebrickable.com/media/downloads/inventory_sets.csv.gz',
-	# 'https://cdn.rebrickable.com/media/downloads/inventory_minifigs.csv.gz'
+	'https://cdn.rebrickable.com/media/downloads/minifigs.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/inventories.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/inventory_parts.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/inventory_sets.csv.gz',
+	'https://cdn.rebrickable.com/media/downloads/inventory_minifigs.csv.gz'
 )
 
 rebrickable_path <- 'data-raw/rebrickable/'
 dir.create(rebrickable_path, showWarnings = FALSE, recursive = TRUE)
 for(i in rebrickable_urls) {
 	zip_file <- paste0(rebrickable_path, '/', basename(i))
+	if(file.exists(zip_file)) {
+		unlink(zip_file)
+	}
 	download.file(i, zip_file)
-	R.utils::gunzip(zip_file)
+	R.utils::gunzip(zip_file, overwrite = TRUE)
 }
 
 df <- read.csv('data-raw/rebrickable/colors.csv')

@@ -2,11 +2,10 @@ Type: Package
 Package: brickset
 Title: Interface with the Brickset API for Getting Data About LEGO Sets
 Version: 2025.0.0
-Date: 2025-01-26
+Date: 2025-02-25
 Authors@R: 
     person("Jason", "Bryer", , "jason@bryer.org", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-2454-0402"))
-Maintainer: Jason Bryer <jason@bryer.org>
 Description: Interface with the 'Brickset' API
     <https://brickset.com/article/52664/api-version-3-documentation> for
     getting data about LEGO sets. Data sets that can be used for teaching
@@ -22,17 +21,18 @@ Imports:
     dplyr,
     httr,
     jsonlite,
-    piggyback,
+    piggyback
 Suggests: 
     bookdown,
     DT,
     ggplot2,
     knitr,
     rmarkdown,
-    shiny,
-    scales
+    scales,
+    shiny
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 LazyData: TRUE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-VignetteBuilder: knitr

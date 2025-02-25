@@ -3,7 +3,7 @@
 \docType{data}
 \name{legosets}
 \alias{legosets}
-\title{Lego sets from 1970 through 2022.}
+\title{Lego sets from 1970 through 2024.}
 \format{
 A data.frame.
 \describe{

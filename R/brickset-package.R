@@ -1,4 +1,5 @@
 brickset_api_endpoint <- 'https://brickset.com/api/v3.asmx/'
+bricklink_api_endpoint <- 'https://api.bricklink.com/api/store/v1'
 
 #' R package to interface with the Brickset API for getting data about LEGO.
 #'
@@ -9,16 +10,15 @@ brickset_api_endpoint <- 'https://brickset.com/api/v3.asmx/'
 #'
 #' \code{options(brickset_key = YOUR_API_KEY)}
 #' @name brickset
-#' @docType package
 #' @title R package to interface with the Brickset API for getting data about LEGO.
 #' @author \email{jason@@bryer.org}
 #' @keywords data lego
 #' @importFrom httr GET http_error http_status content
 #' @importFrom jsonlite fromJSON
 #' @importFrom dplyr bind_cols select mutate any_of
-NULL
+"_PACKAGE"
 
-#' Lego sets from 1970 through 2022.
+#' Lego sets from 1970 through 2024.
 #'
 #' This dataset was built using the \code{\link{getSets}} function. For working
 #' with the LEGO sets data frame this pre-built data is preferred as it will
