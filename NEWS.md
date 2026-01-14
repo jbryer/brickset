@@ -1,3 +1,7 @@
+# brickset 2026.0.0
+
+* Added 2025 sets.
+
 # brickset 2025.0.0
 
 * Added 2024 sets.

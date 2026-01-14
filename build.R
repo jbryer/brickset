@@ -2,6 +2,7 @@
 usethis::use_tidy_description()
 devtools::document()
 devtools::install()
+devtools::install(build_vignettes = TRUE)
 devtools::build()
 devtools::build_readme()
 
@@ -19,6 +20,7 @@ data("legosets", package = 'brickset')
 
 vignette(package = 'brickset')
 vignette('lego_more_expensive')
+vignette('predicting_set_price')
 
 library(ggplot2)
 names(legosets)

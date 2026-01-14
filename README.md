@@ -16,7 +16,7 @@ Status](https://badges.cranchecks.info/flavor/release/brickset.svg)](https://cra
 This package provides functions to access data about
 [LEGO](https://www.lego.com/) sets from the
 [Brickset](https://brickset.com/) website. The package also contains a
-`data.frame` with all LEGO sets (n = 20,420) from 1970 through 2024.
+`data.frame` with all LEGO sets (n = 21,546) from 1970 through 2025.
 This data set was created using the `getSets` function and it is
 recommended that you use this data frame to reduce the number of API
 calls. See the
@@ -67,7 +67,7 @@ You can check your API usage with the `getKeyUsageStats` function.
 ``` r
 brickset::getKeyUsageStats()
 #>              dateStamp count
-#> 1 2025-01-21T00:00:00Z    56
+#> 1 2026-01-14T00:00:00Z    56
 ```
 
 The `getSets` function returns all LEGO sets from the given year.
@@ -85,8 +85,8 @@ head(sets2021, n = 3)
 #> 3         Botanical Collection   Normal     TRUE    756       NA
 #>                         bricksetURL rating reviewCount packagingType
 #> 1 https://brickset.com/sets/10278-1    4.3           4           Box
-#> 2 https://brickset.com/sets/10279-1    4.0           0           Box
-#> 3 https://brickset.com/sets/10280-1    4.1           3           Box
+#> 2 https://brickset.com/sets/10279-1    3.9           0           Box
+#> 3 https://brickset.com/sets/10280-1    4.0           3           Box
 #>     availability agerange_min
 #> 1 LEGO exclusive           18
 #> 2 LEGO exclusive           18
@@ -168,8 +168,8 @@ instructions
 
 ## `legosets` Dataset
 
-The `legosets` data frame contains all LEGO sets (n = 20,420) from 1970
-through 2024.
+The `legosets` data frame contains all LEGO sets (n = 21,546) from 1970
+through 2025.
 
 ``` r
 data("legosets", package = "brickset")
@@ -193,42 +193,42 @@ The variables in the `legosets` data frame are:
 
 |                       | Type      | Unique_Values |
 |:----------------------|:----------|--------------:|
-| setID                 | integer   |         20420 |
-| number                | character |         18958 |
+| setID                 | integer   |         21546 |
+| number                | character |         20037 |
 | numberVariant         | integer   |            25 |
-| name                  | character |         17057 |
-| year                  | integer   |            55 |
-| theme                 | character |           163 |
+| name                  | character |         18081 |
+| year                  | integer   |            56 |
+| theme                 | character |           171 |
 | themeGroup            | character |            17 |
-| subtheme              | character |          1000 |
+| subtheme              | character |          1055 |
 | category              | character |             7 |
 | released              | logical   |             2 |
-| pieces                | integer   |          1543 |
-| minifigs              | integer   |            34 |
-| bricksetURL           | character |         20420 |
+| pieces                | integer   |          1621 |
+| minifigs              | integer   |            35 |
+| bricksetURL           | character |         21546 |
 | rating                | numeric   |            29 |
 | reviewCount           | integer   |            64 |
 | packagingType         | character |            19 |
-| availability          | character |            11 |
-| agerange_min          | integer   |            18 |
-| thumbnailURL          | character |         19365 |
-| imageURL              | character |         19365 |
-| US_retailPrice        | numeric   |           173 |
-| US_dateFirstAvailable | Date      |          1090 |
-| US_dateLastAvailable  | Date      |          2324 |
-| UK_retailPrice        | numeric   |           224 |
-| UK_dateFirstAvailable | Date      |          1019 |
-| UK_dateLastAvailable  | Date      |          2224 |
-| CA_retailPrice        | numeric   |           188 |
-| CA_dateFirstAvailable | Date      |           851 |
-| CA_dateLastAvailable  | Date      |          2005 |
-| DE_retailPrice        | numeric   |           179 |
-| DE_dateFirstAvailable | Date      |           607 |
-| DE_dateLastAvailable  | Date      |          1402 |
-| height                | numeric   |           264 |
-| width                 | numeric   |           317 |
-| depth                 | numeric   |           307 |
-| weight                | numeric   |          1192 |
+| availability          | character |            12 |
+| agerange_min          | integer   |            19 |
+| thumbnailURL          | character |         20514 |
+| imageURL              | character |         20514 |
+| US_retailPrice        | numeric   |           194 |
+| US_dateFirstAvailable | Date      |          1213 |
+| US_dateLastAvailable  | Date      |          2487 |
+| UK_retailPrice        | numeric   |           228 |
+| UK_dateFirstAvailable | Date      |          1132 |
+| UK_dateLastAvailable  | Date      |          2393 |
+| CA_retailPrice        | numeric   |           204 |
+| CA_dateFirstAvailable | Date      |           962 |
+| CA_dateLastAvailable  | Date      |          2165 |
+| DE_retailPrice        | numeric   |           183 |
+| DE_dateFirstAvailable | Date      |           724 |
+| DE_dateLastAvailable  | Date      |          1590 |
+| height                | numeric   |           292 |
+| width                 | numeric   |           349 |
+| depth                 | numeric   |           318 |
+| weight                | numeric   |          1296 |
 
 ## Code of Conduct
 

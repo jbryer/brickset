@@ -1,0 +1,90 @@
+---
+title: "Predicting Lego Set Price"
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    fig_caption: true
+    toc: false
+    number_sections: true
+pkgdown:
+  as_is: true
+vignette: >
+  %\VignetteIndexEntry{Predicting Lego Set Price}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  out.width = '100%',
+  fig.width = 6,
+  fig.height = 4,
+  comment = "#>"
+)
+```
+
+```{r setup, echo=FALSE, results='hide', message=FALSE, warning=FALSE, error=FALSE}
+library(brickset)
+library(ggplot2)
+library(dplyr)
+theme_set(theme_minimal())
+```
+
+In this vignette we will show how the `legosets` dataset can be used to teach basic regression. This, of course, can be extended to other modeling techniques. To begin, we will filter the data frame to include sets from the last 10 years and remove any sets with missing values.
+
+```{r}
+data(legosets)
+last_year <- max(legosets$year)
+legosets <- legosets |> 
+	dplyr::select(year, US_retailPrice, pieces, minifigs, themeGroup) |>
+	dplyr::filter(year %in% seq(last_year - 10, last_year)) |>
+	na.omit()
+```
+
+Our goal is to predict `US_retailPrice` from `pieces` (number of Lego pieces in the set), `minifigs` (number of mini figures in the set), and `themeGroup` (the set theme).
+
+```{r}
+lego_model <- US_retailPrice ~ pieces + minifigs
+```
+
+First, let's plot the data to see if there is a relationship between our dependent variable and indepedent variables.
+
+```{r, warning=FALSE}
+ggplot(legosets, aes(x = pieces, y = US_retailPrice, size = minifigs, color = themeGroup)) +
+	geom_point(alpha = 0.2)
+```
+
+The contingency table reveals that "Licensed" themes are the largest category. To help with interpreting our results we will convert the `themeGroup` variable to a factor and ensure that "Licensed" is our reference group.
+
+```{r}
+table(legosets$themeGroup, useNA = 'ifany')
+```
+
+```{r}
+legosets$themeGroup <- as.factor(legosets$themeGroup)
+legosets$themeGroup <- relevel(legosets$themeGroup, ref = 'Licensed')
+```
+
+Now we can run our linear regression.
+
+```{r}
+lm_out <- lm(US_retailPrice ~ pieces + minifigs + themeGroup, data = legosets)
+summary(lm_out)
+```
+
+The adjusted R-squared for our model is `r round(100 * summary(lm_out)$adj.r.squared, digits = 1)`%. 
+
+Finally, we can check that our residuals are normally distributed.
+
+```{r}
+legosets$predicted <- predict(lm_out)
+legosets$residuals <- resid(lm_out)
+ggplot(legosets, aes(x = residuals)) + geom_histogram(binwidth = 10)
+```
+
+
+
+
