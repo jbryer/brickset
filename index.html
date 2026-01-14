@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Interface with the Brickset API for Getting Data About LEGO Sets">
-<meta name="description" content="Interface with the Brickset API &lt;https://brickset.com/article/52664/api-version-3-documentation&gt; for getting data about LEGO sets. Data sets that can be used for teaching and learning without the need of a Brickset account and API key are also included. Includes all LEGO since through the end of 2023.">
-<meta property="og:description" content="Interface with the Brickset API &lt;https://brickset.com/article/52664/api-version-3-documentation&gt; for getting data about LEGO sets. Data sets that can be used for teaching and learning without the need of a Brickset account and API key are also included. Includes all LEGO since through the end of 2023.">
+<meta name="description" content="Interface with the Brickset API &lt;https://brickset.com/article/52664/api-version-3-documentation&gt; for getting data about LEGO sets. Data sets that can be used for teaching and learning without the need of a Brickset account and API key are also included. Includes all LEGO since through the end of 2025.">
+<meta property="og:description" content="Interface with the Brickset API &lt;https://brickset.com/article/52664/api-version-3-documentation&gt; for getting data about LEGO sets. Data sets that can be used for teaching and learning without the need of a Brickset account and API key are also included. Includes all LEGO since through the end of 2025.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">brickset</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2025.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,7 @@
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="articles/lego_more_expensive.html">Is Lego Getting More Expensive?</a></li>
+    <li><a class="dropdown-item" href="articles/predicting_set_price.html">Predicting Lego Set Price</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="news/index.html">Changelog</a></li>
@@ -59,7 +60,7 @@
 <!-- badges: start -->
 
 <p><strong>Author:</strong> Jason Bryer, Ph.D. <a href="mailto:jason@bryer.org" class="email">jason@bryer.org</a><br><strong>Website:</strong> <a href="https://jbryer.github.io/brickset/" class="uri">https://jbryer.github.io/brickset/</a></p>
-<p>This package provides functions to access data about <a href="https://www.lego.com/" class="external-link">LEGO</a> sets from the <a href="https://brickset.com/" class="external-link">Brickset</a> website. The package also contains a <code>data.frame</code> with all LEGO sets (n = 20,420) from 1970 through 2024. This data set was created using the <code>getSets</code> function and it is recommended that you use this data frame to reduce the number of API calls. See the <a href="https://github.com/jbryer/PSAboot/blob/master/build.R" class="external-link">build.R</a> script for how the data frame was created. Information about the variables is included below.</p>
+<p>This package provides functions to access data about <a href="https://www.lego.com/" class="external-link">LEGO</a> sets from the <a href="https://brickset.com/" class="external-link">Brickset</a> website. The package also contains a <code>data.frame</code> with all LEGO sets (n = 21,546) from 1970 through 2025. This data set was created using the <code>getSets</code> function and it is recommended that you use this data frame to reduce the number of API calls. See the <a href="https://github.com/jbryer/PSAboot/blob/master/build.R" class="external-link">build.R</a> script for how the data frame was created. Information about the variables is included below.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -87,7 +88,7 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getKeyUsageStats.html">getKeyUsageStats</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="co">#&gt;              dateStamp count</span></span>
-<span><span class="co">#&gt; 1 2025-01-21T00:00:00Z    56</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 2026-01-14T00:00:00Z    56</span></span></code></pre></div>
 <p>The <code>getSets</code> function returns all LEGO sets from the given year.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">sets2021</span> <span class="op">&lt;-</span> <span class="fu">brickset</span><span class="fu">::</span><span class="fu"><a href="reference/getSets.html">getSets</a></span><span class="op">(</span><span class="fl">2021</span><span class="op">)</span></span>
@@ -102,8 +103,8 @@
 <span><span class="co">#&gt; 3         Botanical Collection   Normal     TRUE    756       NA</span></span>
 <span><span class="co">#&gt;                         bricksetURL rating reviewCount packagingType</span></span>
 <span><span class="co">#&gt; 1 https://brickset.com/sets/10278-1    4.3           4           Box</span></span>
-<span><span class="co">#&gt; 2 https://brickset.com/sets/10279-1    4.0           0           Box</span></span>
-<span><span class="co">#&gt; 3 https://brickset.com/sets/10280-1    4.1           3           Box</span></span>
+<span><span class="co">#&gt; 2 https://brickset.com/sets/10279-1    3.9           0           Box</span></span>
+<span><span class="co">#&gt; 3 https://brickset.com/sets/10280-1    4.0           3           Box</span></span>
 <span><span class="co">#&gt;     availability agerange_min</span></span>
 <span><span class="co">#&gt; 1 LEGO exclusive           18</span></span>
 <span><span class="co">#&gt; 2 LEGO exclusive           18</span></span>
@@ -175,7 +176,7 @@
 <h2 id="legosets-dataset">
 <code>legosets</code> Dataset<a class="anchor" aria-label="anchor" href="#legosets-dataset"></a>
 </h2>
-<p>The <code>legosets</code> data frame contains all LEGO sets (n = 20,420) from 1970 through 2024.</p>
+<p>The <code>legosets</code> data frame contains all LEGO sets (n = 21,546) from 1970 through 2025.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"legosets"</span>, package <span class="op">=</span> <span class="st">"brickset"</span><span class="op">)</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span><span class="va">legosets</span>, <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fu">geom_bar</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
@@ -199,12 +200,12 @@
 <tr class="odd">
 <td align="left">setID</td>
 <td align="left">integer</td>
-<td align="right">20420</td>
+<td align="right">21546</td>
 </tr>
 <tr class="even">
 <td align="left">number</td>
 <td align="left">character</td>
-<td align="right">18958</td>
+<td align="right">20037</td>
 </tr>
 <tr class="odd">
 <td align="left">numberVariant</td>
@@ -214,17 +215,17 @@
 <tr class="even">
 <td align="left">name</td>
 <td align="left">character</td>
-<td align="right">17057</td>
+<td align="right">18081</td>
 </tr>
 <tr class="odd">
 <td align="left">year</td>
 <td align="left">integer</td>
-<td align="right">55</td>
+<td align="right">56</td>
 </tr>
 <tr class="even">
 <td align="left">theme</td>
 <td align="left">character</td>
-<td align="right">163</td>
+<td align="right">171</td>
 </tr>
 <tr class="odd">
 <td align="left">themeGroup</td>
@@ -234,7 +235,7 @@
 <tr class="even">
 <td align="left">subtheme</td>
 <td align="left">character</td>
-<td align="right">1000</td>
+<td align="right">1055</td>
 </tr>
 <tr class="odd">
 <td align="left">category</td>
@@ -249,17 +250,17 @@
 <tr class="odd">
 <td align="left">pieces</td>
 <td align="left">integer</td>
-<td align="right">1543</td>
+<td align="right">1621</td>
 </tr>
 <tr class="even">
 <td align="left">minifigs</td>
 <td align="left">integer</td>
-<td align="right">34</td>
+<td align="right">35</td>
 </tr>
 <tr class="odd">
 <td align="left">bricksetURL</td>
 <td align="left">character</td>
-<td align="right">20420</td>
+<td align="right">21546</td>
 </tr>
 <tr class="even">
 <td align="left">rating</td>
@@ -279,102 +280,102 @@
 <tr class="odd">
 <td align="left">availability</td>
 <td align="left">character</td>
-<td align="right">11</td>
+<td align="right">12</td>
 </tr>
 <tr class="even">
 <td align="left">agerange_min</td>
 <td align="left">integer</td>
-<td align="right">18</td>
+<td align="right">19</td>
 </tr>
 <tr class="odd">
 <td align="left">thumbnailURL</td>
 <td align="left">character</td>
-<td align="right">19365</td>
+<td align="right">20514</td>
 </tr>
 <tr class="even">
 <td align="left">imageURL</td>
 <td align="left">character</td>
-<td align="right">19365</td>
+<td align="right">20514</td>
 </tr>
 <tr class="odd">
 <td align="left">US_retailPrice</td>
 <td align="left">numeric</td>
-<td align="right">173</td>
+<td align="right">194</td>
 </tr>
 <tr class="even">
 <td align="left">US_dateFirstAvailable</td>
 <td align="left">Date</td>
-<td align="right">1090</td>
+<td align="right">1213</td>
 </tr>
 <tr class="odd">
 <td align="left">US_dateLastAvailable</td>
 <td align="left">Date</td>
-<td align="right">2324</td>
+<td align="right">2487</td>
 </tr>
 <tr class="even">
 <td align="left">UK_retailPrice</td>
 <td align="left">numeric</td>
-<td align="right">224</td>
+<td align="right">228</td>
 </tr>
 <tr class="odd">
 <td align="left">UK_dateFirstAvailable</td>
 <td align="left">Date</td>
-<td align="right">1019</td>
+<td align="right">1132</td>
 </tr>
 <tr class="even">
 <td align="left">UK_dateLastAvailable</td>
 <td align="left">Date</td>
-<td align="right">2224</td>
+<td align="right">2393</td>
 </tr>
 <tr class="odd">
 <td align="left">CA_retailPrice</td>
 <td align="left">numeric</td>
-<td align="right">188</td>
+<td align="right">204</td>
 </tr>
 <tr class="even">
 <td align="left">CA_dateFirstAvailable</td>
 <td align="left">Date</td>
-<td align="right">851</td>
+<td align="right">962</td>
 </tr>
 <tr class="odd">
 <td align="left">CA_dateLastAvailable</td>
 <td align="left">Date</td>
-<td align="right">2005</td>
+<td align="right">2165</td>
 </tr>
 <tr class="even">
 <td align="left">DE_retailPrice</td>
 <td align="left">numeric</td>
-<td align="right">179</td>
+<td align="right">183</td>
 </tr>
 <tr class="odd">
 <td align="left">DE_dateFirstAvailable</td>
 <td align="left">Date</td>
-<td align="right">607</td>
+<td align="right">724</td>
 </tr>
 <tr class="even">
 <td align="left">DE_dateLastAvailable</td>
 <td align="left">Date</td>
-<td align="right">1402</td>
+<td align="right">1590</td>
 </tr>
 <tr class="odd">
 <td align="left">height</td>
 <td align="left">numeric</td>
-<td align="right">264</td>
+<td align="right">292</td>
 </tr>
 <tr class="even">
 <td align="left">width</td>
 <td align="left">numeric</td>
-<td align="right">317</td>
+<td align="right">349</td>
 </tr>
 <tr class="odd">
 <td align="left">depth</td>
 <td align="left">numeric</td>
-<td align="right">307</td>
+<td align="right">318</td>
 </tr>
 <tr class="even">
 <td align="left">weight</td>
 <td align="left">numeric</td>
-<td align="right">1192</td>
+<td align="right">1296</td>
 </tr>
 </tbody>
 </table>
@@ -419,7 +420,7 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Jason Bryer <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2454-0402" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Jason Bryer <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2454-0402" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 </ul>
 </div>
 
@@ -442,7 +443,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer>

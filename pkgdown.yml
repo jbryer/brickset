@@ -1,9 +1,10 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
+pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   lego_more_expensive: lego_more_expensive.html
-last_built: 2025-02-25T18:16Z
+  predicting_set_price: predicting_set_price.html
+last_built: 2026-01-14T19:14Z
 urls:
   reference: https://jbryer.github.io/brickset/reference
   article: https://jbryer.github.io/brickset/articles

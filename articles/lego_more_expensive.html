@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">brickset</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2025.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">2026.0.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,7 @@
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-articles" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Articles</button>
   <ul class="dropdown-menu" aria-labelledby="dropdown-articles">
 <li><a class="dropdown-item" href="../articles/lego_more_expensive.html">Is Lego Getting More Expensive?</a></li>
+    <li><a class="dropdown-item" href="../articles/predicting_set_price.html">Predicting Lego Set Price</a></li>
   </ul>
 </li>
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
@@ -130,89 +131,89 @@ Figure 1: Number of Lego sets by year.
 <tbody>
 <tr class="odd">
 <td align="right">2000</td>
-<td align="right">331</td>
+<td align="right">333</td>
 <td align="right">11</td>
-<td align="left">112.79 (272.29)</td>
+<td align="left">115.73 (276.49)</td>
 <td align="left">6.99 (1.9)</td>
 <td align="left">0.24 (0.26)</td>
 </tr>
 <tr class="even">
 <td align="right">2001</td>
-<td align="right">352</td>
+<td align="right">354</td>
 <td align="right">6</td>
-<td align="left">113.77 (241.37)</td>
+<td align="left">113.77 (240.75)</td>
 <td align="left">7.99 (6)</td>
 <td align="left">0.09 (0.02)</td>
 </tr>
 <tr class="odd">
 <td align="right">2002</td>
-<td align="right">382</td>
+<td align="right">383</td>
 <td align="right">7</td>
-<td align="left">136.24 (257.65)</td>
+<td align="left">135.78 (257.39)</td>
 <td align="left">44.85 (99.32)</td>
 <td align="left">0.15 (0.09)</td>
 </tr>
 <tr class="even">
 <td align="right">2003</td>
-<td align="right">353</td>
+<td align="right">351</td>
 <td align="right">3</td>
-<td align="left">189.3 (332.03)</td>
+<td align="left">189.16 (332.72)</td>
 <td align="left">7.49 (4.33)</td>
 <td align="left">0.11 (0.06)</td>
 </tr>
 <tr class="odd">
 <td align="right">2004</td>
-<td align="right">365</td>
+<td align="right">366</td>
 <td align="right">4</td>
-<td align="left">165.95 (264.32)</td>
+<td align="left">166.08 (264.2)</td>
 <td align="left">9.99 (8.68)</td>
 <td align="left">0.36 (0.43)</td>
 </tr>
 <tr class="even">
 <td align="right">2005</td>
-<td align="right">346</td>
-<td align="right">35</td>
-<td align="left">220.03 (375.4)</td>
-<td align="left">39.42 (51.43)</td>
-<td align="left">0.31 (0.27)</td>
+<td align="right">344</td>
+<td align="right">34</td>
+<td align="left">220.91 (376.92)</td>
+<td align="left">40.2 (51.99)</td>
+<td align="left">0.3 (0.27)</td>
 </tr>
 <tr class="odd">
 <td align="right">2006</td>
-<td align="right">277</td>
-<td align="right">76</td>
-<td align="left">291.65 (356.56)</td>
-<td align="left">44.38 (42.05)</td>
+<td align="right">278</td>
+<td align="right">77</td>
+<td align="left">290.68 (356.29)</td>
+<td align="left">43.97 (41.92)</td>
 <td align="left">0.2 (0.21)</td>
 </tr>
 <tr class="even">
 <td align="right">2007</td>
 <td align="right">242</td>
 <td align="right">154</td>
-<td align="left">362.93 (536.54)</td>
+<td align="left">362.94 (536.53)</td>
 <td align="left">38.13 (49.2)</td>
 <td align="left">0.15 (0.18)</td>
 </tr>
 <tr class="odd">
 <td align="right">2008</td>
-<td align="right">288</td>
+<td align="right">289</td>
 <td align="right">192</td>
-<td align="left">318.53 (522.54)</td>
+<td align="left">317.45 (521.95)</td>
 <td align="left">36.88 (43.59)</td>
 <td align="left">0.18 (0.18)</td>
 </tr>
 <tr class="even">
 <td align="right">2009</td>
-<td align="right">313</td>
+<td align="right">311</td>
 <td align="right">204</td>
-<td align="left">277.5 (386.12)</td>
+<td align="left">279.32 (386.71)</td>
 <td align="left">38.98 (42.56)</td>
 <td align="left">0.19 (0.19)</td>
 </tr>
 <tr class="odd">
 <td align="right">2010</td>
-<td align="right">356</td>
+<td align="right">361</td>
 <td align="right">234</td>
-<td align="left">273.78 (480.52)</td>
+<td align="left">270.04 (478.22)</td>
 <td align="left">34.36 (49.35)</td>
 <td align="left">0.21 (0.18)</td>
 </tr>
@@ -226,107 +227,115 @@ Figure 1: Number of Lego sets by year.
 </tr>
 <tr class="odd">
 <td align="right">2012</td>
-<td align="right">511</td>
+<td align="right">520</td>
 <td align="right">270</td>
-<td align="left">199.16 (329.44)</td>
+<td align="left">195.87 (327.53)</td>
 <td align="left">33.77 (35.61)</td>
 <td align="left">0.2 (0.17)</td>
 </tr>
 <tr class="even">
 <td align="right">2013</td>
-<td align="right">502</td>
+<td align="right">509</td>
 <td align="right">293</td>
-<td align="left">241.43 (398.12)</td>
+<td align="left">238.45 (396.21)</td>
 <td align="left">42.75 (75.83)</td>
 <td align="left">0.2 (0.18)</td>
 </tr>
 <tr class="odd">
 <td align="right">2014</td>
-<td align="right">548</td>
-<td align="right">329</td>
-<td align="left">241.77 (382.49)</td>
-<td align="left">36.21 (40.54)</td>
+<td align="right">562</td>
+<td align="right">330</td>
+<td align="left">236.62 (379.14)</td>
+<td align="left">36.24 (40.48)</td>
 <td align="left">0.17 (0.17)</td>
 </tr>
 <tr class="even">
 <td align="right">2015</td>
-<td align="right">617</td>
+<td align="right">627</td>
 <td align="right">366</td>
-<td align="left">249.87 (542.89)</td>
+<td align="left">244.63 (511.87)</td>
 <td align="left">37.96 (42.32)</td>
 <td align="left">0.17 (0.16)</td>
 </tr>
 <tr class="odd">
 <td align="right">2016</td>
-<td align="right">655</td>
+<td align="right">660</td>
 <td align="right">378</td>
-<td align="left">247.35 (508.79)</td>
+<td align="left">245.72 (507.2)</td>
 <td align="left">39.53 (53.65)</td>
 <td align="left">0.18 (0.18)</td>
 </tr>
 <tr class="even">
 <td align="right">2017</td>
-<td align="right">633</td>
+<td align="right">636</td>
 <td align="right">368</td>
-<td align="left">284.58 (593.79)</td>
+<td align="left">283.4 (592.64)</td>
 <td align="left">45.31 (65.66)</td>
 <td align="left">0.16 (0.16)</td>
 </tr>
 <tr class="odd">
 <td align="right">2018</td>
-<td align="right">642</td>
+<td align="right">643</td>
 <td align="right">373</td>
-<td align="left">269.55 (526.1)</td>
+<td align="left">269.88 (525.66)</td>
 <td align="left">40.71 (54.36)</td>
 <td align="left">0.16 (0.17)</td>
 </tr>
 <tr class="even">
 <td align="right">2019</td>
-<td align="right">614</td>
+<td align="right">624</td>
 <td align="right">337</td>
-<td align="left">308.37 (529.28)</td>
+<td align="left">303.71 (526.29)</td>
 <td align="left">49 (64.58)</td>
 <td align="left">0.16 (0.16)</td>
 </tr>
 <tr class="odd">
 <td align="right">2020</td>
-<td align="right">641</td>
-<td align="right">373</td>
-<td align="left">329.18 (676.54)</td>
-<td align="left">52.55 (72.23)</td>
+<td align="right">657</td>
+<td align="right">374</td>
+<td align="left">321.99 (669.84)</td>
+<td align="left">52.42 (72.18)</td>
 <td align="left">0.17 (0.17)</td>
 </tr>
 <tr class="even">
 <td align="right">2021</td>
-<td align="right">667</td>
-<td align="right">396</td>
-<td align="left">405.63 (884.49)</td>
-<td align="left">58.16 (84.1)</td>
+<td align="right">696</td>
+<td align="right">399</td>
+<td align="left">391.94 (869.1)</td>
+<td align="left">57.95 (83.88)</td>
 <td align="left">0.16 (0.16)</td>
 </tr>
 <tr class="odd">
 <td align="right">2022</td>
-<td align="right">606</td>
-<td align="right">374</td>
-<td align="left">467.46 (840.08)</td>
-<td align="left">67.26 (84.15)</td>
+<td align="right">633</td>
+<td align="right">375</td>
+<td align="left">450.19 (826.19)</td>
+<td align="left">67.1 (84.09)</td>
 <td align="left">0.15 (0.14)</td>
 </tr>
 <tr class="even">
 <td align="right">2023</td>
-<td align="right">679</td>
-<td align="right">392</td>
-<td align="left">444.74 (747.61)</td>
-<td align="left">67.78 (81.91)</td>
+<td align="right">695</td>
+<td align="right">393</td>
+<td align="left">436.05 (741.25)</td>
+<td align="left">67.71 (81.82)</td>
 <td align="left">0.14 (0.13)</td>
 </tr>
 <tr class="odd">
 <td align="right">2024</td>
-<td align="right">679</td>
-<td align="right">420</td>
-<td align="left">485.09 (723.54)</td>
-<td align="left">69.08 (71.48)</td>
+<td align="right">714</td>
+<td align="right">423</td>
+<td align="left">469.07 (713.58)</td>
+<td align="left">69.64 (72.86)</td>
 <td align="left">0.13 (0.13)</td>
+</tr>
+<tr class="even">
+<td align="right">2025</td>
+<td align="right">799</td>
+<td align="right">457</td>
+<td align="left">484.73 (772.39)</td>
+<td align="left">77.95 (89.01)</td>
+<td align="left">0.14 (0.14)</td>
 </tr>
 </tbody>
 </table>
@@ -386,7 +395,7 @@ Figure 4: Average set price (USD) by year.
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
 </div>
 
     </footer>
